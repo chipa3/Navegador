@@ -57,3 +57,16 @@ C:\Users\jose lopez\Desktop\PruebaNavegador\Navegador\CapaModelo\obj\Debug\CapaM
 C:\Users\jose lopez\Desktop\PruebaNavegador\Navegador\CapaModelo\obj\Debug\CapaModelo.csproj.CopyComplete
 C:\Users\jose lopez\Desktop\PruebaNavegador\Navegador\CapaModelo\obj\Debug\CapaModelo.dll
 C:\Users\jose lopez\Desktop\PruebaNavegador\Navegador\CapaModelo\obj\Debug\CapaModelo.pdb
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\Navegador\CapaModelo\bin\Debug\CapaModelo.dll
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\Navegador\CapaModelo\bin\Debug\CapaModelo.pdb
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\Navegador\CapaModelo\bin\Debug\CapaVistaSeguridad.dll
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\Navegador\CapaModelo\bin\Debug\CapaControladorSeguridad.dll
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\Navegador\CapaModelo\bin\Debug\CapaModeloSeguridad.dll
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\Navegador\CapaModelo\bin\Debug\CapaVistaSeguridad.pdb
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\Navegador\CapaModelo\bin\Debug\CapaControladorSeguridad.pdb
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\Navegador\CapaModelo\bin\Debug\CapaModeloSeguridad.pdb
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\Navegador\CapaModelo\obj\Debug\CapaModelo.csprojAssemblyReference.cache
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\Navegador\CapaModelo\obj\Debug\CapaModelo.csproj.CoreCompileInputs.cache
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\Navegador\CapaModelo\obj\Debug\CapaModelo.csproj.CopyComplete
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\Navegador\CapaModelo\obj\Debug\CapaModelo.dll
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\Navegador\CapaModelo\obj\Debug\CapaModelo.pdb

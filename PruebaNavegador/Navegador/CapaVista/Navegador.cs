@@ -18,7 +18,6 @@ namespace CapaVista
         //codigo de guardar
         public List<Control> control = new List<Control>();
         public List<string> Modificar = new List<string>();
-        public string tabla = "";
         public int OpGuardar;
         public int aplicacion;
         //codigo de guardar
@@ -110,7 +109,8 @@ namespace CapaVista
         {
             OpGuardar = 1;
             Desbloquear();
-            insertar(tbl, cmp, txt);
+            TextBox text = (TextBox)control.First();
+            insertar(tbl, text.Tag.ToString(), text);
             btnModificar.Enabled = false;
             btnInsertar.Enabled = false;
             btnEliminar.Enabled = false;

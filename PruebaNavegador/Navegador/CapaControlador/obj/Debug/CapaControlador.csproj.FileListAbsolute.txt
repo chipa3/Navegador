@@ -72,3 +72,18 @@ C:\Users\jose lopez\Desktop\PruebaNavegador\Navegador\CapaControlador\obj\Debug\
 C:\Users\jose lopez\Desktop\PruebaNavegador\Navegador\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
 C:\Users\jose lopez\Desktop\PruebaNavegador\Navegador\CapaControlador\obj\Debug\CapaControlador.dll
 C:\Users\jose lopez\Desktop\PruebaNavegador\Navegador\CapaControlador\obj\Debug\CapaControlador.pdb
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\Navegador\CapaControlador\bin\Debug\CapaControlador.dll
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\Navegador\CapaControlador\bin\Debug\CapaControlador.pdb
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\Navegador\CapaControlador\bin\Debug\CapaModelo.dll
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\Navegador\CapaControlador\bin\Debug\CapaVistaSeguridad.dll
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\Navegador\CapaControlador\bin\Debug\CapaControladorSeguridad.dll
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\Navegador\CapaControlador\bin\Debug\CapaModeloSeguridad.dll
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\Navegador\CapaControlador\bin\Debug\CapaModelo.pdb
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\Navegador\CapaControlador\bin\Debug\CapaVistaSeguridad.pdb
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\Navegador\CapaControlador\bin\Debug\CapaControladorSeguridad.pdb
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\Navegador\CapaControlador\bin\Debug\CapaModeloSeguridad.pdb
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\Navegador\CapaControlador\obj\Debug\CapaControlador.csprojAssemblyReference.cache
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\Navegador\CapaControlador\obj\Debug\CapaControlador.csproj.CoreCompileInputs.cache
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\Navegador\CapaControlador\obj\Debug\CapaControlador.csproj.CopyComplete
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\Navegador\CapaControlador\obj\Debug\CapaControlador.dll
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\Navegador\CapaControlador\obj\Debug\CapaControlador.pdb

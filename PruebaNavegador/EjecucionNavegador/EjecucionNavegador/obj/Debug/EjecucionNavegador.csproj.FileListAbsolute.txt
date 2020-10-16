@@ -112,3 +112,27 @@ C:\Users\jose lopez\Desktop\PruebaNavegador\EjecucionNavegador\EjecucionNavegado
 C:\Users\jose lopez\Desktop\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csproj.CopyComplete
 C:\Users\jose lopez\Desktop\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.exe
 C:\Users\jose lopez\Desktop\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.pdb
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\EjecucionNavegador.exe.config
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\EjecucionNavegador.exe
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\EjecucionNavegador.pdb
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVista.dll
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVistaSeguridad.dll
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControlador.dll
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControladorSeguridad.dll
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModelo.dll
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModeloSeguridad.dll
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVista.pdb
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVistaSeguridad.pdb
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControlador.pdb
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControladorSeguridad.pdb
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModelo.pdb
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModeloSeguridad.pdb
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csprojAssemblyReference.cache
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.frmBanco.resources
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.MDI.resources
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.Properties.Resources.resources
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csproj.GenerateResource.cache
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csproj.CoreCompileInputs.cache
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csproj.CopyComplete
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.exe
+C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.pdb

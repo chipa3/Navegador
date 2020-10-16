@@ -27,8 +27,6 @@ namespace EjecucionNavegador
             List<Control> lista = new List<Control>();
             //List<Control> lista = new List<Control>();
             navegador1.aplicacion = 5;
-            navegador1.cmp = "pk_idarea";
-            navegador1.txt = textBox1;
             navegador1.tbl = "area";
             navegador1.campoEstado = "estado_area";
 
