@@ -1,0 +1,134 @@
+D:\U\4 AÑO 2 SEM\ANALISIS 2\SEGUNDO PROYECTO\Navegador\CapaVista\bin\Debug\CapaVista.dll
+D:\U\4 AÑO 2 SEM\ANALISIS 2\SEGUNDO PROYECTO\Navegador\CapaVista\bin\Debug\CapaVista.pdb
+D:\U\4 AÑO 2 SEM\ANALISIS 2\SEGUNDO PROYECTO\Navegador\CapaVista\bin\Debug\CapaControlador.dll
+D:\U\4 AÑO 2 SEM\ANALISIS 2\SEGUNDO PROYECTO\Navegador\CapaVista\bin\Debug\CapaControlador.pdb
+D:\U\4 AÑO 2 SEM\ANALISIS 2\SEGUNDO PROYECTO\Navegador\CapaVista\obj\Debug\CapaVista.csprojAssemblyReference.cache
+D:\U\4 AÑO 2 SEM\ANALISIS 2\SEGUNDO PROYECTO\Navegador\CapaVista\obj\Debug\CapaVista.Navegador.resources
+D:\U\4 AÑO 2 SEM\ANALISIS 2\SEGUNDO PROYECTO\Navegador\CapaVista\obj\Debug\CapaVista.Properties.Resources.resources
+D:\U\4 AÑO 2 SEM\ANALISIS 2\SEGUNDO PROYECTO\Navegador\CapaVista\obj\Debug\CapaVista.csproj.GenerateResource.cache
+D:\U\4 AÑO 2 SEM\ANALISIS 2\SEGUNDO PROYECTO\Navegador\CapaVista\obj\Debug\CapaVista.csproj.CoreCompileInputs.cache
+D:\U\4 AÑO 2 SEM\ANALISIS 2\SEGUNDO PROYECTO\Navegador\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
+D:\U\4 AÑO 2 SEM\ANALISIS 2\SEGUNDO PROYECTO\Navegador\CapaVista\obj\Debug\CapaVista.dll
+D:\U\4 AÑO 2 SEM\ANALISIS 2\SEGUNDO PROYECTO\Navegador\CapaVista\obj\Debug\CapaVista.pdb
+D:\U\4 AÑO 2 SEM\ANALISIS 2\SEGUNDO PROYECTO\Navegador\CapaVista\bin\Debug\CapaModelo.dll
+D:\U\4 AÑO 2 SEM\ANALISIS 2\SEGUNDO PROYECTO\Navegador\CapaVista\bin\Debug\CapaModelo.pdb
+C:\Users\jose lopez\Desktop\Navegador\CapaVista\bin\Debug\CapaVista.dll
+C:\Users\jose lopez\Desktop\Navegador\CapaVista\bin\Debug\CapaVista.pdb
+C:\Users\jose lopez\Desktop\Navegador\CapaVista\bin\Debug\CapaControlador.dll
+C:\Users\jose lopez\Desktop\Navegador\CapaVista\bin\Debug\CapaModelo.dll
+C:\Users\jose lopez\Desktop\Navegador\CapaVista\bin\Debug\CapaControlador.pdb
+C:\Users\jose lopez\Desktop\Navegador\CapaVista\bin\Debug\CapaModelo.pdb
+C:\Users\jose lopez\Desktop\Navegador\CapaVista\obj\Debug\CapaVista.csprojAssemblyReference.cache
+C:\Users\jose lopez\Desktop\Navegador\CapaVista\obj\Debug\CapaVista.Navegador.resources
+C:\Users\jose lopez\Desktop\Navegador\CapaVista\obj\Debug\CapaVista.Properties.Resources.resources
+C:\Users\jose lopez\Desktop\Navegador\CapaVista\obj\Debug\CapaVista.csproj.GenerateResource.cache
+C:\Users\jose lopez\Desktop\Navegador\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
+C:\Users\jose lopez\Desktop\Navegador\CapaVista\obj\Debug\CapaVista.dll
+C:\Users\jose lopez\Desktop\Navegador\CapaVista\obj\Debug\CapaVista.pdb
+C:\Users\jose lopez\Desktop\Segundo proyecto AS2\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaVista.dll
+C:\Users\jose lopez\Desktop\Segundo proyecto AS2\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaVista.pdb
+C:\Users\jose lopez\Desktop\Segundo proyecto AS2\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaControlador.dll
+C:\Users\jose lopez\Desktop\Segundo proyecto AS2\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaModelo.dll
+C:\Users\jose lopez\Desktop\Segundo proyecto AS2\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaControlador.pdb
+C:\Users\jose lopez\Desktop\Segundo proyecto AS2\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaModelo.pdb
+C:\Users\jose lopez\Desktop\Segundo proyecto AS2\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.csprojAssemblyReference.cache
+C:\Users\jose lopez\Desktop\Segundo proyecto AS2\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.Navegador.resources
+C:\Users\jose lopez\Desktop\Segundo proyecto AS2\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.Properties.Resources.resources
+C:\Users\jose lopez\Desktop\Segundo proyecto AS2\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.csproj.GenerateResource.cache
+C:\Users\jose lopez\Desktop\Segundo proyecto AS2\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
+C:\Users\jose lopez\Desktop\Segundo proyecto AS2\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.dll
+C:\Users\jose lopez\Desktop\Segundo proyecto AS2\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.pdb
+C:\Users\jose lopez\Desktop\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaVista.dll
+C:\Users\jose lopez\Desktop\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaVista.pdb
+C:\Users\jose lopez\Desktop\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaControlador.dll
+C:\Users\jose lopez\Desktop\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaModelo.dll
+C:\Users\jose lopez\Desktop\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaControlador.pdb
+C:\Users\jose lopez\Desktop\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaModelo.pdb
+C:\Users\jose lopez\Desktop\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.csprojAssemblyReference.cache
+C:\Users\jose lopez\Desktop\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.Navegador.resources
+C:\Users\jose lopez\Desktop\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.Properties.Resources.resources
+C:\Users\jose lopez\Desktop\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.csproj.GenerateResource.cache
+C:\Users\jose lopez\Desktop\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
+C:\Users\jose lopez\Desktop\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.dll
+C:\Users\jose lopez\Desktop\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.pdb
+C:\Users\jose lopez\Desktop\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaVistaSeguridad.dll
+C:\Users\jose lopez\Desktop\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaControladorSeguridad.dll
+C:\Users\jose lopez\Desktop\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaModeloSeguridad.dll
+C:\Users\jose lopez\Desktop\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaVistaSeguridad.pdb
+C:\Users\jose lopez\Desktop\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaControladorSeguridad.pdb
+C:\Users\jose lopez\Desktop\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaModeloSeguridad.pdb
+C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaVista.dll
+C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaVista.pdb
+C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaControlador.dll
+C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaVistaSeguridad.dll
+C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaModelo.dll
+C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaControladorSeguridad.dll
+C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaModeloSeguridad.dll
+C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaControlador.pdb
+C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaVistaSeguridad.pdb
+C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaModelo.pdb
+C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaControladorSeguridad.pdb
+C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaModeloSeguridad.pdb
+C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.Navegador.resources
+C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.Properties.Resources.resources
+C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.csproj.GenerateResource.cache
+C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
+C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.dll
+C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.pdb
+C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.csprojAssemblyReference.cache
+D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaVista.dll
+D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaVista.pdb
+D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaControlador.dll
+D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaModelo.dll
+D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaControladorSeguridad.dll
+D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaModeloSeguridad.dll
+D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaControlador.pdb
+D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaVistaSeguridad.pdb
+D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaModelo.pdb
+D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaControladorSeguridad.pdb
+D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaModeloSeguridad.pdb
+D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.csprojAssemblyReference.cache
+D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.Navegador.resources
+D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.Properties.Resources.resources
+D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.csproj.GenerateResource.cache
+D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.csproj.CoreCompileInputs.cache
+D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
+D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.dll
+D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.pdb
+C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaVista.dll
+C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaVista.pdb
+C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaControlador.dll
+C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaModelo.dll
+C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaControladorSeguridad.dll
+C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaModeloSeguridad.dll
+C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaControlador.pdb
+C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaVistaSeguridad.pdb
+C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaModelo.pdb
+C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaControladorSeguridad.pdb
+C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\bin\Debug\CapaModeloSeguridad.pdb
+C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.csprojAssemblyReference.cache
+C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.Navegador.resources
+C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.Properties.Resources.resources
+C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.csproj.GenerateResource.cache
+C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
+C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.dll
+C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\Navegador\CapaVista\obj\Debug\CapaVista.pdb
+C:\Users\jose lopez\Desktop\PruebaNavegador\Navegador\CapaVista\bin\Debug\CapaVista.dll
+C:\Users\jose lopez\Desktop\PruebaNavegador\Navegador\CapaVista\bin\Debug\CapaVista.pdb
+C:\Users\jose lopez\Desktop\PruebaNavegador\Navegador\CapaVista\bin\Debug\CapaControlador.dll
+C:\Users\jose lopez\Desktop\PruebaNavegador\Navegador\CapaVista\bin\Debug\CapaVistaSeguridad.dll
+C:\Users\jose lopez\Desktop\PruebaNavegador\Navegador\CapaVista\bin\Debug\CapaModelo.dll
+C:\Users\jose lopez\Desktop\PruebaNavegador\Navegador\CapaVista\bin\Debug\CapaControladorSeguridad.dll
+C:\Users\jose lopez\Desktop\PruebaNavegador\Navegador\CapaVista\bin\Debug\CapaModeloSeguridad.dll
+C:\Users\jose lopez\Desktop\PruebaNavegador\Navegador\CapaVista\bin\Debug\CapaControlador.pdb
+C:\Users\jose lopez\Desktop\PruebaNavegador\Navegador\CapaVista\bin\Debug\CapaVistaSeguridad.pdb
+C:\Users\jose lopez\Desktop\PruebaNavegador\Navegador\CapaVista\bin\Debug\CapaModelo.pdb
+C:\Users\jose lopez\Desktop\PruebaNavegador\Navegador\CapaVista\bin\Debug\CapaControladorSeguridad.pdb
+C:\Users\jose lopez\Desktop\PruebaNavegador\Navegador\CapaVista\bin\Debug\CapaModeloSeguridad.pdb
+C:\Users\jose lopez\Desktop\PruebaNavegador\Navegador\CapaVista\obj\Debug\CapaVista.csprojAssemblyReference.cache
+C:\Users\jose lopez\Desktop\PruebaNavegador\Navegador\CapaVista\obj\Debug\CapaVista.Navegador.resources
+C:\Users\jose lopez\Desktop\PruebaNavegador\Navegador\CapaVista\obj\Debug\CapaVista.Properties.Resources.resources
+C:\Users\jose lopez\Desktop\PruebaNavegador\Navegador\CapaVista\obj\Debug\CapaVista.csproj.GenerateResource.cache
+C:\Users\jose lopez\Desktop\PruebaNavegador\Navegador\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
+C:\Users\jose lopez\Desktop\PruebaNavegador\Navegador\CapaVista\obj\Debug\CapaVista.dll
+C:\Users\jose lopez\Desktop\PruebaNavegador\Navegador\CapaVista\obj\Debug\CapaVista.pdb

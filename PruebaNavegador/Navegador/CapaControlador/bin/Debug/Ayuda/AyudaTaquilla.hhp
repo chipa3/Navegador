@@ -1,0 +1,24 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=AyudaTaquilla.chm
+Contents file=AyudaTaquilla.hhc
+Default Window=AyudaTaquilla
+Display compile progress=No
+Language=0x409 English (United States)
+
+[WINDOWS]
+AyudaTaquilla="Ayuda Programa de Taquilla","AyudaTaquilla.hhc",,"Cartelera.html","Cartelera.html",,,,,0x23520,,0x387e,,,,,,,,0
+
+
+[FILES]
+AgregarCliente.html
+Asientos.html
+CantidadBoletos.html
+Cartelera.html
+DatosCliente.html
+Funciones.html
+Tarjeta.html
+Trailer.html
+
+[INFOTYPES]
+
