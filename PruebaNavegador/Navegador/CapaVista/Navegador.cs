@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using CapaControlador;
 using CapaVistaSeguridad;
 
+
 namespace CapaVista
 {
     public partial class Navegador : UserControl
@@ -663,5 +664,10 @@ namespace CapaVista
             
         }
 
+        private void btnImprimir_Click(object sender, EventArgs e)
+        {
+          /*  frmReporteadorNavegador reporte = new frmReporteadorNavegador(aplicacion);
+            reporte.Show();*/
+        }
     }
 }

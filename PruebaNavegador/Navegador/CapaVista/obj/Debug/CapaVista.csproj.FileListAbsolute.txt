@@ -152,3 +152,22 @@ C:\Users\bryan\Desktop\Navegador\PruebaNavegador\Navegador\CapaVista\obj\Debug\C
 C:\Users\bryan\Desktop\Navegador\PruebaNavegador\Navegador\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
 C:\Users\bryan\Desktop\Navegador\PruebaNavegador\Navegador\CapaVista\obj\Debug\CapaVista.dll
 C:\Users\bryan\Desktop\Navegador\PruebaNavegador\Navegador\CapaVista\obj\Debug\CapaVista.pdb
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Navegador\CapaVista\bin\Debug\CapaVista.dll
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Navegador\CapaVista\bin\Debug\CapaVista.pdb
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Navegador\CapaVista\bin\Debug\CapaControlador.dll
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Navegador\CapaVista\bin\Debug\CapaVistaSeguridad.dll
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Navegador\CapaVista\bin\Debug\CapaModelo.dll
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Navegador\CapaVista\bin\Debug\CapaControladorSeguridad.dll
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Navegador\CapaVista\bin\Debug\CapaModeloSeguridad.dll
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Navegador\CapaVista\bin\Debug\CapaControlador.pdb
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Navegador\CapaVista\bin\Debug\CapaVistaSeguridad.pdb
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Navegador\CapaVista\bin\Debug\CapaModelo.pdb
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Navegador\CapaVista\bin\Debug\CapaControladorSeguridad.pdb
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Navegador\CapaVista\bin\Debug\CapaModeloSeguridad.pdb
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Navegador\CapaVista\obj\Debug\CapaVista.csprojAssemblyReference.cache
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Navegador\CapaVista\obj\Debug\CapaVista.Navegador.resources
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Navegador\CapaVista\obj\Debug\CapaVista.Properties.Resources.resources
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Navegador\CapaVista\obj\Debug\CapaVista.csproj.GenerateResource.cache
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Navegador\CapaVista\obj\Debug\CapaVista.csproj.CopyComplete
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Navegador\CapaVista\obj\Debug\CapaVista.dll
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Navegador\CapaVista\obj\Debug\CapaVista.pdb

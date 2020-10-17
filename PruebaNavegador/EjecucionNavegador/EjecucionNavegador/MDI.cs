@@ -40,5 +40,25 @@ namespace EjecucionNavegador
                 MessageBox.Show("El Usuario No Cuenta Con Permisos De Acceso A La Aplicación");
             }
         }
+
+        private void mATERIAPRIMAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            clsVistaBitacora bit = new clsVistaBitacora();
+            clsFuncionesSeguridad seguridad = new clsFuncionesSeguridad();
+            if (seguridad.PermisosAcceso("6", textBox1.Text) == 1)
+            {
+                bit.user(textBox1.Text);
+                frmarea Bancos = new frmarea(textBox1.Text);
+                Bancos.MdiParent = this;
+                Bancos.Show();
+            }
+            else
+            {
+                MessageBox.Show("El Usuario No Cuenta Con Permisos De Acceso A La Aplicación");
+            }
+
+
+        }
     }
 }

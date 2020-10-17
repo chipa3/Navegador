@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.aBRIRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cATALOGOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bANCOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rEPORTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aYUDAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bANCOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.mATERIAPRIMAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,14 +53,6 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(12, 158);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(262, 22);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Visible = false;
-            // 
             // aBRIRToolStripMenuItem
             // 
             this.aBRIRToolStripMenuItem.Name = "aBRIRToolStripMenuItem";
@@ -69,10 +62,18 @@
             // cATALOGOToolStripMenuItem
             // 
             this.cATALOGOToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bANCOSToolStripMenuItem});
+            this.bANCOSToolStripMenuItem,
+            this.mATERIAPRIMAToolStripMenuItem});
             this.cATALOGOToolStripMenuItem.Name = "cATALOGOToolStripMenuItem";
             this.cATALOGOToolStripMenuItem.Size = new System.Drawing.Size(96, 24);
             this.cATALOGOToolStripMenuItem.Text = "CATALOGO";
+            // 
+            // bANCOSToolStripMenuItem
+            // 
+            this.bANCOSToolStripMenuItem.Name = "bANCOSToolStripMenuItem";
+            this.bANCOSToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.bANCOSToolStripMenuItem.Text = "BANCOS";
+            this.bANCOSToolStripMenuItem.Click += new System.EventHandler(this.bANCOSToolStripMenuItem_Click);
             // 
             // rEPORTESToolStripMenuItem
             // 
@@ -86,12 +87,20 @@
             this.aYUDAToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
             this.aYUDAToolStripMenuItem.Text = "AYUDA";
             // 
-            // bANCOSToolStripMenuItem
+            // textBox1
             // 
-            this.bANCOSToolStripMenuItem.Name = "bANCOSToolStripMenuItem";
-            this.bANCOSToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.bANCOSToolStripMenuItem.Text = "BANCOS";
-            this.bANCOSToolStripMenuItem.Click += new System.EventHandler(this.bANCOSToolStripMenuItem_Click);
+            this.textBox1.Location = new System.Drawing.Point(12, 158);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(262, 22);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.Visible = false;
+            // 
+            // mATERIAPRIMAToolStripMenuItem
+            // 
+            this.mATERIAPRIMAToolStripMenuItem.Name = "mATERIAPRIMAToolStripMenuItem";
+            this.mATERIAPRIMAToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.mATERIAPRIMAToolStripMenuItem.Text = "MATERIA PRIMA";
+            this.mATERIAPRIMAToolStripMenuItem.Click += new System.EventHandler(this.mATERIAPRIMAToolStripMenuItem_Click);
             // 
             // MDI
             // 
@@ -121,5 +130,6 @@
         private System.Windows.Forms.ToolStripMenuItem rEPORTESToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aYUDAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bANCOSToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mATERIAPRIMAToolStripMenuItem;
     }
 }
