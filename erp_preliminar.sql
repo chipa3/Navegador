@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 16-10-2020 a las 19:27:58
+-- Tiempo de generación: 18-10-2020 a las 00:52:11
 -- Versión del servidor: 10.1.37-MariaDB
 -- Versión de PHP: 7.3.1
 
@@ -44,7 +44,8 @@ INSERT INTO `aplicacion` (`pk_id_aplicacion`, `nombre_aplicacion`, `informe_apli
 (2, 'PRUEBA 2', 'NO HAY', 1),
 (3, 'PRUEBA 3', 'NO HAY ', 1),
 (4, 'MRP', 'NO HAY', 1),
-(5, 'Bancos', 'NO HAY', 1);
+(5, 'Bancos', 'NO HAY', 1),
+(6, 'MateriaPrima', 'NO HAY', 1);
 
 -- --------------------------------------------------------
 
@@ -87,7 +88,8 @@ CREATE TABLE `aplicacionusuario` (
 --
 
 INSERT INTO `aplicacionusuario` (`pk_id_aplicacionusuario`, `fk_idlogin_aplicacionusuario`, `fk_idaplicacion_aplicacionusuario`, `fk_idpermiso_aplicacionusuario`) VALUES
-(1, 3, 5, 8);
+(1, 3, 5, 8),
+(2, 3, 6, 8);
 
 -- --------------------------------------------------------
 
@@ -124,7 +126,10 @@ INSERT INTO `area` (`pk_idarea`, `nombre_area`, `descripcion_area`, `estado_area
 (15, 'A', 'A', 1),
 (16, 'A', 'A', 1),
 (17, 'FRM', 'AAAAAAA', 1),
-(18, 'asda', 'asda', 1);
+(18, 'asda', 'asda', 1),
+(19, 'qweq', 'qweq', 1),
+(20, 'CRM', 'VENTAS', 1),
+(21, 'UMG', 'UMG', 0);
 
 -- --------------------------------------------------------
 
@@ -276,7 +281,34 @@ INSERT INTO `bitacora` (`pk_id_bitacora`, `fk_idusuario_bitacora`, `fk_idaplicac
 (188, 3, 5, '16/10/2020 10:48:33', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
 (189, 3, 5, '16/10/2020 10:48:33', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
 (190, 3, 5, '16/10/2020 10:48:33', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 18,  asda,  asda,  1) '),
-(191, 3, 5, '16/10/2020 10:53:13', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos');
+(191, 3, 5, '16/10/2020 10:53:13', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
+(192, 3, 5, '16/10/2020 19:08:13', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
+(193, 3, 5, '16/10/2020 19:08:13', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Formulario de ayuda'),
+(194, 3, 6, '16/10/2020 21:27:29', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO materiaprimainsumo VALUES ( 1,  a,  aa,  a,  1,  a) '),
+(195, 3, 6, '16/10/2020 21:27:29', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
+(196, 3, 6, '16/10/2020 21:28:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO materiaprimainsumo VALUES ( 1,  a,  a,  a,  1,  a) '),
+(197, 3, 6, '16/10/2020 21:28:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
+(198, 3, 6, '16/10/2020 21:30:52', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO materiaprimainsumo VALUES ( 1,  a,  a,  a,  1,  5) '),
+(199, 3, 6, '16/10/2020 21:31:25', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO materiaprimainsumo VALUES ( 2,  w,  w,  w,  1,  5) '),
+(200, 3, 6, '16/10/2020 21:34:04', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO materiaprimainsumo VALUES ( 3,  platano,  rrrrr,  materia prima,  1,  5.5) '),
+(201, 3, 6, '16/10/2020 21:35:29', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
+(202, 3, 6, '16/10/2020 21:35:29', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE materiaprimainsumo SET estado_materiaprimainsumo=0 WHERE pk_id_materiaprimainsumo= 3 '),
+(203, 3, 6, '16/10/2020 21:35:29', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
+(204, 3, 5, '16/10/2020 23:13:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 19,  qweq,  qweq,  1) '),
+(205, 3, 5, '16/10/2020 23:27:43', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
+(206, 3, 5, '16/10/2020 23:27:43', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
+(207, 3, 5, '17/10/2020 11:14:19', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 20,  CRM,  VENTAS,  1) '),
+(208, 3, 5, '17/10/2020 12:08:30', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
+(209, 3, 5, '17/10/2020 12:36:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 21,  UMG,  ASDA,  1) '),
+(210, 3, 5, '17/10/2020 12:36:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
+(211, 3, 5, '17/10/2020 12:36:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET   nombre_area =  UMG,  descripcion_area =  UMG,  estado_area =  1  WHERE pk_idarea = 21; '),
+(212, 3, 5, '17/10/2020 12:36:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
+(213, 3, 5, '17/10/2020 12:36:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET estado_area=0 WHERE pk_idarea= 21 '),
+(214, 3, 5, '17/10/2020 12:36:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
+(215, 3, 5, '17/10/2020 12:36:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
+(216, 3, 5, '17/10/2020 12:36:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
+(217, 3, 5, '17/10/2020 12:36:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Formulario de ayuda'),
+(218, 3, 5, '17/10/2020 12:36:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Salir de la aplicacion');
 
 -- --------------------------------------------------------
 
@@ -1100,6 +1132,15 @@ CREATE TABLE `materiaprimainsumo` (
   `estado_materiaprimainsumo` tinyint(1) DEFAULT NULL,
   `precio_materiaprimainsumo` double DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `materiaprimainsumo`
+--
+
+INSERT INTO `materiaprimainsumo` (`pk_id_materiaprimainsumo`, `nombre_materiaprimainsumo`, `descripcion_materiaprimainsumo`, `marca_materiaprimainsumo`, `estado_materiaprimainsumo`, `precio_materiaprimainsumo`) VALUES
+(1, 'a', 'a', 'a', 1, 5),
+(2, 'w', 'w', 'w', 1, 5),
+(3, 'platano', 'rrrrr', 'materia prima', 0, 5.5);
 
 -- --------------------------------------------------------
 
@@ -2378,7 +2419,7 @@ ALTER TABLE `venta`
 -- AUTO_INCREMENT de la tabla `aplicacion`
 --
 ALTER TABLE `aplicacion`
-  MODIFY `pk_id_aplicacion` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `pk_id_aplicacion` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `aplicacionperfil`
@@ -2390,13 +2431,13 @@ ALTER TABLE `aplicacionperfil`
 -- AUTO_INCREMENT de la tabla `aplicacionusuario`
 --
 ALTER TABLE `aplicacionusuario`
-  MODIFY `pk_id_aplicacionusuario` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `pk_id_aplicacionusuario` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `bitacora`
 --
 ALTER TABLE `bitacora`
-  MODIFY `pk_id_bitacora` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=192;
+  MODIFY `pk_id_bitacora` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=219;
 
 --
 -- AUTO_INCREMENT de la tabla `bodega`
@@ -2510,7 +2551,7 @@ ALTER TABLE `marca`
 -- AUTO_INCREMENT de la tabla `materiaprimainsumo`
 --
 ALTER TABLE `materiaprimainsumo`
-  MODIFY `pk_id_materiaprimainsumo` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `pk_id_materiaprimainsumo` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `municipio`
