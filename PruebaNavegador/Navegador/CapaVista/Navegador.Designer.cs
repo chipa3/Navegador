@@ -1,4 +1,4 @@
-﻿namespace CapaVista
+﻿namespace CapaVistaNavegador
 {
     partial class Navegador
     {
@@ -189,7 +189,7 @@
             // 
             this.btnModificar.BackColor = System.Drawing.Color.White;
             this.btnModificar.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.Image = global::CapaVista.Properties.Resources.Modificar_;
+            this.btnModificar.Image = global::CapaVistaNavegador.Properties.Resources.Modificar_;
             this.btnModificar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnModificar.Location = new System.Drawing.Point(96, 23);
             this.btnModificar.Margin = new System.Windows.Forms.Padding(4);
@@ -286,7 +286,7 @@
             // 
             this.btnInsertar.BackColor = System.Drawing.Color.White;
             this.btnInsertar.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInsertar.Image = global::CapaVista.Properties.Resources.Insertar;
+            this.btnInsertar.Image = global::CapaVistaNavegador.Properties.Resources.Insertar;
             this.btnInsertar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnInsertar.Location = new System.Drawing.Point(20, 23);
             this.btnInsertar.Margin = new System.Windows.Forms.Padding(4);

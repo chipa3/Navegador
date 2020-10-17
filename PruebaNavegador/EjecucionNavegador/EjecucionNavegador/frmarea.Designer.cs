@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.navegador1 = new CapaVista.Navegador();
+            this.navegador1 = new CapaVistaNavegador.Navegador();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -130,7 +130,7 @@
 
         #endregion
 
-        private CapaVista.Navegador navegador1;
+        private CapaVistaNavegador.Navegador navegador1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;

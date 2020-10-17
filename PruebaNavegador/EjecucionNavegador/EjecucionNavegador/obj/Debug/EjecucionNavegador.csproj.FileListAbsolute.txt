@@ -139,17 +139,11 @@ C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNav
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\EjecucionNavegador.exe.config
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\EjecucionNavegador.exe
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\EjecucionNavegador.pdb
-C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVista.dll
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVistaSeguridad.dll
-C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControlador.dll
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControladorSeguridad.dll
-C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModelo.dll
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModeloSeguridad.dll
-C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVista.pdb
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVistaSeguridad.pdb
-C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControlador.pdb
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControladorSeguridad.pdb
-C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModelo.pdb
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModeloSeguridad.pdb
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csprojAssemblyReference.cache
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.frmBanco.resources
@@ -185,3 +179,9 @@ C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegado
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVistaReporteador.pdb
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControladorReporteador.pdb
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModeloReporteador.pdb
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVistaNavegador.dll
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControladorNavegador.dll
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModeloNavegador.dll
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVistaNavegador.pdb
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControladorNavegador.pdb
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModeloNavegador.pdb

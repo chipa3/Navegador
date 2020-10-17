@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CapaVistaSeguridad;
 
-namespace CapaModelo
+namespace CapaModeloNavegador
 {
     public class Sentencias
     {

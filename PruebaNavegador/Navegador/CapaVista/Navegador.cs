@@ -7,12 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CapaControlador;
+using CapaControladorNavegador;
 using CapaVistaSeguridad;
 using CapaVistaReporteador;
 using CapaVista.Reporteador_Navegador;
 
-namespace CapaVista
+namespace CapaVistaNavegador
 {
     public partial class Navegador : UserControl
     {

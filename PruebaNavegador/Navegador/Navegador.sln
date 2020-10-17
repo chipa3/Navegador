@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaVista", "CapaVista\CapaVista.csproj", "{9CEAD4E9-DE4A-44CD-871A-A05E3AF6073A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaVistaNavegador", "CapaVista\CapaVistaNavegador.csproj", "{9CEAD4E9-DE4A-44CD-871A-A05E3AF6073A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaModelo", "CapaModelo\CapaModelo.csproj", "{E7736D95-E20E-493F-8BFD-56CAC390ED36}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaModeloNavegador", "CapaModelo\CapaModeloNavegador.csproj", "{E7736D95-E20E-493F-8BFD-56CAC390ED36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaControlador", "CapaControlador\CapaControlador.csproj", "{3A336B36-218D-4D64-A126-1BB13BE3BA00}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaControladorNavegador", "CapaControlador\CapaControladorNavegador.csproj", "{3A336B36-218D-4D64-A126-1BB13BE3BA00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
