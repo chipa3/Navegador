@@ -34,6 +34,9 @@
     <Reference Include="CapaControlador">
       <HintPath>..\CapaControlador\bin\Debug\CapaControlador.dll</HintPath>
     </Reference>
+    <Reference Include="CapaVistaReporteador">
+      <HintPath>..\..\Reporteador-master2\Reporteador\CapaVista\bin\Debug\CapaVistaReporteador.dll</HintPath>
+    </Reference>
     <Reference Include="CapaVistaSeguridad, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaVistaSeguridad.dll</HintPath>

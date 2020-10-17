@@ -9,7 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaControlador;
 using CapaVistaSeguridad;
-
+using CapaVistaReporteador;
+using CapaVista.Reporteador_Navegador;
 
 namespace CapaVista
 {
@@ -666,8 +667,8 @@ namespace CapaVista
 
         private void btnImprimir_Click(object sender, EventArgs e)
         {
-          /*  frmReporteadorNavegador reporte = new frmReporteadorNavegador(aplicacion);
-            reporte.Show();*/
+           frmReporteadorNavegador reporte = new frmReporteadorNavegador(aplicacion);
+            reporte.Show();
         }
     }
 }
