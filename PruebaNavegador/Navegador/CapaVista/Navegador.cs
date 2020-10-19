@@ -156,7 +156,7 @@ namespace CapaVistaNavegador
         private void btnAyuda_Click(object sender, EventArgs e)
         {
             Bitacora.insert("Formulario de ayuda", aplicacion);
-            Help.ShowHelp(this, "Ayuda/AyudaTaquilla.chm", ruta);
+            Help.ShowHelp(this, "Ayuda/AyudaERP.chm", ruta);
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
