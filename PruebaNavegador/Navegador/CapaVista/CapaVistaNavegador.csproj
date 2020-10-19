@@ -37,9 +37,8 @@
     <Reference Include="CapaVistaReporteador">
       <HintPath>..\..\Reporteador-master2\Reporteador\CapaVista\bin\Debug\CapaVistaReporteador.dll</HintPath>
     </Reference>
-    <Reference Include="CapaVistaSeguridad, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaVistaSeguridad.dll</HintPath>
+    <Reference Include="CapaVistaSeguridad">
+      <HintPath>..\..\Objeto_Seguridad-master\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaVistaSeguridad.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

@@ -1,0 +1,157 @@
+C:\Users\CARLOS JAVIER\source\repos\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaVistaSeguridad.dll
+C:\Users\CARLOS JAVIER\source\repos\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaVistaSeguridad.pdb
+C:\Users\CARLOS JAVIER\source\repos\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csprojAssemblyReference.cache
+C:\Users\CARLOS JAVIER\source\repos\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csproj.CoreCompileInputs.cache
+C:\Users\CARLOS JAVIER\source\repos\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.dll
+C:\Users\CARLOS JAVIER\source\repos\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.pdb
+C:\Users\CARLOS JAVIER\source\repos\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaControladorSeguridad.dll
+C:\Users\CARLOS JAVIER\source\repos\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaControladorSeguridad.pdb
+C:\Users\CARLOS JAVIER\source\repos\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Properties.Resources.resources
+C:\Users\CARLOS JAVIER\source\repos\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csproj.GenerateResource.cache
+C:\Users\CARLOS JAVIER\source\repos\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csproj.CopyComplete
+C:\Users\CARLOS JAVIER\source\repos\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frmMantenimientoPerfil.resources
+C:\Users\CARLOS JAVIER\source\repos\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frmAgregarAplicacion.resources
+C:\Users\CARLOS JAVIER\source\repos\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.frmAsignacionDeAplicaciones.resources
+C:\Users\CARLOS JAVIER\source\repos\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.frmLogin.resources
+C:\Users\CARLOS JAVIER\source\repos\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaModeloSeguridad.dll
+C:\Users\CARLOS JAVIER\source\repos\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaModeloSeguridad.pdb
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaVistaSeguridad.dll
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaVistaSeguridad.pdb
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaControladorSeguridad.dll
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaModeloSeguridad.dll
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaControladorSeguridad.pdb
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaModeloSeguridad.pdb
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csprojAssemblyReference.cache
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.frmAsignacionDeAplicaciones.resources
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.frmLogin.resources
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frmAgregarAplicacion.resources
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frmMantenimientoPerfil.resources
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Properties.Resources.resources
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csproj.GenerateResource.cache
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csproj.CoreCompileInputs.cache
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csproj.CopyComplete
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.dll
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.pdb
+C:\Users\CARLOS JAVIER\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csprojAssemblyReference.cache
+C:\Users\CARLOS JAVIER\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.frmAsignacionDeAplicaciones.resources
+C:\Users\CARLOS JAVIER\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.frmLogin.resources
+C:\Users\CARLOS JAVIER\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frmAgregarAplicacion.resources
+C:\Users\CARLOS JAVIER\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frmMantenimientoPerfil.resources
+C:\Users\CARLOS JAVIER\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Properties.Resources.resources
+C:\Users\CARLOS JAVIER\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csproj.GenerateResource.cache
+C:\Users\CARLOS JAVIER\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csproj.CoreCompileInputs.cache
+C:\Users\CARLOS JAVIER\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaVistaSeguridad.dll
+C:\Users\CARLOS JAVIER\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaVistaSeguridad.pdb
+C:\Users\CARLOS JAVIER\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaControladorSeguridad.dll
+C:\Users\CARLOS JAVIER\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaModeloSeguridad.dll
+C:\Users\CARLOS JAVIER\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaControladorSeguridad.pdb
+C:\Users\CARLOS JAVIER\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaModeloSeguridad.pdb
+C:\Users\CARLOS JAVIER\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csproj.CopyComplete
+C:\Users\CARLOS JAVIER\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.dll
+C:\Users\CARLOS JAVIER\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.pdb
+D:\Escritorio\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csprojAssemblyReference.cache
+D:\Escritorio\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.frmAsignacionDeAplicaciones.resources
+D:\Escritorio\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.frmLogin.resources
+D:\Escritorio\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frmAgregarAplicacion.resources
+D:\Escritorio\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frmMantenimientoPerfil.resources
+D:\Escritorio\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Properties.Resources.resources
+D:\Escritorio\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csproj.GenerateResource.cache
+D:\Escritorio\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csproj.CoreCompileInputs.cache
+D:\Escritorio\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.dll
+D:\Escritorio\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.pdb
+D:\Escritorio\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaVistaSeguridad.dll
+D:\Escritorio\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaVistaSeguridad.pdb
+D:\Escritorio\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaControladorSeguridad.dll
+D:\Escritorio\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaModeloSeguridad.dll
+D:\Escritorio\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaControladorSeguridad.pdb
+D:\Escritorio\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaModeloSeguridad.pdb
+D:\Escritorio\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csproj.CopyComplete
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Objeto Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csprojAssemblyReference.cache
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Objeto Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.frmAsignacionDeAplicaciones.resources
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Objeto Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.frmLogin.resources
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Objeto Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frmAgregarAplicacion.resources
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Objeto Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frmMantenimientoPerfil.resources
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Objeto Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Properties.Resources.resources
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Objeto Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csproj.GenerateResource.cache
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Objeto Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csproj.CoreCompileInputs.cache
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Objeto Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.dll
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Objeto Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.pdb
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Objeto Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaVistaSeguridad.dll
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Objeto Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaVistaSeguridad.pdb
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Objeto Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaControladorSeguridad.dll
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Objeto Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaModeloSeguridad.dll
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Objeto Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaControladorSeguridad.pdb
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Objeto Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaModeloSeguridad.pdb
+D:\Clases Universidad\Analisis de Sistemas II\Segundo Proyecto\Modulo Seguridad\Objeto Seguridad\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csproj.CopyComplete
+C:\Users\CARLOS JAVIER\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.frmAsignarAplicacionesAPerfil.resources
+C:\Users\CARLOS JAVIER\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frmConsultarPerfil.resources
+C:\Users\jmora\Desktop\SegudadAhoraSi\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csprojAssemblyReference.cache
+C:\Users\jmora\Desktop\SegudadAhoraSi\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.frmAsignacionDeAplicaciones.resources
+C:\Users\jmora\Desktop\SegudadAhoraSi\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.frmAsignarAplicacionesAPerfil.resources
+C:\Users\jmora\Desktop\SegudadAhoraSi\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.frmLogin.resources
+C:\Users\jmora\Desktop\SegudadAhoraSi\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frmAgregarAplicacion.resources
+C:\Users\jmora\Desktop\SegudadAhoraSi\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frmConsultarPerfil.resources
+C:\Users\jmora\Desktop\SegudadAhoraSi\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frmMantenimientoPerfil.resources
+C:\Users\jmora\Desktop\SegudadAhoraSi\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Properties.Resources.resources
+C:\Users\jmora\Desktop\SegudadAhoraSi\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csproj.GenerateResource.cache
+C:\Users\jmora\Desktop\SegudadAhoraSi\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csproj.CoreCompileInputs.cache
+C:\Users\jmora\Desktop\SegudadAhoraSi\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.dll
+C:\Users\jmora\Desktop\SegudadAhoraSi\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.pdb
+C:\Users\jmora\Desktop\SegudadAhoraSi\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaVistaSeguridad.dll
+C:\Users\jmora\Desktop\SegudadAhoraSi\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaVistaSeguridad.pdb
+C:\Users\jmora\Desktop\SegudadAhoraSi\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaControladorSeguridad.dll
+C:\Users\jmora\Desktop\SegudadAhoraSi\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaModeloSeguridad.dll
+C:\Users\jmora\Desktop\SegudadAhoraSi\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaControladorSeguridad.pdb
+C:\Users\jmora\Desktop\SegudadAhoraSi\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaModeloSeguridad.pdb
+C:\Users\jmora\Desktop\SegudadAhoraSi\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csproj.CopyComplete
+C:\Users\ekt\Desktop\seguridad2\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csprojAssemblyReference.cache
+C:\Users\ekt\Desktop\seguridad2\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.frmAsignacionDeAplicaciones.resources
+C:\Users\ekt\Desktop\seguridad2\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.frmAsignarAplicacionesAPerfil.resources
+C:\Users\ekt\Desktop\seguridad2\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.frmLogin.resources
+C:\Users\ekt\Desktop\seguridad2\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frm_mantenimiento_usuario.resources
+C:\Users\ekt\Desktop\seguridad2\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frmAgregarAplicacion.resources
+C:\Users\ekt\Desktop\seguridad2\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frmConsultarPerfil.resources
+C:\Users\ekt\Desktop\seguridad2\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frmMantenimientoPerfil.resources
+C:\Users\ekt\Desktop\seguridad2\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frm_aplicacion.resources
+C:\Users\ekt\Desktop\seguridad2\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Properties.Resources.resources
+C:\Users\ekt\Desktop\seguridad2\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csproj.GenerateResource.cache
+C:\Users\ekt\Desktop\seguridad2\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csproj.CoreCompileInputs.cache
+C:\Users\ekt\Desktop\seguridad2\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.dll
+C:\Users\ekt\Desktop\seguridad2\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.pdb
+C:\Users\ekt\Desktop\seguridad2\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaVistaSeguridad.dll
+C:\Users\ekt\Desktop\seguridad2\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaVistaSeguridad.pdb
+C:\Users\ekt\Desktop\seguridad2\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaControladorSeguridad.dll
+C:\Users\ekt\Desktop\seguridad2\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaModeloSeguridad.dll
+C:\Users\ekt\Desktop\seguridad2\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaControladorSeguridad.pdb
+C:\Users\ekt\Desktop\seguridad2\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaModeloSeguridad.pdb
+C:\Users\ekt\Desktop\seguridad2\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csproj.CopyComplete
+C:\Users\jmora\Desktop\AhoraSI3.0\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csprojAssemblyReference.cache
+C:\Users\jmora\Desktop\AhoraSI3.0\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.frmAsignacionDeAplicaciones.resources
+C:\Users\jmora\Desktop\AhoraSI3.0\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.frmAsignarAplicacionesAPerfil.resources
+C:\Users\jmora\Desktop\AhoraSI3.0\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.frmLogin.resources
+C:\Users\jmora\Desktop\AhoraSI3.0\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frm_mantenimiento_usuario.resources
+C:\Users\jmora\Desktop\AhoraSI3.0\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frmAgregarAplicacion.resources
+C:\Users\jmora\Desktop\AhoraSI3.0\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frmConsultarPerfil.resources
+C:\Users\jmora\Desktop\AhoraSI3.0\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frmMantenimientoPerfil.resources
+C:\Users\jmora\Desktop\AhoraSI3.0\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frmModificarPermisos.resources
+C:\Users\jmora\Desktop\AhoraSI3.0\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frm_aplicacion.resources
+C:\Users\jmora\Desktop\AhoraSI3.0\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Properties.Resources.resources
+C:\Users\jmora\Desktop\AhoraSI3.0\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csproj.GenerateResource.cache
+C:\Users\jmora\Desktop\AhoraSI3.0\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csproj.CoreCompileInputs.cache
+C:\Users\jmora\Desktop\AhoraSI3.0\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.dll
+C:\Users\jmora\Desktop\AhoraSI3.0\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.pdb
+C:\Users\jmora\Desktop\AhoraSI3.0\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaVistaSeguridad.dll
+C:\Users\jmora\Desktop\AhoraSI3.0\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaVistaSeguridad.pdb
+C:\Users\jmora\Desktop\AhoraSI3.0\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaControladorSeguridad.dll
+C:\Users\jmora\Desktop\AhoraSI3.0\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaModeloSeguridad.dll
+C:\Users\jmora\Desktop\AhoraSI3.0\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaModeloSeguridad.pdb
+C:\Users\jmora\Desktop\AhoraSI3.0\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaControladorSeguridad.pdb
+C:\Users\jmora\Desktop\AhoraSI3.0\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csproj.CopyComplete
+C:\Users\CARLOS JAVIER\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frm_mantenimiento_usuario.resources
+C:\Users\CARLOS JAVIER\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frmModificarPermisos.resources
+C:\Users\CARLOS JAVIER\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frm_aplicacion.resources
+D:\Escritorio\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.frmAsignarAplicacionesAPerfil.resources
+D:\Escritorio\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frm_mantenimiento_usuario.resources
+D:\Escritorio\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frmConsultarPerfil.resources
+D:\Escritorio\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frmModificarPermisos.resources
+D:\Escritorio\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frm_aplicacion.resources
