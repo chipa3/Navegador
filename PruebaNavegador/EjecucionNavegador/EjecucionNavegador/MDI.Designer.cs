@@ -32,10 +32,10 @@
             this.aBRIRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cATALOGOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bANCOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mATERIAPRIMAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rEPORTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aYUDAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.mATERIAPRIMAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,8 +72,15 @@
             // 
             this.bANCOSToolStripMenuItem.Name = "bANCOSToolStripMenuItem";
             this.bANCOSToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.bANCOSToolStripMenuItem.Text = "BANCOS";
+            this.bANCOSToolStripMenuItem.Text = "AREA";
             this.bANCOSToolStripMenuItem.Click += new System.EventHandler(this.bANCOSToolStripMenuItem_Click);
+            // 
+            // mATERIAPRIMAToolStripMenuItem
+            // 
+            this.mATERIAPRIMAToolStripMenuItem.Name = "mATERIAPRIMAToolStripMenuItem";
+            this.mATERIAPRIMAToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.mATERIAPRIMAToolStripMenuItem.Text = "MATERIA PRIMA";
+            this.mATERIAPRIMAToolStripMenuItem.Click += new System.EventHandler(this.mATERIAPRIMAToolStripMenuItem_Click);
             // 
             // rEPORTESToolStripMenuItem
             // 
@@ -94,13 +101,6 @@
             this.textBox1.Size = new System.Drawing.Size(262, 22);
             this.textBox1.TabIndex = 1;
             this.textBox1.Visible = false;
-            // 
-            // mATERIAPRIMAToolStripMenuItem
-            // 
-            this.mATERIAPRIMAToolStripMenuItem.Name = "mATERIAPRIMAToolStripMenuItem";
-            this.mATERIAPRIMAToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.mATERIAPRIMAToolStripMenuItem.Text = "MATERIA PRIMA";
-            this.mATERIAPRIMAToolStripMenuItem.Click += new System.EventHandler(this.mATERIAPRIMAToolStripMenuItem_Click);
             // 
             // MDI
             // 

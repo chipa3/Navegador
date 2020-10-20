@@ -53,17 +53,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmarea.cs">
+    <Compile Include="frmMateriaPrima.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmarea.Designer.cs">
-      <DependentUpon>frmarea.cs</DependentUpon>
+    <Compile Include="frmMateriaPrima.Designer.cs">
+      <DependentUpon>frmMateriaPrima.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmBanco.cs">
+    <Compile Include="frmAreas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmBanco.Designer.cs">
-      <DependentUpon>frmBanco.cs</DependentUpon>
+    <Compile Include="frmAreas.Designer.cs">
+      <DependentUpon>frmAreas.cs</DependentUpon>
     </Compile>
     <Compile Include="MDI.cs">
       <SubType>Form</SubType>
@@ -73,11 +73,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmarea.resx">
-      <DependentUpon>frmarea.cs</DependentUpon>
+    <EmbeddedResource Include="frmMateriaPrima.resx">
+      <DependentUpon>frmMateriaPrima.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmBanco.resx">
-      <DependentUpon>frmBanco.cs</DependentUpon>
+    <EmbeddedResource Include="frmAreas.resx">
+      <DependentUpon>frmAreas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDI.resx">
       <DependentUpon>MDI.cs</DependentUpon>

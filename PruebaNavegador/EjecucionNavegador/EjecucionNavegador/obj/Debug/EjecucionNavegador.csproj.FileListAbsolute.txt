@@ -146,14 +146,12 @@ C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegado
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControladorSeguridad.pdb
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModeloSeguridad.pdb
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csprojAssemblyReference.cache
-C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.frmBanco.resources
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.MDI.resources
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.Properties.Resources.resources
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csproj.GenerateResource.cache
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csproj.CopyComplete
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.exe
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.pdb
-C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.frmarea.resources
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVistaReporteador.dll
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControladorReporteador.dll
@@ -185,3 +183,5 @@ C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegado
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVistaNavegador.pdb
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControladorNavegador.pdb
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModeloNavegador.pdb
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.frmMateriaPrima.resources
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.frmAreas.resources

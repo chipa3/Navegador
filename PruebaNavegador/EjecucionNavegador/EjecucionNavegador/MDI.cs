@@ -31,7 +31,7 @@ namespace EjecucionNavegador
             if (seguridad.PermisosAcceso("5", textBox1.Text) == 1)
             {
                 bit.user(textBox1.Text);
-                frmBanco Bancos = new frmBanco(textBox1.Text);
+                frmAreas Bancos = new frmAreas(textBox1.Text);
                 Bancos.MdiParent = this;
                 Bancos.Show();
             }
@@ -49,7 +49,7 @@ namespace EjecucionNavegador
             if (seguridad.PermisosAcceso("6", textBox1.Text) == 1)
             {
                 bit.user(textBox1.Text);
-                frmarea Bancos = new frmarea(textBox1.Text);
+                frmMateriaPrima Bancos = new frmMateriaPrima(textBox1.Text);
                 Bancos.MdiParent = this;
                 Bancos.Show();
             }
