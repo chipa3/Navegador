@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-10-2020 a las 00:52:11
+-- Tiempo de generación: 21-10-2020 a las 21:35:20
 -- Versión del servidor: 10.1.37-MariaDB
 -- Versión de PHP: 7.3.1
 
@@ -45,7 +45,8 @@ INSERT INTO `aplicacion` (`pk_id_aplicacion`, `nombre_aplicacion`, `informe_apli
 (3, 'PRUEBA 3', 'NO HAY ', 1),
 (4, 'MRP', 'NO HAY', 1),
 (5, 'Bancos', 'NO HAY', 1),
-(6, 'MateriaPrima', 'NO HAY', 1);
+(6, 'MateriaPrima', 'NO HAY', 1),
+(7, 'Consultas', 'NO HAY', 1);
 
 -- --------------------------------------------------------
 
@@ -89,7 +90,8 @@ CREATE TABLE `aplicacionusuario` (
 
 INSERT INTO `aplicacionusuario` (`pk_id_aplicacionusuario`, `fk_idlogin_aplicacionusuario`, `fk_idaplicacion_aplicacionusuario`, `fk_idpermiso_aplicacionusuario`) VALUES
 (1, 3, 5, 8),
-(2, 3, 6, 8);
+(2, 3, 6, 8),
+(3, 3, 3, 8);
 
 -- --------------------------------------------------------
 
@@ -123,13 +125,21 @@ INSERT INTO `area` (`pk_idarea`, `nombre_area`, `descripcion_area`, `estado_area
 (12, 'FMR', 'A', 0),
 (13, 'FMR', 'A', 0),
 (14, 'FMR', 'A', 0),
-(15, 'A', 'A', 1),
-(16, 'A', 'A', 1),
+(15, 'A', 'A', 0),
+(16, 'A', 'A', 0),
 (17, 'FRM', 'AAAAAAA', 1),
 (18, 'asda', 'asda', 1),
 (19, 'qweq', 'qweq', 1),
 (20, 'CRM', 'VENTAS', 1),
-(21, 'UMG', 'UMG', 0);
+(21, 'UMG', 'UMG', 0),
+(22, 'a', 'a', 0),
+(23, 'e', 'e', 0),
+(24, 'qweqweq', 'qweqweq', 0),
+(25, 'eeeee', 'eeeeee', 1),
+(26, 'FRM2', 'MODULO DE FINANZAS', 0),
+(27, 'CRM', 'DESCRIPCION', 0),
+(28, 'HMC', 'NO EXISTE ESTA AREA', 0),
+(29, 'PRUEBA', 'PRUEBA PRUEBA ', 0);
 
 -- --------------------------------------------------------
 
@@ -178,7 +188,15 @@ CREATE TABLE `banco` (
 
 INSERT INTO `banco` (`pk_idbanco`, `nombre_banco`, `estado_banco`) VALUES
 (1, 'Banrural1', 1),
-(2, 'Banrural', 1);
+(2, 'Banrural', 1),
+(3, 'Industrial', 1),
+(4, 'BAM', 1),
+(5, 'GYT CONTINENTAL', 0),
+(6, 'GYT', 1),
+(7, 'BANRURAL', 0),
+(8, 'PRUEBA', 1),
+(9, 'nuevo', 1),
+(10, 'BAMTRAB', 1);
 
 -- --------------------------------------------------------
 
@@ -308,7 +326,195 @@ INSERT INTO `bitacora` (`pk_id_bitacora`, `fk_idusuario_bitacora`, `fk_idaplicac
 (215, 3, 5, '17/10/2020 12:36:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
 (216, 3, 5, '17/10/2020 12:36:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
 (217, 3, 5, '17/10/2020 12:36:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Formulario de ayuda'),
-(218, 3, 5, '17/10/2020 12:36:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Salir de la aplicacion');
+(218, 3, 5, '17/10/2020 12:36:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Salir de la aplicacion'),
+(219, 3, 5, '19/10/2020 07:31:24', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
+(220, 3, 5, '19/10/2020 07:31:58', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 22,  a,  a) '),
+(221, 3, 5, '19/10/2020 07:31:58', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 22,  a,  a) '),
+(222, 3, 5, '19/10/2020 07:31:58', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
+(223, 3, 5, '19/10/2020 07:32:40', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 22,  a,  a,  1) '),
+(224, 3, 5, '19/10/2020 07:40:40', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Formulario de ayuda'),
+(225, 3, 5, '19/10/2020 07:56:30', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 23,  e,  e,  1) '),
+(226, 3, 5, '19/10/2020 07:56:30', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET   nombre_area =  e,  descripcion_area =  e,  estado_area =  0  WHERE pk_idarea = 23; '),
+(227, 3, 5, '19/10/2020 08:38:50', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO banco VALUES ( 3,  Industrial,  1) '),
+(228, 3, 5, '19/10/2020 10:40:25', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO banco VALUES ( 4,  BAM,  1) '),
+(229, 3, 5, '19/10/2020 10:40:25', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Formulario de ayuda'),
+(230, 3, 5, '19/10/2020 10:40:25', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Formulario de ayuda'),
+(231, 3, 5, '19/10/2020 15:56:08', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO banco VALUES ( 5,  GYT,  1) '),
+(232, 3, 5, '19/10/2020 15:56:08', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE banco SET   nombre_banco =  GYT CONTINENTAL,  estado_banco =  1  WHERE pk_idbanco = 5; '),
+(233, 3, 5, '19/10/2020 15:56:08', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
+(234, 3, 5, '19/10/2020 15:56:08', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE banco SET estado_banco=0 WHERE pk_idbanco= 5 '),
+(235, 3, 5, '19/10/2020 15:56:08', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
+(236, 3, 5, '19/10/2020 15:56:08', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Salir de la aplicacion'),
+(237, 3, 1, '19/10/2020 16:33:36', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(238, 3, 5, '19/10/2020 16:33:36', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO banco VALUES ( 6,  GYT,  1) '),
+(239, 3, 1, '19/10/2020 16:39:44', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(240, 3, 1, '19/10/2020 17:37:58', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(241, 3, 1, '19/10/2020 17:43:21', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(242, 3, 5, '19/10/2020 17:43:21', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 24,  qweqweq,  qweqweq,  1) '),
+(243, 3, 5, '19/10/2020 17:43:21', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
+(244, 3, 5, '19/10/2020 17:43:21', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET estado_area=0 WHERE pk_idarea= 24 '),
+(245, 3, 5, '19/10/2020 17:43:21', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET   nombre_area =  a,  descripcion_area =  a,  estado_area =  0  WHERE pk_idarea = 22; '),
+(246, 3, 1, '19/10/2020 17:49:29', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(247, 3, 5, '19/10/2020 17:49:29', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 25,  asd,  asda,  1) '),
+(248, 3, 5, '19/10/2020 17:49:29', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET   nombre_area =  eeeee,  descripcion_area =  eeeeee,  estado_area =  1  WHERE pk_idarea = 25; '),
+(249, 3, 5, '19/10/2020 17:49:29', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
+(250, 3, 1, '19/10/2020 17:53:58', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(251, 3, 5, '19/10/2020 17:53:58', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
+(252, 3, 1, '19/10/2020 19:24:16', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(253, 3, 1, '19/10/2020 19:27:17', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(254, 3, 5, '19/10/2020 19:27:17', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO departamento VALUES ( 1,  RECURSOS HUMANOS,  RECURSOS,  1) '),
+(255, 3, 5, '19/10/2020 19:27:17', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
+(256, 3, 5, '19/10/2020 19:27:17', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE departamento SET estado=0 WHERE pk_id_departamento= 1 '),
+(257, 3, 5, '19/10/2020 19:27:17', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
+(258, 3, 5, '19/10/2020 19:27:17', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
+(259, 3, 5, '19/10/2020 19:27:17', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE departamento SET estado=0 WHERE pk_id_departamento=  '),
+(260, 3, 5, '19/10/2020 19:27:17', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
+(261, 3, 5, '19/10/2020 19:27:17', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE departamento SET estado=0 WHERE pk_id_departamento=  '),
+(262, 3, 5, '19/10/2020 19:27:17', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Formulario de ayuda'),
+(263, 3, 1, '19/10/2020 20:59:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(264, 3, 1, '20/10/2020 10:24:32', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(265, 3, 5, '20/10/2020 10:24:32', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 26,  FRM2,  FINAZAS,  1) '),
+(266, 3, 5, '20/10/2020 10:24:32', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET   nombre_area =  FRM2,  descripcion_area =  MODULO DE FINANZAS,  estado_area =  1  WHERE pk_idarea = 26; '),
+(267, 3, 5, '20/10/2020 10:24:32', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
+(268, 3, 5, '20/10/2020 10:24:32', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET estado_area=0 WHERE pk_idarea= 26 '),
+(269, 3, 5, '20/10/2020 10:24:32', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
+(270, 3, 5, '20/10/2020 10:24:32', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
+(271, 3, 5, '20/10/2020 10:24:32', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
+(272, 3, 5, '20/10/2020 10:24:32', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
+(273, 3, 1, '20/10/2020 10:34:18', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(274, 3, 5, '20/10/2020 10:34:18', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
+(275, 3, 5, '20/10/2020 10:34:18', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 27,  CRM,  DESCRIPCION,  1) '),
+(276, 3, 1, '20/10/2020 10:41:27', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(277, 3, 1, '20/10/2020 10:42:26', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(278, 3, 6, '20/10/2020 10:42:26', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO materiaprimainsumo VALUES ( 4,  resortes,  metal,  marca,  1,  5.5) '),
+(279, 3, 6, '20/10/2020 10:42:26', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
+(280, 3, 6, '20/10/2020 10:42:26', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE materiaprimainsumo SET estado_materiaprimainsumo=0 WHERE pk_id_materiaprimainsumo= 4 '),
+(281, 3, 1, '20/10/2020 10:53:14', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(282, 3, 1, '20/10/2020 11:04:11', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(283, 3, 1, '20/10/2020 11:04:52', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(284, 3, 1, '20/10/2020 13:20:12', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(285, 3, 5, '20/10/2020 13:20:12', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
+(286, 3, 5, '20/10/2020 13:20:12', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 28,  ,  ,  ) '),
+(287, 3, 1, '20/10/2020 13:30:30', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(288, 3, 1, '20/10/2020 13:54:58', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(289, 3, 5, '20/10/2020 13:54:58', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 28,  HMC,  NO EXISTE ESTA AREA,  1) '),
+(290, 3, 1, '20/10/2020 13:56:06', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(291, 3, 1, '20/10/2020 13:57:35', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(292, 3, 1, '20/10/2020 13:59:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(293, 3, 6, '20/10/2020 13:59:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO materiaprimainsumo VALUES ( 5,  TORNILLOS,  TORNILLOS DE METAL QUE SON INOXIDABLES,  TORNILLOS S.A,  1,  3.30) '),
+(294, 3, 1, '20/10/2020 14:04:41', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(295, 3, 1, '20/10/2020 14:21:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(296, 3, 5, '20/10/2020 14:21:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO banco VALUES ( 7,  AGROMERCANTIL,  1) '),
+(297, 3, 5, '20/10/2020 14:21:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE banco SET   nombre_banco =  BANRURAL,  estado_banco =  1  WHERE pk_idbanco = 7; '),
+(298, 3, 5, '20/10/2020 14:21:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
+(299, 3, 5, '20/10/2020 14:21:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE banco SET estado_banco=0 WHERE pk_idbanco= 7 '),
+(300, 3, 5, '20/10/2020 14:21:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
+(301, 3, 5, '20/10/2020 14:21:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
+(302, 3, 5, '20/10/2020 14:21:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
+(303, 3, 5, '20/10/2020 14:21:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE banco SET estado_banco=0 WHERE pk_idbanco=  '),
+(304, 3, 5, '20/10/2020 14:21:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
+(305, 3, 5, '20/10/2020 14:21:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE banco SET   nombre_banco =  A,  estado_banco =  1  WHERE pk_idbanco = ; '),
+(306, 3, 5, '20/10/2020 14:21:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Formulario de ayuda'),
+(307, 3, 5, '20/10/2020 14:21:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Salir de la aplicacion'),
+(308, 3, 1, '20/10/2020 14:23:50', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(309, 3, 1, '20/10/2020 15:27:16', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(310, 3, 1, '20/10/2020 17:06:49', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(311, 3, 5, '20/10/2020 17:06:49', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO banco VALUES ( 8,  PRUEBA,  1) '),
+(312, 3, 5, '20/10/2020 17:06:49', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO banco VALUES ( 9,  ,  ) '),
+(313, 3, 5, '20/10/2020 17:06:49', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
+(314, 3, 5, '20/10/2020 17:06:49', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE banco SET   nombre_banco =  Banrural1,  estado_banco =  1  WHERE pk_idbanco = 1; '),
+(315, 3, 1, '20/10/2020 17:08:19', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(316, 3, 5, '20/10/2020 17:08:19', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO banco VALUES ( 9,  nuevo,  1) '),
+(317, 3, 1, '20/10/2020 20:52:03', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(318, 3, 1, '20/10/2020 20:53:53', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(319, 3, 1, '20/10/2020 20:54:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(320, 3, 1, '20/10/2020 20:55:14', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(321, 3, 1, '20/10/2020 20:55:50', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(322, 3, 1, '20/10/2020 20:56:43', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(323, 3, 1, '20/10/2020 20:56:58', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(324, 3, 1, '20/10/2020 20:57:12', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(325, 3, 1, '20/10/2020 20:58:00', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(326, 3, 1, '20/10/2020 20:59:04', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(327, 3, 1, '20/10/2020 20:59:39', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(328, 3, 1, '20/10/2020 21:00:16', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(329, 3, 1, '20/10/2020 21:02:15', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(330, 3, 1, '20/10/2020 21:03:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(331, 3, 1, '20/10/2020 21:04:35', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(332, 3, 1, '20/10/2020 21:05:27', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(333, 3, 1, '20/10/2020 21:06:30', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(334, 3, 1, '20/10/2020 21:07:00', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(335, 3, 1, '20/10/2020 21:15:48', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(336, 3, 1, '20/10/2020 21:16:17', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(337, 3, 1, '20/10/2020 21:22:27', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(338, 3, 1, '20/10/2020 21:23:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(339, 3, 1, '20/10/2020 21:23:59', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(340, 3, 1, '20/10/2020 21:25:10', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(341, 3, 1, '20/10/2020 21:29:21', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(342, 3, 1, '20/10/2020 21:35:47', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(343, 3, 1, '20/10/2020 21:36:44', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(344, 3, 1, '21/10/2020 07:16:01', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(345, 3, 5, '21/10/2020 07:16:01', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO banco VALUES ( 10,  BAMTRAB,  1) '),
+(346, 3, 1, '21/10/2020 12:02:23', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(347, 3, 1, '21/10/2020 12:07:12', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(348, 3, 1, '21/10/2020 12:10:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(349, 3, 5, '21/10/2020 12:10:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 29,  PRUEBA,  PRUEBA PRUEBA ,  1) '),
+(350, 3, 5, '21/10/2020 12:10:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET   nombre_area =  PRUEBA,  descripcion_area =  PRUEBA PRUEBA ,  estado_area =  0  WHERE pk_idarea = 29; '),
+(351, 3, 5, '21/10/2020 12:10:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
+(352, 3, 5, '21/10/2020 12:10:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET estado_area=0 WHERE pk_idarea= 15 '),
+(353, 3, 5, '21/10/2020 12:10:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
+(354, 3, 5, '21/10/2020 12:10:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
+(355, 3, 5, '21/10/2020 12:10:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET estado_area=0 WHERE pk_idarea= 16 '),
+(356, 3, 5, '21/10/2020 12:10:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
+(357, 3, 5, '21/10/2020 12:10:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
+(358, 3, 5, '21/10/2020 12:10:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
+(359, 3, 5, '21/10/2020 12:10:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
+(360, 3, 5, '21/10/2020 12:10:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Formulario de ayuda'),
+(361, 3, 5, '21/10/2020 12:10:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Salir de la aplicacion'),
+(362, 3, 1, '21/10/2020 12:25:45', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(363, 3, 5, '21/10/2020 12:25:45', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
+(364, 3, 1, '21/10/2020 12:41:37', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(365, 3, 1, '21/10/2020 12:47:56', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(366, 3, 1, '21/10/2020 12:48:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo erroneo'),
+(367, 3, 1, '21/10/2020 12:48:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(368, 3, 1, '21/10/2020 12:49:27', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(369, 3, 1, '21/10/2020 12:49:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(370, 3, 1, '21/10/2020 12:50:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(371, 3, 5, '21/10/2020 12:50:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
+(372, 3, 5, '21/10/2020 12:50:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET estado_area=0 WHERE pk_idarea= 28 '),
+(373, 3, 5, '21/10/2020 12:50:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
+(374, 3, 5, '21/10/2020 12:50:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET estado_area=0 WHERE pk_idarea= 27 '),
+(375, 3, 5, '21/10/2020 12:50:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
+(376, 3, 5, '21/10/2020 12:50:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
+(377, 3, 5, '21/10/2020 12:50:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
+(378, 3, 1, '21/10/2020 13:12:25', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(379, 3, 1, '21/10/2020 13:17:50', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(380, 3, 5, '21/10/2020 13:17:50', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
+(381, 3, 5, '21/10/2020 13:17:50', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
+(382, 3, 1, '21/10/2020 13:18:44', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(383, 3, 5, '21/10/2020 13:18:44', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
+(384, 3, 5, '21/10/2020 13:18:44', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
+(385, 3, 5, '21/10/2020 13:18:44', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
+(386, 3, 5, '21/10/2020 13:18:44', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
+(387, 3, 5, '21/10/2020 13:18:44', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
+(388, 3, 5, '21/10/2020 13:18:44', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
+(389, 3, 1, '21/10/2020 13:23:50', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(390, 3, 5, '21/10/2020 13:23:50', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
+(391, 3, 5, '21/10/2020 13:23:50', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
+(392, 3, 5, '21/10/2020 13:23:50', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
+(393, 3, 5, '21/10/2020 13:23:50', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
+(394, 3, 5, '21/10/2020 13:23:50', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
+(395, 3, 1, '21/10/2020 13:27:26', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(396, 3, 5, '21/10/2020 13:27:26', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Formulario de ayuda'),
+(397, 3, 1, '21/10/2020 13:27:43', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(398, 3, 6, '21/10/2020 13:27:43', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Formulario de ayuda'),
+(399, 3, 1, '21/10/2020 13:29:10', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo erroneo'),
+(400, 3, 1, '21/10/2020 13:29:10', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(401, 3, 5, '21/10/2020 13:29:10', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Formulario de ayuda'),
+(402, 3, 6, '21/10/2020 13:29:10', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Formulario de ayuda'),
+(403, 3, 1, '21/10/2020 13:34:31', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(404, 3, 5, '21/10/2020 13:34:31', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Formulario de ayuda'),
+(405, 3, 5, '21/10/2020 13:34:31', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
+(406, 3, 5, '21/10/2020 13:34:31', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar');
 
 -- --------------------------------------------------------
 
@@ -611,6 +817,13 @@ CREATE TABLE `departamento` (
   `descripcion` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
   `estado` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `departamento`
+--
+
+INSERT INTO `departamento` (`pk_id_departamento`, `nombre`, `descripcion`, `estado`) VALUES
+(1, 'RECURSOS HUMANOS', 'RECURSOS', 0);
 
 -- --------------------------------------------------------
 
@@ -1140,7 +1353,9 @@ CREATE TABLE `materiaprimainsumo` (
 INSERT INTO `materiaprimainsumo` (`pk_id_materiaprimainsumo`, `nombre_materiaprimainsumo`, `descripcion_materiaprimainsumo`, `marca_materiaprimainsumo`, `estado_materiaprimainsumo`, `precio_materiaprimainsumo`) VALUES
 (1, 'a', 'a', 'a', 1, 5),
 (2, 'w', 'w', 'w', 1, 5),
-(3, 'platano', 'rrrrr', 'materia prima', 0, 5.5);
+(3, 'platano', 'rrrrr', 'materia prima', 0, 5.5),
+(4, 'resortes', 'metal', 'marca', 0, 5.5),
+(5, 'TORNILLOS', 'TORNILLOS DE METAL QUE SON INOXIDABLES', 'TORNILLOS S.A', 1, 3.3);
 
 -- --------------------------------------------------------
 
@@ -1177,6 +1392,19 @@ CREATE TABLE `mayor_encabezado` (
 CREATE TABLE `modo_de_pago` (
   `pk_idmodopago` int(11) NOT NULL,
   `tipo_pago` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `modulo`
+--
+
+CREATE TABLE `modulo` (
+  `pk_id_modulo` int(10) NOT NULL,
+  `nombre_modulo` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `descripcion_modulo` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `estado_modulo` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -1347,7 +1575,8 @@ INSERT INTO `permiso` (`pk_id_permiso`, `insertar_permiso`, `modificar_permiso`,
 (5, 0, 0, 1, 0, 0),
 (6, 0, 0, 1, 0, 1),
 (7, 0, 0, 1, 1, 0),
-(8, 1, 1, 1, 1, 1);
+(8, 1, 1, 1, 1, 1),
+(9, 1, 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -1476,6 +1705,44 @@ CREATE TABLE `reclutamiento` (
   `fk_id_puesto_reclutamiento` int(11) DEFAULT NULL,
   `estado_reclutado_entrevista` int(11) DEFAULT NULL,
   `fk_id_departamento_empresarial_reclutamiento` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `reporte`
+--
+
+CREATE TABLE `reporte` (
+  `pk_id_reporte` int(10) NOT NULL,
+  `nombre_reporte` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `ruta_reporte` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `estado_reporte` int(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `reporte_aplicativo`
+--
+
+CREATE TABLE `reporte_aplicativo` (
+  `fk_id_reporte` int(10) NOT NULL,
+  `fk_id_aplicacion` int(10) NOT NULL,
+  `fk_id_modulo` int(10) NOT NULL,
+  `estado_reporte_aplicativo` int(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `reporte_modulo`
+--
+
+CREATE TABLE `reporte_modulo` (
+  `fk_id_reporte` int(10) NOT NULL,
+  `fk_id_modulo` int(10) NOT NULL,
+  `estado_reporte_modulo` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -2180,6 +2447,13 @@ ALTER TABLE `modo_de_pago`
   ADD PRIMARY KEY (`pk_idmodopago`);
 
 --
+-- Indices de la tabla `modulo`
+--
+ALTER TABLE `modulo`
+  ADD PRIMARY KEY (`pk_id_modulo`),
+  ADD KEY `pk_id_modulo` (`pk_id_modulo`);
+
+--
 -- Indices de la tabla `municipio`
 --
 ALTER TABLE `municipio`
@@ -2318,6 +2592,30 @@ ALTER TABLE `reclutamiento`
   ADD KEY `fk_departamento_empresarial_reclutamiento` (`fk_id_departamento_empresarial_reclutamiento`);
 
 --
+-- Indices de la tabla `reporte`
+--
+ALTER TABLE `reporte`
+  ADD PRIMARY KEY (`pk_id_reporte`),
+  ADD KEY `pk_id_reporte` (`pk_id_reporte`);
+
+--
+-- Indices de la tabla `reporte_aplicativo`
+--
+ALTER TABLE `reporte_aplicativo`
+  ADD PRIMARY KEY (`fk_id_reporte`,`fk_id_aplicacion`,`fk_id_modulo`),
+  ADD KEY `fk_id_reporte` (`fk_id_reporte`,`fk_id_aplicacion`,`fk_id_modulo`),
+  ADD KEY `fk_reporte_aplicativo_modulo` (`fk_id_modulo`),
+  ADD KEY `fk_report_aplicativo` (`fk_id_aplicacion`);
+
+--
+-- Indices de la tabla `reporte_modulo`
+--
+ALTER TABLE `reporte_modulo`
+  ADD PRIMARY KEY (`fk_id_reporte`,`fk_id_modulo`),
+  ADD KEY `fk_id_reporte` (`fk_id_reporte`,`fk_id_modulo`),
+  ADD KEY `fk_reporte_de_modulo_reportes` (`fk_id_modulo`);
+
+--
 -- Indices de la tabla `ruta`
 --
 ALTER TABLE `ruta`
@@ -2419,7 +2717,7 @@ ALTER TABLE `venta`
 -- AUTO_INCREMENT de la tabla `aplicacion`
 --
 ALTER TABLE `aplicacion`
-  MODIFY `pk_id_aplicacion` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `pk_id_aplicacion` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de la tabla `aplicacionperfil`
@@ -2431,13 +2729,13 @@ ALTER TABLE `aplicacionperfil`
 -- AUTO_INCREMENT de la tabla `aplicacionusuario`
 --
 ALTER TABLE `aplicacionusuario`
-  MODIFY `pk_id_aplicacionusuario` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `pk_id_aplicacionusuario` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `bitacora`
 --
 ALTER TABLE `bitacora`
-  MODIFY `pk_id_bitacora` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=219;
+  MODIFY `pk_id_bitacora` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=407;
 
 --
 -- AUTO_INCREMENT de la tabla `bodega`
@@ -2479,7 +2777,7 @@ ALTER TABLE `cuentas_por_cobrar`
 -- AUTO_INCREMENT de la tabla `departamento`
 --
 ALTER TABLE `departamento`
-  MODIFY `pk_id_departamento` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `pk_id_departamento` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `detallebitacora`
@@ -2551,7 +2849,13 @@ ALTER TABLE `marca`
 -- AUTO_INCREMENT de la tabla `materiaprimainsumo`
 --
 ALTER TABLE `materiaprimainsumo`
-  MODIFY `pk_id_materiaprimainsumo` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `pk_id_materiaprimainsumo` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT de la tabla `modulo`
+--
+ALTER TABLE `modulo`
+  MODIFY `pk_id_modulo` int(10) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `municipio`
@@ -2593,7 +2897,7 @@ ALTER TABLE `perfilusuario`
 -- AUTO_INCREMENT de la tabla `permiso`
 --
 ALTER TABLE `permiso`
-  MODIFY `pk_id_permiso` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `pk_id_permiso` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `productodetalle`
@@ -2612,6 +2916,12 @@ ALTER TABLE `productoscm`
 --
 ALTER TABLE `proveedor`
   MODIFY `pk_id_proveedor` int(10) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `reporte`
+--
+ALTER TABLE `reporte`
+  MODIFY `pk_id_reporte` int(10) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `ruta`
@@ -3038,6 +3348,21 @@ ALTER TABLE `reclutamiento`
   ADD CONSTRAINT `fk_genero_reclutamiento` FOREIGN KEY (`fk_id_genero_reclutamiento`) REFERENCES `genero` (`pk_id_genero`) ON UPDATE CASCADE,
   ADD CONSTRAINT `fk_licencia_conducir_reclutamiento` FOREIGN KEY (`fk_id_licencia_conducir_reclutamiento`) REFERENCES `licencia_conduccion` (`pk_id_licencia_conduccion`) ON UPDATE CASCADE,
   ADD CONSTRAINT `fk_puesto_reclutamiento` FOREIGN KEY (`fk_id_puesto_reclutamiento`) REFERENCES `puesto` (`pk_id_puesto`) ON UPDATE CASCADE;
+
+--
+-- Filtros para la tabla `reporte_aplicativo`
+--
+ALTER TABLE `reporte_aplicativo`
+  ADD CONSTRAINT `fk_report_aplicativo` FOREIGN KEY (`fk_id_aplicacion`) REFERENCES `aplicacion` (`pk_id_aplicacion`),
+  ADD CONSTRAINT `fk_reporte_aplicativo_modulo` FOREIGN KEY (`fk_id_modulo`) REFERENCES `modulo` (`pk_id_modulo`),
+  ADD CONSTRAINT `fk_reporte_aplicativo_reporte` FOREIGN KEY (`fk_id_reporte`) REFERENCES `reporte` (`pk_id_reporte`);
+
+--
+-- Filtros para la tabla `reporte_modulo`
+--
+ALTER TABLE `reporte_modulo`
+  ADD CONSTRAINT `fk_reporte_de_modulo` FOREIGN KEY (`fk_id_reporte`) REFERENCES `reporte` (`pk_id_reporte`),
+  ADD CONSTRAINT `fk_reporte_de_modulo_reportes` FOREIGN KEY (`fk_id_modulo`) REFERENCES `modulo` (`pk_id_modulo`);
 
 --
 -- Filtros para la tabla `saldo_historico`
