@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using CapaControladorNavegador;
 using CapaVistaSeguridad;
 using CapaVistaReporteador;
-using CapaVista.Reporteador_Navegador;
+using CapaVistaReporteador.Reporteador_Navegador;
 
 namespace CapaVistaNavegador
 {
