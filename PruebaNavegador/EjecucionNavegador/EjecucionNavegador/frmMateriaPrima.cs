@@ -61,6 +61,7 @@ namespace EjecucionNavegador
             navegador1.DatosActualizar = dataGridView1;
             navegador1.actualizarData();
             navegador1.cargar();
+            navegador1.ayudaRuta = "Ayuda/AyudaTaquilla.chm";
             navegador1.ruta = "AgregarCliente.html";
 
 

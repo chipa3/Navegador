@@ -31,6 +31,7 @@ namespace CapaVistaNavegador
         public string cmp;
         public TextBox txt;
         public string ruta;
+        public string ayudaRuta;
         public string Usuario;
         string[] word;
         bool Señal2 = false;
@@ -116,6 +117,7 @@ namespace CapaVistaNavegador
             btnModificar.Enabled = false;
             btnInsertar.Enabled = false;
             btnEliminar.Enabled = false;
+            btnRefrescar.Enabled = false;
             btnGuardar.Enabled = true;
             btnCancelar.Enabled = true;
 
@@ -156,7 +158,7 @@ namespace CapaVistaNavegador
         private void btnAyuda_Click(object sender, EventArgs e)
         {
             Bitacora.insert("Formulario de ayuda", aplicacion);
-            Help.ShowHelp(this, "Ayuda/AyudaERP.chm", ruta);
+            Help.ShowHelp(this, ayudaRuta, ruta);
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -348,6 +350,7 @@ namespace CapaVistaNavegador
               btnEliminar.Enabled = true;*/
             btnGuardar.Enabled = false;
             btnCancelar.Enabled = false;
+            btnRefrescar.Enabled = true;
 
         }
 
@@ -368,7 +371,7 @@ namespace CapaVistaNavegador
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             //DialogResult dialogResult = (MessageBox.Show("¿Esta Seguro de eliminar este resgistro?", "Advertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning));
-            DialogResult dialogResult = MessageBox.Show("¿Esta Seguro de eliminar este resgistro?", "Advertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
+            DialogResult dialogResult = MessageBox.Show("¿Esta Seguro de eliminar este registro?", "Advertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
             if (dialogResult == DialogResult.OK)
             {
                 Bitacora.insert("Eliminacion de Datos", aplicacion);
@@ -409,6 +412,7 @@ namespace CapaVistaNavegador
             Desbloquear();
             btnModificar.Enabled = false;
             btnInsertar.Enabled = false;
+            btnRefrescar.Enabled = false;
             btnCancelar.Enabled = true;
             btnGuardar.Enabled = true;
             btnEliminar.Enabled = false;
