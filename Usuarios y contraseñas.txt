@@ -1,7 +1,6 @@
 usuario: bmaza
 contraseña: bmaza
 
-usuario: bjsican
-contraseña: bjsican
+
 
 DNS = clc_erp

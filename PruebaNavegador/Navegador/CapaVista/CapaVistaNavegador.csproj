@@ -37,8 +37,7 @@
     <Reference Include="CapaVista">
       <HintPath>..\..\Consultas_Inteligentes-master\ConsultasInteligentes\CapaVista\bin\Debug\CapaVista.dll</HintPath>
     </Reference>
-    <Reference Include="CapaVistaReporteador, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="CapaVistaReporteador">
       <HintPath>..\..\Reporteador-master\Reporteador\CapaVista\bin\Debug\CapaVistaReporteador.dll</HintPath>
     </Reference>
     <Reference Include="CapaVistaSeguridad">

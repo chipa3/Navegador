@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 21-10-2020 a las 21:35:20
+-- Tiempo de generación: 22-10-2020 a las 16:05:31
 -- Versión del servidor: 10.1.37-MariaDB
 -- Versión de PHP: 7.3.1
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `erp_preliminar`
+-- Base de datos: `repo`
 --
 
 -- --------------------------------------------------------
@@ -30,68 +30,59 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `aplicacion` (
   `pk_id_aplicacion` int(10) NOT NULL,
-  `nombre_aplicacion` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `informe_aplicacion` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `estado_aplicacion` int(2) DEFAULT NULL
+  `fk_id_modulo` int(10) NOT NULL,
+  `nombre_aplicacion` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `descripcion_aplicacion` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `estado_aplicacion` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `aplicacion`
 --
 
-INSERT INTO `aplicacion` (`pk_id_aplicacion`, `nombre_aplicacion`, `informe_aplicacion`, `estado_aplicacion`) VALUES
-(1, 'PRUEBA1', 'NOHAY', 1),
-(2, 'PRUEBA 2', 'NO HAY', 1),
-(3, 'PRUEBA 3', 'NO HAY ', 1),
-(4, 'MRP', 'NO HAY', 1),
-(5, 'Bancos', 'NO HAY', 1),
-(6, 'MateriaPrima', 'NO HAY', 1),
-(7, 'Consultas', 'NO HAY', 1);
+INSERT INTO `aplicacion` (`pk_id_aplicacion`, `fk_id_modulo`, `nombre_aplicacion`, `descripcion_aplicacion`, `estado_aplicacion`) VALUES
+(1, 1, 'Prueba', 'Bancos', 1),
+(5, 1, 'Bancos', 'Bancos', 1);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `aplicacionperfil`
+-- Estructura de tabla para la tabla `aplicacion_perfil`
 --
 
-CREATE TABLE `aplicacionperfil` (
-  `pk_id_aplicacionperfil` int(10) NOT NULL,
-  `fk_idaplicacion_aplicacionperfil` int(10) DEFAULT NULL,
-  `fk_idperfil_aplicacionperfil` int(10) DEFAULT NULL,
-  `fk_idpermiso_aplicacionperfil` int(10) DEFAULT NULL
+CREATE TABLE `aplicacion_perfil` (
+  `pk_id_aplicacion_perfil` int(10) NOT NULL,
+  `fk_idaplicacion_aplicacion_perfil` int(10) DEFAULT NULL,
+  `fk_idperfil_aplicacion_perfil` int(10) DEFAULT NULL,
+  `fk_idpermiso_aplicacion_perfil` int(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Volcado de datos para la tabla `aplicacionperfil`
+-- Volcado de datos para la tabla `aplicacion_perfil`
 --
 
-INSERT INTO `aplicacionperfil` (`pk_id_aplicacionperfil`, `fk_idaplicacion_aplicacionperfil`, `fk_idperfil_aplicacionperfil`, `fk_idpermiso_aplicacionperfil`) VALUES
-(1, 1, 1, 1),
-(2, 1, 3, 2),
-(3, 2, 2, 1),
-(4, 5, 2, 1);
+INSERT INTO `aplicacion_perfil` (`pk_id_aplicacion_perfil`, `fk_idaplicacion_aplicacion_perfil`, `fk_idperfil_aplicacion_perfil`, `fk_idpermiso_aplicacion_perfil`) VALUES
+(1, 5, 3, 1);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `aplicacionusuario`
+-- Estructura de tabla para la tabla `aplicacion_usuario`
 --
 
-CREATE TABLE `aplicacionusuario` (
-  `pk_id_aplicacionusuario` int(10) NOT NULL,
-  `fk_idlogin_aplicacionusuario` int(10) DEFAULT NULL,
-  `fk_idaplicacion_aplicacionusuario` int(10) DEFAULT NULL,
-  `fk_idpermiso_aplicacionusuario` int(10) DEFAULT NULL
+CREATE TABLE `aplicacion_usuario` (
+  `pk_id_aplicacion_usuario` int(10) NOT NULL,
+  `fk_idlogin_aplicacion_usuario` int(10) DEFAULT NULL,
+  `fk_idaplicacion_aplicacion_usuario` int(10) DEFAULT NULL,
+  `fk_idpermiso_aplicacion_usuario` int(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Volcado de datos para la tabla `aplicacionusuario`
+-- Volcado de datos para la tabla `aplicacion_usuario`
 --
 
-INSERT INTO `aplicacionusuario` (`pk_id_aplicacionusuario`, `fk_idlogin_aplicacionusuario`, `fk_idaplicacion_aplicacionusuario`, `fk_idpermiso_aplicacionusuario`) VALUES
-(1, 3, 5, 8),
-(2, 3, 6, 8),
-(3, 3, 3, 8);
+INSERT INTO `aplicacion_usuario` (`pk_id_aplicacion_usuario`, `fk_idlogin_aplicacion_usuario`, `fk_idaplicacion_aplicacion_usuario`, `fk_idpermiso_aplicacion_usuario`) VALUES
+(1, 3, 5, 1);
 
 -- --------------------------------------------------------
 
@@ -102,44 +93,9 @@ INSERT INTO `aplicacionusuario` (`pk_id_aplicacionusuario`, `fk_idlogin_aplicaci
 CREATE TABLE `area` (
   `pk_idarea` int(11) NOT NULL,
   `nombre_area` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `descripcion_area` varchar(300) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `descripcion_area` varchar(75) COLLATE utf8_unicode_ci DEFAULT NULL,
   `estado_area` tinyint(4) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Volcado de datos para la tabla `area`
---
-
-INSERT INTO `area` (`pk_idarea`, `nombre_area`, `descripcion_area`, `estado_area`) VALUES
-(1, 'FRM', 'Esta area se manejaran las finanzas de la empresa, como libros contables, bancos, presupuestos, clientes.', 0),
-(2, 'FRM', 'Area de Finanzas', 0),
-(3, 'FRM', 'FRM,FRM,FRM', 0),
-(4, 'FRM', 'Prueba insertar', 0),
-(5, 'a', 'a', 0),
-(6, 'a', 'a', 0),
-(7, 'a', 'a', 0),
-(8, 'FMR', 'A', 0),
-(9, 'FMR', 'A', 0),
-(10, 'aaaaaa', 'A', 0),
-(11, 'FMR', 'A', 0),
-(12, 'FMR', 'A', 0),
-(13, 'FMR', 'A', 0),
-(14, 'FMR', 'A', 0),
-(15, 'A', 'A', 0),
-(16, 'A', 'A', 0),
-(17, 'FRM', 'AAAAAAA', 1),
-(18, 'asda', 'asda', 1),
-(19, 'qweq', 'qweq', 1),
-(20, 'CRM', 'VENTAS', 1),
-(21, 'UMG', 'UMG', 0),
-(22, 'a', 'a', 0),
-(23, 'e', 'e', 0),
-(24, 'qweqweq', 'qweqweq', 0),
-(25, 'eeeee', 'eeeeee', 1),
-(26, 'FRM2', 'MODULO DE FINANZAS', 0),
-(27, 'CRM', 'DESCRIPCION', 0),
-(28, 'HMC', 'NO EXISTE ESTA AREA', 0),
-(29, 'PRUEBA', 'PRUEBA PRUEBA ', 0);
 
 -- --------------------------------------------------------
 
@@ -187,16 +143,8 @@ CREATE TABLE `banco` (
 --
 
 INSERT INTO `banco` (`pk_idbanco`, `nombre_banco`, `estado_banco`) VALUES
-(1, 'Banrural1', 1),
-(2, 'Banrural', 1),
-(3, 'Industrial', 1),
-(4, 'BAM', 1),
-(5, 'GYT CONTINENTAL', 0),
-(6, 'GYT', 1),
-(7, 'BANRURAL', 0),
-(8, 'PRUEBA', 1),
-(9, 'nuevo', 1),
-(10, 'BAMTRAB', 1);
+(1, 'BAM', 1),
+(2, 'BAMTRAB', 1);
 
 -- --------------------------------------------------------
 
@@ -211,7 +159,7 @@ CREATE TABLE `bitacora` (
   `fechahora_bitacora` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
   `direccionhost_bitacora` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
   `nombrehost_bitacora` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `accion_bitacora` varchar(500) COLLATE utf8_unicode_ci DEFAULT NULL
+  `accion_bitacora` varchar(250) COLLATE utf8_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
@@ -219,302 +167,24 @@ CREATE TABLE `bitacora` (
 --
 
 INSERT INTO `bitacora` (`pk_id_bitacora`, `fk_idusuario_bitacora`, `fk_idaplicacion_bitacora`, `fechahora_bitacora`, `direccionhost_bitacora`, `nombrehost_bitacora`, `accion_bitacora`) VALUES
-(111, 3, 5, '15/10/2020 19:43:31', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 3,  FRM,  FRM,FRM,FRM,  1) '),
-(112, 3, 5, '15/10/2020 19:43:31', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(113, 3, 5, '15/10/2020 19:53:33', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 1,  Prueba insertar,  FRM,  4) '),
-(114, 3, 5, '15/10/2020 19:53:33', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 4,  FRM,  Prueba insertar,  1) '),
-(115, 3, 5, '15/10/2020 19:53:33', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(116, 3, 5, '15/10/2020 19:53:33', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
-(117, 3, 5, '15/10/2020 20:01:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
-(118, 3, 5, '15/10/2020 20:01:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET estado_area=0 WHERE estado_area= 1 '),
-(119, 3, 5, '15/10/2020 20:01:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(120, 3, 5, '15/10/2020 20:01:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(121, 3, 5, '15/10/2020 20:01:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 1,  a,  a,  5) '),
-(122, 3, 5, '15/10/2020 20:01:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 5,  a,  a,  1) '),
-(123, 3, 5, '15/10/2020 20:01:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(124, 3, 5, '15/10/2020 20:01:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 1,  a,  a,  6) '),
-(125, 3, 5, '15/10/2020 20:01:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 6,  a,  a,  1) '),
-(126, 3, 5, '15/10/2020 20:01:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(127, 3, 5, '15/10/2020 20:01:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 1,  a,  a,  7) '),
-(128, 3, 5, '15/10/2020 20:01:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 7,  a,  a,  1) '),
-(129, 3, 5, '15/10/2020 20:01:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(130, 3, 5, '15/10/2020 20:01:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
-(131, 3, 5, '15/10/2020 20:01:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET estado_area=0 WHERE estado_area= 1 '),
-(132, 3, 5, '15/10/2020 20:01:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(133, 3, 5, '15/10/2020 20:09:18', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 8,  FMR,  A,  1) '),
-(134, 3, 5, '15/10/2020 20:09:18', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(135, 3, 5, '15/10/2020 20:09:18', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 9,  FMR,  A,  1) '),
-(136, 3, 5, '15/10/2020 20:09:18', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(137, 3, 5, '15/10/2020 20:09:18', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(138, 3, 5, '15/10/2020 20:09:18', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 10,  FMR,  A,  1) '),
-(139, 3, 5, '15/10/2020 20:09:18', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(140, 3, 5, '15/10/2020 20:09:18', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(141, 3, 5, '15/10/2020 20:09:18', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET   nombre_area =  aaaaaa,  descripcion_area =  A,  estado_area =  1  WHERE pk_idarea = 10; '),
-(142, 3, 5, '15/10/2020 20:09:18', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(143, 3, 5, '15/10/2020 20:09:18', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
-(144, 3, 5, '15/10/2020 20:09:18', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET estado_area=0 WHERE pk_idarea= 10 '),
-(145, 3, 5, '15/10/2020 20:09:18', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(146, 3, 5, '15/10/2020 20:09:18', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
-(147, 3, 5, '15/10/2020 20:09:18', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET estado_area=0 WHERE pk_idarea= 9 '),
-(148, 3, 5, '15/10/2020 20:09:18', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(149, 3, 5, '15/10/2020 20:10:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 11,  FMR,  A,  1) '),
-(150, 3, 5, '15/10/2020 20:10:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(151, 3, 5, '15/10/2020 20:10:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 12,  FMR,  A,  1) '),
-(152, 3, 5, '15/10/2020 20:10:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(153, 3, 5, '15/10/2020 20:10:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(154, 3, 5, '15/10/2020 20:10:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 13,  FMR,  A,  1) '),
-(155, 3, 5, '15/10/2020 20:10:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(156, 3, 5, '15/10/2020 20:10:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 14,  FMR,  A,  1) '),
-(157, 3, 5, '15/10/2020 20:10:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(158, 3, 5, '15/10/2020 20:10:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
-(159, 3, 5, '15/10/2020 20:10:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET estado_area=0 WHERE pk_idarea= 12 '),
-(160, 3, 5, '15/10/2020 20:10:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(161, 3, 5, '15/10/2020 20:10:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
-(162, 3, 5, '15/10/2020 20:10:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET estado_area=0 WHERE pk_idarea= 11 '),
-(163, 3, 5, '15/10/2020 20:10:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(164, 3, 5, '15/10/2020 20:12:27', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
-(165, 3, 5, '15/10/2020 20:12:27', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET estado_area=0 WHERE pk_idarea= 13 '),
-(166, 3, 5, '15/10/2020 20:12:27', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
-(167, 3, 5, '15/10/2020 20:12:27', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET estado_area=0 WHERE pk_idarea= 8 '),
-(168, 3, 5, '15/10/2020 20:12:27', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
-(169, 3, 5, '15/10/2020 20:12:27', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET estado_area=0 WHERE pk_idarea= 8 '),
-(170, 3, 5, '15/10/2020 20:12:27', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
-(171, 3, 5, '15/10/2020 20:12:27', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET estado_area=0 WHERE pk_idarea= 14 '),
-(172, 3, 5, '15/10/2020 20:19:43', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 15,  A,  A,  1) '),
-(173, 3, 5, '15/10/2020 20:21:12', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 16,  A,  A,  1) '),
-(174, 3, 5, '16/10/2020 01:55:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 17,  FRM,  SDASDA,  1) '),
-(175, 3, 5, '16/10/2020 01:55:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(176, 3, 5, '16/10/2020 01:55:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET   nombre_area =  FRM,  descripcion_area =  AAAAAAA,  estado_area =  1  WHERE pk_idarea = 17; '),
-(177, 3, 5, '16/10/2020 01:55:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(178, 3, 5, '16/10/2020 01:55:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(179, 3, 5, '16/10/2020 01:55:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Formulario de ayuda'),
-(180, 3, 5, '16/10/2020 01:55:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Salir de la aplicacion'),
-(181, 3, 5, '16/10/2020 02:17:13', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(182, 3, 5, '16/10/2020 02:34:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(183, 3, 5, '16/10/2020 02:34:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(184, 3, 5, '16/10/2020 02:34:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(185, 3, 5, '16/10/2020 02:34:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(186, 3, 5, '16/10/2020 02:34:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Formulario de ayuda'),
-(187, 3, 5, '16/10/2020 02:34:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Salir de la aplicacion'),
-(188, 3, 5, '16/10/2020 10:48:33', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(189, 3, 5, '16/10/2020 10:48:33', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(190, 3, 5, '16/10/2020 10:48:33', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 18,  asda,  asda,  1) '),
-(191, 3, 5, '16/10/2020 10:53:13', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(192, 3, 5, '16/10/2020 19:08:13', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(193, 3, 5, '16/10/2020 19:08:13', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Formulario de ayuda'),
-(194, 3, 6, '16/10/2020 21:27:29', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO materiaprimainsumo VALUES ( 1,  a,  aa,  a,  1,  a) '),
-(195, 3, 6, '16/10/2020 21:27:29', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(196, 3, 6, '16/10/2020 21:28:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO materiaprimainsumo VALUES ( 1,  a,  a,  a,  1,  a) '),
-(197, 3, 6, '16/10/2020 21:28:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(198, 3, 6, '16/10/2020 21:30:52', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO materiaprimainsumo VALUES ( 1,  a,  a,  a,  1,  5) '),
-(199, 3, 6, '16/10/2020 21:31:25', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO materiaprimainsumo VALUES ( 2,  w,  w,  w,  1,  5) '),
-(200, 3, 6, '16/10/2020 21:34:04', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO materiaprimainsumo VALUES ( 3,  platano,  rrrrr,  materia prima,  1,  5.5) '),
-(201, 3, 6, '16/10/2020 21:35:29', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
-(202, 3, 6, '16/10/2020 21:35:29', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE materiaprimainsumo SET estado_materiaprimainsumo=0 WHERE pk_id_materiaprimainsumo= 3 '),
-(203, 3, 6, '16/10/2020 21:35:29', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(204, 3, 5, '16/10/2020 23:13:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 19,  qweq,  qweq,  1) '),
-(205, 3, 5, '16/10/2020 23:27:43', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(206, 3, 5, '16/10/2020 23:27:43', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(207, 3, 5, '17/10/2020 11:14:19', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 20,  CRM,  VENTAS,  1) '),
-(208, 3, 5, '17/10/2020 12:08:30', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(209, 3, 5, '17/10/2020 12:36:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 21,  UMG,  ASDA,  1) '),
-(210, 3, 5, '17/10/2020 12:36:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(211, 3, 5, '17/10/2020 12:36:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET   nombre_area =  UMG,  descripcion_area =  UMG,  estado_area =  1  WHERE pk_idarea = 21; '),
-(212, 3, 5, '17/10/2020 12:36:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
-(213, 3, 5, '17/10/2020 12:36:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET estado_area=0 WHERE pk_idarea= 21 '),
-(214, 3, 5, '17/10/2020 12:36:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(215, 3, 5, '17/10/2020 12:36:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(216, 3, 5, '17/10/2020 12:36:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(217, 3, 5, '17/10/2020 12:36:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Formulario de ayuda'),
-(218, 3, 5, '17/10/2020 12:36:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Salir de la aplicacion'),
-(219, 3, 5, '19/10/2020 07:31:24', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(220, 3, 5, '19/10/2020 07:31:58', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 22,  a,  a) '),
-(221, 3, 5, '19/10/2020 07:31:58', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 22,  a,  a) '),
-(222, 3, 5, '19/10/2020 07:31:58', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(223, 3, 5, '19/10/2020 07:32:40', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 22,  a,  a,  1) '),
-(224, 3, 5, '19/10/2020 07:40:40', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Formulario de ayuda'),
-(225, 3, 5, '19/10/2020 07:56:30', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 23,  e,  e,  1) '),
-(226, 3, 5, '19/10/2020 07:56:30', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET   nombre_area =  e,  descripcion_area =  e,  estado_area =  0  WHERE pk_idarea = 23; '),
-(227, 3, 5, '19/10/2020 08:38:50', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO banco VALUES ( 3,  Industrial,  1) '),
-(228, 3, 5, '19/10/2020 10:40:25', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO banco VALUES ( 4,  BAM,  1) '),
-(229, 3, 5, '19/10/2020 10:40:25', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Formulario de ayuda'),
-(230, 3, 5, '19/10/2020 10:40:25', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Formulario de ayuda'),
-(231, 3, 5, '19/10/2020 15:56:08', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO banco VALUES ( 5,  GYT,  1) '),
-(232, 3, 5, '19/10/2020 15:56:08', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE banco SET   nombre_banco =  GYT CONTINENTAL,  estado_banco =  1  WHERE pk_idbanco = 5; '),
-(233, 3, 5, '19/10/2020 15:56:08', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
-(234, 3, 5, '19/10/2020 15:56:08', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE banco SET estado_banco=0 WHERE pk_idbanco= 5 '),
-(235, 3, 5, '19/10/2020 15:56:08', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(236, 3, 5, '19/10/2020 15:56:08', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Salir de la aplicacion'),
-(237, 3, 1, '19/10/2020 16:33:36', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(238, 3, 5, '19/10/2020 16:33:36', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO banco VALUES ( 6,  GYT,  1) '),
-(239, 3, 1, '19/10/2020 16:39:44', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(240, 3, 1, '19/10/2020 17:37:58', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(241, 3, 1, '19/10/2020 17:43:21', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(242, 3, 5, '19/10/2020 17:43:21', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 24,  qweqweq,  qweqweq,  1) '),
-(243, 3, 5, '19/10/2020 17:43:21', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
-(244, 3, 5, '19/10/2020 17:43:21', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET estado_area=0 WHERE pk_idarea= 24 '),
-(245, 3, 5, '19/10/2020 17:43:21', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET   nombre_area =  a,  descripcion_area =  a,  estado_area =  0  WHERE pk_idarea = 22; '),
-(246, 3, 1, '19/10/2020 17:49:29', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(247, 3, 5, '19/10/2020 17:49:29', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 25,  asd,  asda,  1) '),
-(248, 3, 5, '19/10/2020 17:49:29', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET   nombre_area =  eeeee,  descripcion_area =  eeeeee,  estado_area =  1  WHERE pk_idarea = 25; '),
-(249, 3, 5, '19/10/2020 17:49:29', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(250, 3, 1, '19/10/2020 17:53:58', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(251, 3, 5, '19/10/2020 17:53:58', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(252, 3, 1, '19/10/2020 19:24:16', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(253, 3, 1, '19/10/2020 19:27:17', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(254, 3, 5, '19/10/2020 19:27:17', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO departamento VALUES ( 1,  RECURSOS HUMANOS,  RECURSOS,  1) '),
-(255, 3, 5, '19/10/2020 19:27:17', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
-(256, 3, 5, '19/10/2020 19:27:17', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE departamento SET estado=0 WHERE pk_id_departamento= 1 '),
-(257, 3, 5, '19/10/2020 19:27:17', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(258, 3, 5, '19/10/2020 19:27:17', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
-(259, 3, 5, '19/10/2020 19:27:17', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE departamento SET estado=0 WHERE pk_id_departamento=  '),
-(260, 3, 5, '19/10/2020 19:27:17', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
-(261, 3, 5, '19/10/2020 19:27:17', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE departamento SET estado=0 WHERE pk_id_departamento=  '),
-(262, 3, 5, '19/10/2020 19:27:17', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Formulario de ayuda'),
-(263, 3, 1, '19/10/2020 20:59:46', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(264, 3, 1, '20/10/2020 10:24:32', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(265, 3, 5, '20/10/2020 10:24:32', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 26,  FRM2,  FINAZAS,  1) '),
-(266, 3, 5, '20/10/2020 10:24:32', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET   nombre_area =  FRM2,  descripcion_area =  MODULO DE FINANZAS,  estado_area =  1  WHERE pk_idarea = 26; '),
-(267, 3, 5, '20/10/2020 10:24:32', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
-(268, 3, 5, '20/10/2020 10:24:32', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET estado_area=0 WHERE pk_idarea= 26 '),
-(269, 3, 5, '20/10/2020 10:24:32', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(270, 3, 5, '20/10/2020 10:24:32', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(271, 3, 5, '20/10/2020 10:24:32', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(272, 3, 5, '20/10/2020 10:24:32', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(273, 3, 1, '20/10/2020 10:34:18', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(274, 3, 5, '20/10/2020 10:34:18', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(275, 3, 5, '20/10/2020 10:34:18', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 27,  CRM,  DESCRIPCION,  1) '),
-(276, 3, 1, '20/10/2020 10:41:27', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(277, 3, 1, '20/10/2020 10:42:26', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(278, 3, 6, '20/10/2020 10:42:26', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO materiaprimainsumo VALUES ( 4,  resortes,  metal,  marca,  1,  5.5) '),
-(279, 3, 6, '20/10/2020 10:42:26', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
-(280, 3, 6, '20/10/2020 10:42:26', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE materiaprimainsumo SET estado_materiaprimainsumo=0 WHERE pk_id_materiaprimainsumo= 4 '),
-(281, 3, 1, '20/10/2020 10:53:14', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(282, 3, 1, '20/10/2020 11:04:11', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(283, 3, 1, '20/10/2020 11:04:52', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(284, 3, 1, '20/10/2020 13:20:12', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(285, 3, 5, '20/10/2020 13:20:12', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(286, 3, 5, '20/10/2020 13:20:12', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 28,  ,  ,  ) '),
-(287, 3, 1, '20/10/2020 13:30:30', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(288, 3, 1, '20/10/2020 13:54:58', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(289, 3, 5, '20/10/2020 13:54:58', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 28,  HMC,  NO EXISTE ESTA AREA,  1) '),
-(290, 3, 1, '20/10/2020 13:56:06', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(291, 3, 1, '20/10/2020 13:57:35', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(292, 3, 1, '20/10/2020 13:59:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(293, 3, 6, '20/10/2020 13:59:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO materiaprimainsumo VALUES ( 5,  TORNILLOS,  TORNILLOS DE METAL QUE SON INOXIDABLES,  TORNILLOS S.A,  1,  3.30) '),
-(294, 3, 1, '20/10/2020 14:04:41', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(295, 3, 1, '20/10/2020 14:21:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(296, 3, 5, '20/10/2020 14:21:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO banco VALUES ( 7,  AGROMERCANTIL,  1) '),
-(297, 3, 5, '20/10/2020 14:21:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE banco SET   nombre_banco =  BANRURAL,  estado_banco =  1  WHERE pk_idbanco = 7; '),
-(298, 3, 5, '20/10/2020 14:21:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
-(299, 3, 5, '20/10/2020 14:21:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE banco SET estado_banco=0 WHERE pk_idbanco= 7 '),
-(300, 3, 5, '20/10/2020 14:21:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(301, 3, 5, '20/10/2020 14:21:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(302, 3, 5, '20/10/2020 14:21:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
-(303, 3, 5, '20/10/2020 14:21:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE banco SET estado_banco=0 WHERE pk_idbanco=  '),
-(304, 3, 5, '20/10/2020 14:21:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(305, 3, 5, '20/10/2020 14:21:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE banco SET   nombre_banco =  A,  estado_banco =  1  WHERE pk_idbanco = ; '),
-(306, 3, 5, '20/10/2020 14:21:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Formulario de ayuda'),
-(307, 3, 5, '20/10/2020 14:21:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Salir de la aplicacion'),
-(308, 3, 1, '20/10/2020 14:23:50', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(309, 3, 1, '20/10/2020 15:27:16', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(310, 3, 1, '20/10/2020 17:06:49', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(311, 3, 5, '20/10/2020 17:06:49', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO banco VALUES ( 8,  PRUEBA,  1) '),
-(312, 3, 5, '20/10/2020 17:06:49', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO banco VALUES ( 9,  ,  ) '),
-(313, 3, 5, '20/10/2020 17:06:49', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(314, 3, 5, '20/10/2020 17:06:49', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE banco SET   nombre_banco =  Banrural1,  estado_banco =  1  WHERE pk_idbanco = 1; '),
-(315, 3, 1, '20/10/2020 17:08:19', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(316, 3, 5, '20/10/2020 17:08:19', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO banco VALUES ( 9,  nuevo,  1) '),
-(317, 3, 1, '20/10/2020 20:52:03', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(318, 3, 1, '20/10/2020 20:53:53', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(319, 3, 1, '20/10/2020 20:54:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(320, 3, 1, '20/10/2020 20:55:14', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(321, 3, 1, '20/10/2020 20:55:50', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(322, 3, 1, '20/10/2020 20:56:43', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(323, 3, 1, '20/10/2020 20:56:58', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(324, 3, 1, '20/10/2020 20:57:12', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(325, 3, 1, '20/10/2020 20:58:00', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(326, 3, 1, '20/10/2020 20:59:04', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(327, 3, 1, '20/10/2020 20:59:39', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(328, 3, 1, '20/10/2020 21:00:16', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(329, 3, 1, '20/10/2020 21:02:15', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(330, 3, 1, '20/10/2020 21:03:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(331, 3, 1, '20/10/2020 21:04:35', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(332, 3, 1, '20/10/2020 21:05:27', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(333, 3, 1, '20/10/2020 21:06:30', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(334, 3, 1, '20/10/2020 21:07:00', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(335, 3, 1, '20/10/2020 21:15:48', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(336, 3, 1, '20/10/2020 21:16:17', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(337, 3, 1, '20/10/2020 21:22:27', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(338, 3, 1, '20/10/2020 21:23:09', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(339, 3, 1, '20/10/2020 21:23:59', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(340, 3, 1, '20/10/2020 21:25:10', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(341, 3, 1, '20/10/2020 21:29:21', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(342, 3, 1, '20/10/2020 21:35:47', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(343, 3, 1, '20/10/2020 21:36:44', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(344, 3, 1, '21/10/2020 07:16:01', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(345, 3, 5, '21/10/2020 07:16:01', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO banco VALUES ( 10,  BAMTRAB,  1) '),
-(346, 3, 1, '21/10/2020 12:02:23', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(347, 3, 1, '21/10/2020 12:07:12', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(348, 3, 1, '21/10/2020 12:10:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(349, 3, 5, '21/10/2020 12:10:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO area VALUES ( 29,  PRUEBA,  PRUEBA PRUEBA ,  1) '),
-(350, 3, 5, '21/10/2020 12:10:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET   nombre_area =  PRUEBA,  descripcion_area =  PRUEBA PRUEBA ,  estado_area =  0  WHERE pk_idarea = 29; '),
-(351, 3, 5, '21/10/2020 12:10:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
-(352, 3, 5, '21/10/2020 12:10:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET estado_area=0 WHERE pk_idarea= 15 '),
-(353, 3, 5, '21/10/2020 12:10:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(354, 3, 5, '21/10/2020 12:10:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
-(355, 3, 5, '21/10/2020 12:10:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET estado_area=0 WHERE pk_idarea= 16 '),
-(356, 3, 5, '21/10/2020 12:10:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(357, 3, 5, '21/10/2020 12:10:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(358, 3, 5, '21/10/2020 12:10:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(359, 3, 5, '21/10/2020 12:10:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(360, 3, 5, '21/10/2020 12:10:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Formulario de ayuda'),
-(361, 3, 5, '21/10/2020 12:10:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Salir de la aplicacion'),
-(362, 3, 1, '21/10/2020 12:25:45', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(363, 3, 5, '21/10/2020 12:25:45', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(364, 3, 1, '21/10/2020 12:41:37', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(365, 3, 1, '21/10/2020 12:47:56', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(366, 3, 1, '21/10/2020 12:48:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo erroneo'),
-(367, 3, 1, '21/10/2020 12:48:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(368, 3, 1, '21/10/2020 12:49:27', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(369, 3, 1, '21/10/2020 12:49:51', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(370, 3, 1, '21/10/2020 12:50:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(371, 3, 5, '21/10/2020 12:50:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
-(372, 3, 5, '21/10/2020 12:50:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET estado_area=0 WHERE pk_idarea= 28 '),
-(373, 3, 5, '21/10/2020 12:50:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Eliminacion de Datos'),
-(374, 3, 5, '21/10/2020 12:50:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'UPDATE area SET estado_area=0 WHERE pk_idarea= 27 '),
-(375, 3, 5, '21/10/2020 12:50:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(376, 3, 5, '21/10/2020 12:50:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(377, 3, 5, '21/10/2020 12:50:07', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(378, 3, 1, '21/10/2020 13:12:25', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(379, 3, 1, '21/10/2020 13:17:50', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(380, 3, 5, '21/10/2020 13:17:50', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(381, 3, 5, '21/10/2020 13:17:50', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(382, 3, 1, '21/10/2020 13:18:44', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(383, 3, 5, '21/10/2020 13:18:44', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(384, 3, 5, '21/10/2020 13:18:44', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(385, 3, 5, '21/10/2020 13:18:44', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(386, 3, 5, '21/10/2020 13:18:44', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(387, 3, 5, '21/10/2020 13:18:44', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(388, 3, 5, '21/10/2020 13:18:44', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(389, 3, 1, '21/10/2020 13:23:50', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(390, 3, 5, '21/10/2020 13:23:50', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(391, 3, 5, '21/10/2020 13:23:50', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(392, 3, 5, '21/10/2020 13:23:50', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Refrescar Datos'),
-(393, 3, 5, '21/10/2020 13:23:50', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(394, 3, 5, '21/10/2020 13:23:50', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(395, 3, 1, '21/10/2020 13:27:26', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(396, 3, 5, '21/10/2020 13:27:26', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Formulario de ayuda'),
-(397, 3, 1, '21/10/2020 13:27:43', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(398, 3, 6, '21/10/2020 13:27:43', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Formulario de ayuda'),
-(399, 3, 1, '21/10/2020 13:29:10', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo erroneo'),
-(400, 3, 1, '21/10/2020 13:29:10', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(401, 3, 5, '21/10/2020 13:29:10', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Formulario de ayuda'),
-(402, 3, 6, '21/10/2020 13:29:10', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Formulario de ayuda'),
-(403, 3, 1, '21/10/2020 13:34:31', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
-(404, 3, 5, '21/10/2020 13:34:31', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Formulario de ayuda'),
-(405, 3, 5, '21/10/2020 13:34:31', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar'),
-(406, 3, 5, '21/10/2020 13:34:31', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Cancelar');
+(1, 3, 1, '21/10/2020 23:32:14', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(2, 3, 1, '21/10/2020 23:33:42', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(3, 3, 1, '21/10/2020 23:52:03', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(4, 3, 1, '21/10/2020 23:54:55', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(5, 3, 1, '21/10/2020 23:55:32', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(6, 3, 5, '21/10/2020 23:55:32', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO banco VALUES ( 1,  BAM,  1) '),
+(7, 3, 1, '22/10/2020 00:08:10', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(8, 3, 5, '22/10/2020 00:08:10', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', ' INSERT INTO banco VALUES ( 2,  BAMTRAB,  1) '),
+(9, 3, 1, '22/10/2020 00:21:29', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(10, 3, 1, '22/10/2020 00:32:33', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(11, 3, 1, '22/10/2020 00:42:01', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(12, 3, 5, '22/10/2020 00:42:01', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Salir de la aplicacion'),
+(14, 3, 1, '22/10/2020 00:42:25', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo erroneo'),
+(15, 3, 1, '22/10/2020 00:42:25', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo erroneo'),
+(16, 3, 1, '22/10/2020 07:52:47', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(17, 3, 1, '22/10/2020 07:53:44', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(18, 3, 1, '22/10/2020 08:00:58', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso'),
+(19, 3, 1, '22/10/2020 08:04:20', 'fdb4:f58e:1300:1d00:', 'LAPTOP-I01T9HGS', 'Logeo Exitoso');
 
 -- --------------------------------------------------------
 
@@ -525,11 +195,11 @@ INSERT INTO `bitacora` (`pk_id_bitacora`, `fk_idusuario_bitacora`, `fk_idaplicac
 CREATE TABLE `bodega` (
   `pk_id_bodega` int(10) NOT NULL,
   `fk_id_municipio` int(10) NOT NULL,
-  `dimensiones` double(5,2) NOT NULL,
-  `direccion` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
-  `telefono` int(8) NOT NULL,
-  `descripcion` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
-  `estado` int(1) NOT NULL
+  `dimensiones_bodega` double(5,2) NOT NULL,
+  `direccion_bodega` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `telefono_bodega` int(8) NOT NULL,
+  `descripcion_bodega` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `estado_bodega` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -553,8 +223,9 @@ CREATE TABLE `capacitacion` (
 
 CREATE TABLE `categoria_producto` (
   `pk_id_categoria_producto` int(10) NOT NULL,
-  `descripcion` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
-  `estado` int(1) NOT NULL
+  `nombre_categoria_producto` varchar(35) COLLATE utf8_unicode_ci NOT NULL,
+  `descripcion_categoria_producto` varchar(60) COLLATE utf8_unicode_ci NOT NULL,
+  `estado_categoria_producto` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -616,13 +287,13 @@ CREATE TABLE `competencia_desarrollo` (
 --
 
 CREATE TABLE `compra_detalle` (
-  `fk_id_encabezado_compra` int(10) NOT NULL,
-  `cod_linea` int(10) NOT NULL,
+  `fk_id_compra_encabezado` int(10) NOT NULL,
+  `cod_linea_compra_detalle` int(10) NOT NULL,
   `fk_id_producto` int(10) NOT NULL,
-  `cantidad` int(10) NOT NULL,
-  `precio_unitario` double(8,2) NOT NULL,
-  `subtotal` double(12,2) NOT NULL,
-  `estado` int(1) NOT NULL
+  `cantidad_compra_detalle` int(10) NOT NULL,
+  `precio_unitario_compra_detalle` double(8,2) NOT NULL,
+  `subtotal_compra_detalle` double(12,2) NOT NULL,
+  `estado_compra_detalle` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -632,11 +303,11 @@ CREATE TABLE `compra_detalle` (
 --
 
 CREATE TABLE `compra_encabezado` (
-  `pk_id_encabezado_compra` int(10) NOT NULL,
+  `pk_id_compra_encabezado` int(10) NOT NULL,
   `fk_id_proveedor` int(10) NOT NULL,
-  `fec_compra` datetime NOT NULL,
-  `total_compra` double(12,2) NOT NULL,
-  `estado` int(1) NOT NULL
+  `fec_compra_encabezado_compra` datetime NOT NULL,
+  `total_compra_encabezado_compra` double(12,2) NOT NULL,
+  `estado_encabezado_compra` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -732,7 +403,7 @@ CREATE TABLE `correo_cliente` (
 CREATE TABLE `correo_proveedor` (
   `pk_id_correo_proveedor` int(10) NOT NULL,
   `fk_id_proveedor` int(10) NOT NULL,
-  `correo` varchar(50) COLLATE utf8_unicode_ci NOT NULL
+  `correo_correo_proveedor` varchar(50) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -813,17 +484,10 @@ CREATE TABLE `deduccion` (
 
 CREATE TABLE `departamento` (
   `pk_id_departamento` int(10) NOT NULL,
-  `nombre` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
-  `descripcion` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
-  `estado` int(1) NOT NULL
+  `nombre_departamento` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `descripcion_departamento` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `estado_departamento` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Volcado de datos para la tabla `departamento`
---
-
-INSERT INTO `departamento` (`pk_id_departamento`, `nombre`, `descripcion`, `estado`) VALUES
-(1, 'RECURSOS HUMANOS', 'RECURSOS', 0);
 
 -- --------------------------------------------------------
 
@@ -839,14 +503,14 @@ CREATE TABLE `departamento_empresarial` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `detallebitacora`
+-- Estructura de tabla para la tabla `detalle_bitacora`
 --
 
-CREATE TABLE `detallebitacora` (
-  `pk_id_detallebitacora` int(10) NOT NULL,
-  `fk_idbitacora_detallebitacora` int(10) DEFAULT NULL,
-  `querryantigua_detallebitacora` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `querrynueva_detallebitacora` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL
+CREATE TABLE `detalle_bitacora` (
+  `pk_id_detalle_bitacora` int(10) NOT NULL,
+  `fk_idbitacora_detalle_bitacora` int(10) DEFAULT NULL,
+  `querryantigua_detalle_bitacora` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `querrynueva_detalle_bitacora` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -911,15 +575,15 @@ CREATE TABLE `detalle_transaccion` (
 --
 
 CREATE TABLE `devolucion_detalle` (
-  `fk_id_encabezado_devolucion` int(10) NOT NULL,
-  `cod_linea` int(10) NOT NULL,
+  `fk_id_devolucion_encabezado` int(10) NOT NULL,
+  `cod_linea_devolucion_encabezado` int(10) NOT NULL,
   `fk_id_producto` int(10) NOT NULL,
   `fk_id_estado_producto` int(10) NOT NULL,
-  `cantidad` int(10) NOT NULL,
-  `iva_por_cobrar` double(8,2) NOT NULL,
-  `precio_unitario` double(8,2) NOT NULL,
-  `subtotal` double(12,2) NOT NULL,
-  `estado` int(1) NOT NULL
+  `cantidad_devolucion_encabezado` int(10) NOT NULL,
+  `iva_por_cobrar_devolucion_encabezado` double(8,2) NOT NULL,
+  `precio_unitario_devolucion_encabezado` double(8,2) NOT NULL,
+  `subtotal_devolucion_encabezado` double(12,2) NOT NULL,
+  `estado_devolucion_encabezado` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -929,12 +593,12 @@ CREATE TABLE `devolucion_detalle` (
 --
 
 CREATE TABLE `devolucion_encabezado` (
-  `pk_id_encabezado_devolucion` int(10) NOT NULL,
+  `pk_id_devolucion_encabezado` int(10) NOT NULL,
   `fk_id_fabrica` int(10) NOT NULL,
   `fk_id_categoria_producto` int(10) NOT NULL,
-  `fec_devolucion` datetime NOT NULL,
-  `total_devolucion` double(12,2) NOT NULL,
-  `estado` int(1) NOT NULL
+  `fec_devolucion_encabezado` datetime NOT NULL,
+  `total_devolucion_encabezado` double(12,2) NOT NULL,
+  `estado_devolucion_encabezado` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -1056,7 +720,7 @@ CREATE TABLE `encargado_bodega` (
   `pk_id_encargado_bodega` int(10) NOT NULL,
   `fk_id_empleado` int(10) NOT NULL,
   `fk_id_bodega` int(10) NOT NULL,
-  `estado` int(1) NOT NULL
+  `estado_encargado_bodega` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -1086,9 +750,9 @@ CREATE TABLE `envio_producto` (
   `fk_id_producto` int(10) NOT NULL,
   `fk_id_empleado` int(10) NOT NULL,
   `fk_id_vehiculo` int(10) NOT NULL,
-  `fec_envio` datetime NOT NULL,
-  `fec_recibido` datetime NOT NULL,
-  `descripcion` varchar(45) COLLATE utf8_unicode_ci NOT NULL
+  `fec_envio_producto` datetime NOT NULL,
+  `fec_recibido_envio_producto` datetime NOT NULL,
+  `descripcion_envio_producto` varchar(45) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -1122,8 +786,9 @@ CREATE TABLE `estado_civil` (
 
 CREATE TABLE `estado_producto` (
   `pk_id_estado_producto` int(10) NOT NULL,
-  `descripcion` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
-  `estado` int(1) NOT NULL
+  `nombre_estado_producto` varchar(25) COLLATE utf8_unicode_ci NOT NULL,
+  `descripcion_estado_producto` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `estado_estado_producto` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -1135,11 +800,11 @@ CREATE TABLE `estado_producto` (
 CREATE TABLE `fabrica` (
   `pk_id_fabrica` int(10) NOT NULL,
   `fk_id_municipio` int(10) NOT NULL,
-  `dimensiones` double(5,2) NOT NULL,
-  `direccion` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
-  `telefono` int(8) NOT NULL,
-  `descripcion` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
-  `estado` int(1) NOT NULL
+  `dimensiones_fabrica` double(5,2) NOT NULL,
+  `direccion_fabrica` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `telefono_fabrica` int(8) NOT NULL,
+  `descripcion_fabrica` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `estado_fabrica` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -1231,6 +896,20 @@ CREATE TABLE `horario` (
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `inventario`
+--
+
+CREATE TABLE `inventario` (
+  `pk_id_inventario` int(10) NOT NULL,
+  `fk_id_bodega` int(10) NOT NULL,
+  `fk_id_producto` int(10) NOT NULL,
+  `existencia_inventario` int(10) NOT NULL,
+  `estado_inventario` int(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `inventariocrm`
 --
 
@@ -1258,24 +937,6 @@ CREATE TABLE `inventariomrp` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `inventarioscm`
---
-
-CREATE TABLE `inventarioscm` (
-  `pk_id_inventario` int(10) NOT NULL,
-  `fk_id_bodega` int(10) NOT NULL,
-  `fk_id_producto` int(10) NOT NULL,
-  `fecha_ingreso` datetime NOT NULL,
-  `fecha_salida` datetime NOT NULL,
-  `cantidad_ingresa` int(10) NOT NULL,
-  `cantidad_salida` int(10) NOT NULL,
-  `existencia` int(10) NOT NULL,
-  `estado` int(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
--- --------------------------------------------------------
-
---
 -- Estructura de tabla para la tabla `licencia_conduccion`
 --
 
@@ -1291,9 +952,10 @@ CREATE TABLE `licencia_conduccion` (
 --
 
 CREATE TABLE `linea_producto` (
-  `pk_id_linea` int(10) NOT NULL,
-  `descripcion` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-  `estado` int(1) NOT NULL
+  `pk_id_linea_producto` int(10) NOT NULL,
+  `nombre_linea_producto` varchar(25) COLLATE utf8_unicode_ci NOT NULL,
+  `descripcion_linea_producto` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `estado_linea_producto` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -1315,9 +977,7 @@ CREATE TABLE `login` (
 --
 
 INSERT INTO `login` (`pk_id_login`, `usuario_login`, `contraseña_login`, `nombreCompleto_login`, `estado_login`) VALUES
-(1, 'bjsican', 'bjsican', 'Billy Jeshua Sican Matias', 1),
-(2, 'jmorataya', 'jmorataya', 'Julio Morataya', 1),
-(3, 'bmaza', 'bmaza', 'Bryan Mazariegos', 1);
+(3, 'bmaza', 'bmaza', 'bryan', 1);
 
 -- --------------------------------------------------------
 
@@ -1327,8 +987,8 @@ INSERT INTO `login` (`pk_id_login`, `usuario_login`, `contraseña_login`, `nombr
 
 CREATE TABLE `marca` (
   `pk_id_marca` int(10) NOT NULL,
-  `descripcion` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
-  `estado` int(1) NOT NULL
+  `descripcion_marca` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `estado_marca` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -1345,17 +1005,6 @@ CREATE TABLE `materiaprimainsumo` (
   `estado_materiaprimainsumo` tinyint(1) DEFAULT NULL,
   `precio_materiaprimainsumo` double DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Volcado de datos para la tabla `materiaprimainsumo`
---
-
-INSERT INTO `materiaprimainsumo` (`pk_id_materiaprimainsumo`, `nombre_materiaprimainsumo`, `descripcion_materiaprimainsumo`, `marca_materiaprimainsumo`, `estado_materiaprimainsumo`, `precio_materiaprimainsumo`) VALUES
-(1, 'a', 'a', 'a', 1, 5),
-(2, 'w', 'w', 'w', 1, 5),
-(3, 'platano', 'rrrrr', 'materia prima', 0, 5.5),
-(4, 'resortes', 'metal', 'marca', 0, 5.5),
-(5, 'TORNILLOS', 'TORNILLOS DE METAL QUE SON INOXIDABLES', 'TORNILLOS S.A', 1, 3.3);
 
 -- --------------------------------------------------------
 
@@ -1407,6 +1056,40 @@ CREATE TABLE `modulo` (
   `estado_modulo` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Volcado de datos para la tabla `modulo`
+--
+
+INSERT INTO `modulo` (`pk_id_modulo`, `nombre_modulo`, `descripcion_modulo`, `estado_modulo`) VALUES
+(1, 'FRM', 'FINANZAS', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `movimiento_inventario`
+--
+
+CREATE TABLE `movimiento_inventario` (
+  `pk_id_movimiento_inventario` int(10) NOT NULL,
+  `fecha_movimiento_inventario` datetime NOT NULL,
+  `fk_id_tipo_movimiento` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `movimiento_inventario_detalle`
+--
+
+CREATE TABLE `movimiento_inventario_detalle` (
+  `pk_id_movimiento_inventario_detalle` int(10) NOT NULL,
+  `fk_id_movimiento_inventario` int(10) NOT NULL,
+  `fk_id_producto` int(10) NOT NULL,
+  `cantidad` int(8) NOT NULL,
+  `origen` varchar(35) COLLATE utf8_unicode_ci NOT NULL,
+  `destino` varchar(35) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
 -- --------------------------------------------------------
 
 --
@@ -1416,9 +1099,9 @@ CREATE TABLE `modulo` (
 CREATE TABLE `municipio` (
   `pk_id_municipio` int(10) NOT NULL,
   `fk_id_departamento` int(10) NOT NULL,
-  `nombre` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
-  `descripcion` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
-  `estado` int(1) NOT NULL
+  `nombre_municipio` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `descripcion_municipio` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `estado_municipio` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -1457,9 +1140,9 @@ CREATE TABLE `ordenproduccion` (
 
 CREATE TABLE `pais` (
   `pk_id_pais` int(10) NOT NULL,
-  `nombre` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
-  `capital` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
-  `estado` int(1) NOT NULL
+  `nombre_pais` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `capital_pais` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `estado_pais` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -1469,13 +1152,13 @@ CREATE TABLE `pais` (
 --
 
 CREATE TABLE `pedido_detalle` (
-  `fk_id_encabezado_pedido` int(10) NOT NULL,
-  `cod_linea` int(10) NOT NULL,
+  `fk_id_pedido_encabezado` int(10) NOT NULL,
+  `cod_linea_pedido_detalle` int(10) NOT NULL,
   `fk_id_producto` int(10) NOT NULL,
-  `cantidad` int(10) NOT NULL,
-  `precio_unitario` double(8,2) NOT NULL,
-  `subtotal` double(12,2) NOT NULL,
-  `estado` int(1) NOT NULL
+  `cantidad_pedido_detalle` int(10) NOT NULL,
+  `precio_unitario_pedido_detalle` double(8,2) NOT NULL,
+  `subtotal_pedido_detalle` double(12,2) NOT NULL,
+  `estado_pedido_detalle` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -1485,11 +1168,11 @@ CREATE TABLE `pedido_detalle` (
 --
 
 CREATE TABLE `pedido_encabezado` (
-  `pk_id_encabezado_pedido` int(10) NOT NULL,
+  `pk_id_pedido_encabezado` int(10) NOT NULL,
   `fk_id_fabrica` int(10) NOT NULL,
-  `fec_pedido` datetime NOT NULL,
-  `total_pedido` double(12,2) NOT NULL,
-  `estado` int(1) NOT NULL
+  `fec_pedido_pedido_encabezado` datetime NOT NULL,
+  `total_pedido_encabezado` double(12,2) NOT NULL,
+  `estado_pedido_encabezado` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -1513,8 +1196,8 @@ CREATE TABLE `percepcion` (
 
 CREATE TABLE `perfil` (
   `pk_id_perfil` int(10) NOT NULL,
-  `nombre_perfil` int(10) DEFAULT NULL,
-  `descripcion_perfil` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `nombre_perfil` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `descripcion_perfil` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
   `estado_perfil` int(2) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -1523,30 +1206,28 @@ CREATE TABLE `perfil` (
 --
 
 INSERT INTO `perfil` (`pk_id_perfil`, `nombre_perfil`, `descripcion_perfil`, `estado_perfil`) VALUES
-(1, 0, 'Pruebas', 1),
-(2, 0, 'Coordinador', 1),
-(3, 0, 'Prueba', 1);
+(1, '0', 'Prueba', 1),
+(2, '0', 'Coordinador', 1),
+(3, '0', 'prueba', 1);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `perfilusuario`
+-- Estructura de tabla para la tabla `perfil_usuario`
 --
 
-CREATE TABLE `perfilusuario` (
-  `pk_id_perfilusuario` int(10) NOT NULL,
-  `fk_idusuario_perfilusuario` int(10) DEFAULT NULL,
-  `fk_idperfil_perfilusuario` int(10) DEFAULT NULL
+CREATE TABLE `perfil_usuario` (
+  `pk_id_perfil_usuario` int(10) NOT NULL,
+  `fk_idusuario_perfil_usuario` int(10) DEFAULT NULL,
+  `fk_idperfil_perfil_usuario` int(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Volcado de datos para la tabla `perfilusuario`
+-- Volcado de datos para la tabla `perfil_usuario`
 --
 
-INSERT INTO `perfilusuario` (`pk_id_perfilusuario`, `fk_idusuario_perfilusuario`, `fk_idperfil_perfilusuario`) VALUES
-(1, 1, 1),
-(2, 2, 1),
-(3, 3, 3);
+INSERT INTO `perfil_usuario` (`pk_id_perfil_usuario`, `fk_idusuario_perfil_usuario`, `fk_idperfil_perfil_usuario`) VALUES
+(1, 3, 3);
 
 -- --------------------------------------------------------
 
@@ -1568,15 +1249,7 @@ CREATE TABLE `permiso` (
 --
 
 INSERT INTO `permiso` (`pk_id_permiso`, `insertar_permiso`, `modificar_permiso`, `eliminar_permiso`, `consultar_permiso`, `imprimir_permiso`) VALUES
-(1, 0, 0, 0, 0, 0),
-(2, 0, 0, 0, 0, 1),
-(3, 0, 0, 0, 1, 0),
-(4, 0, 0, 0, 1, 1),
-(5, 0, 0, 1, 0, 0),
-(6, 0, 0, 1, 0, 1),
-(7, 0, 0, 1, 1, 0),
-(8, 1, 1, 1, 1, 1),
-(9, 1, 0, 0, 0, 0);
+(1, 1, 1, 1, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -1631,12 +1304,13 @@ CREATE TABLE `productodetalle` (
 
 CREATE TABLE `productoscm` (
   `pk_id_producto` int(10) NOT NULL,
-  `fk_id_lineaProducto` int(10) NOT NULL,
+  `fk_id_linea_producto` int(10) NOT NULL,
   `fk_id_categoria_producto` int(10) NOT NULL,
-  `precio` double(12,2) NOT NULL,
-  `medida` double(5,2) NOT NULL,
-  `descripcion` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
-  `estado` int(1) NOT NULL
+  `nombre_producto` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `precio_producto` double(12,2) NOT NULL,
+  `medida_producto` double(5,2) NOT NULL,
+  `descripcion_producto` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `estado_producto` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -1661,10 +1335,10 @@ CREATE TABLE `propietario` (
 CREATE TABLE `proveedor` (
   `pk_id_proveedor` int(10) NOT NULL,
   `fk_id_pais` int(10) NOT NULL,
-  `razon_social` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
-  `representante_legal` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
-  `nit` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-  `estado` int(1) NOT NULL
+  `razon_social_proveedor` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `representante_legal_proveedor` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `nit_proveedor` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `estado_proveedor` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -1720,6 +1394,13 @@ CREATE TABLE `reporte` (
   `estado_reporte` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Volcado de datos para la tabla `reporte`
+--
+
+INSERT INTO `reporte` (`pk_id_reporte`, `nombre_reporte`, `ruta_reporte`, `estado_reporte`) VALUES
+(2, 'Ventas', 'ReporteVentas.rpt', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -1733,6 +1414,13 @@ CREATE TABLE `reporte_aplicativo` (
   `estado_reporte_aplicativo` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Volcado de datos para la tabla `reporte_aplicativo`
+--
+
+INSERT INTO `reporte_aplicativo` (`fk_id_reporte`, `fk_id_aplicacion`, `fk_id_modulo`, `estado_reporte_aplicativo`) VALUES
+(2, 5, 1, 1);
+
 -- --------------------------------------------------------
 
 --
@@ -1745,6 +1433,13 @@ CREATE TABLE `reporte_modulo` (
   `estado_reporte_modulo` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Volcado de datos para la tabla `reporte_modulo`
+--
+
+INSERT INTO `reporte_modulo` (`fk_id_reporte`, `fk_id_modulo`, `estado_reporte_modulo`) VALUES
+(2, 1, 1);
+
 -- --------------------------------------------------------
 
 --
@@ -1753,10 +1448,10 @@ CREATE TABLE `reporte_modulo` (
 
 CREATE TABLE `ruta` (
   `pk_id_ruta` int(10) NOT NULL,
-  `origen` int(10) NOT NULL,
-  `destino` int(10) NOT NULL,
-  `descripcion` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
-  `estado` int(1) NOT NULL
+  `origen_ruta` int(10) NOT NULL,
+  `destino_ruta` int(10) NOT NULL,
+  `descripcion_ruta` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `estado_ruta` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -1780,11 +1475,11 @@ CREATE TABLE `saldo_historico` (
 CREATE TABLE `sucursal` (
   `pk_id_sucursal` int(10) NOT NULL,
   `fk_id_municipio` int(10) NOT NULL,
-  `nombre` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
-  `direccion` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
-  `telefono` int(8) NOT NULL,
-  `descripcion` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
-  `estado` int(1) NOT NULL
+  `nombre_sucursal` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `direccion_sucursal` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `telefono_sucursal` int(8) NOT NULL,
+  `descripcion_sucursal` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `estado_sucursal` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -1808,7 +1503,7 @@ CREATE TABLE `telefono_cliente` (
 CREATE TABLE `telefono_proveedor` (
   `pk_id_telefono_proveedor` int(10) NOT NULL,
   `fk_id_proveedor` int(10) NOT NULL,
-  `telefono` varchar(20) COLLATE utf8_unicode_ci NOT NULL
+  `telefono_telefono_proveedor` varchar(20) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -1887,6 +1582,18 @@ CREATE TABLE `tipo_moneda` (
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `tipo_movimiento`
+--
+
+CREATE TABLE `tipo_movimiento` (
+  `pk_id_tipo_movimiento` int(10) NOT NULL,
+  `nombre_tipo_movimiento` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `signo_tipo` varchar(1) COLLATE utf8_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `tipo_transaccion`
 --
 
@@ -1906,12 +1613,12 @@ CREATE TABLE `tipo_transaccion` (
 CREATE TABLE `vehiculo` (
   `pk_id_vehiculo` int(10) NOT NULL,
   `fk_id_marca` int(10) NOT NULL,
-  `placa` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
-  `modelo` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
-  `color` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
-  `anio` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
-  `tipo_combustible` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
-  `estado` int(1) NOT NULL
+  `placa_vehiculo` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `modelo_vehiculo` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `color_vehiculo` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `anio_vehiculo` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `tipo_combustible_vehiculo` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `estado_vehiculo` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
@@ -1935,25 +1642,27 @@ CREATE TABLE `venta` (
 -- Indices de la tabla `aplicacion`
 --
 ALTER TABLE `aplicacion`
-  ADD PRIMARY KEY (`pk_id_aplicacion`);
+  ADD PRIMARY KEY (`pk_id_aplicacion`),
+  ADD KEY `pk_id_aplicacion` (`pk_id_aplicacion`),
+  ADD KEY `fk_aplicativo_modulo` (`fk_id_modulo`);
 
 --
--- Indices de la tabla `aplicacionperfil`
+-- Indices de la tabla `aplicacion_perfil`
 --
-ALTER TABLE `aplicacionperfil`
-  ADD PRIMARY KEY (`pk_id_aplicacionperfil`),
-  ADD KEY `fk_aplicacionperfil_aplicacion` (`fk_idaplicacion_aplicacionperfil`),
-  ADD KEY `fk_aplicacionperfil_perfil` (`fk_idperfil_aplicacionperfil`),
-  ADD KEY `fk_aplicacionperfil_permiso` (`fk_idpermiso_aplicacionperfil`);
+ALTER TABLE `aplicacion_perfil`
+  ADD PRIMARY KEY (`pk_id_aplicacion_perfil`),
+  ADD KEY `fk_aplicacionperfil_aplicacion` (`fk_idaplicacion_aplicacion_perfil`),
+  ADD KEY `fk_aplicacionperfil_perfil` (`fk_idperfil_aplicacion_perfil`),
+  ADD KEY `fk_aplicacionperfil_permiso` (`fk_idpermiso_aplicacion_perfil`);
 
 --
--- Indices de la tabla `aplicacionusuario`
+-- Indices de la tabla `aplicacion_usuario`
 --
-ALTER TABLE `aplicacionusuario`
-  ADD PRIMARY KEY (`pk_id_aplicacionusuario`),
-  ADD KEY `fk_aplicacionusuario_login` (`fk_idlogin_aplicacionusuario`),
-  ADD KEY `fk_aplicacionusuario_aplicacion` (`fk_idaplicacion_aplicacionusuario`),
-  ADD KEY `fk_aplicacionusuario_permiso` (`fk_idpermiso_aplicacionusuario`);
+ALTER TABLE `aplicacion_usuario`
+  ADD PRIMARY KEY (`pk_id_aplicacion_usuario`),
+  ADD KEY `fk_aplicacionusuario_login` (`fk_idlogin_aplicacion_usuario`),
+  ADD KEY `fk_aplicacionusuario_aplicacion` (`fk_idaplicacion_aplicacion_usuario`),
+  ADD KEY `fk_aplicacionusuario_permiso` (`fk_idpermiso_aplicacion_usuario`);
 
 --
 -- Indices de la tabla `area`
@@ -2041,16 +1750,16 @@ ALTER TABLE `competencia_desarrollo`
 -- Indices de la tabla `compra_detalle`
 --
 ALTER TABLE `compra_detalle`
-  ADD PRIMARY KEY (`fk_id_encabezado_compra`,`cod_linea`),
-  ADD KEY `fk_id_encabezado_compra` (`fk_id_encabezado_compra`,`cod_linea`),
+  ADD PRIMARY KEY (`fk_id_compra_encabezado`,`cod_linea_compra_detalle`),
+  ADD KEY `fk_id_compra_encabezado` (`fk_id_compra_encabezado`,`cod_linea_compra_detalle`),
   ADD KEY `fk_compra_producto` (`fk_id_producto`);
 
 --
 -- Indices de la tabla `compra_encabezado`
 --
 ALTER TABLE `compra_encabezado`
-  ADD PRIMARY KEY (`pk_id_encabezado_compra`),
-  ADD KEY `pk_id_encabezado_compra` (`pk_id_encabezado_compra`),
+  ADD PRIMARY KEY (`pk_id_compra_encabezado`),
+  ADD KEY `pk_id_compra_encabezado` (`pk_id_compra_encabezado`),
   ADD KEY `fk_compra_proveedor` (`fk_id_proveedor`);
 
 --
@@ -2156,11 +1865,11 @@ ALTER TABLE `departamento_empresarial`
   ADD PRIMARY KEY (`pk_id__departamento_empresarial`);
 
 --
--- Indices de la tabla `detallebitacora`
+-- Indices de la tabla `detalle_bitacora`
 --
-ALTER TABLE `detallebitacora`
-  ADD PRIMARY KEY (`pk_id_detallebitacora`),
-  ADD KEY `fk_bitacora_detallebitacora` (`fk_idbitacora_detallebitacora`);
+ALTER TABLE `detalle_bitacora`
+  ADD PRIMARY KEY (`pk_id_detalle_bitacora`),
+  ADD KEY `fk_bitacora_detallebitacora` (`fk_idbitacora_detalle_bitacora`);
 
 --
 -- Indices de la tabla `detalle_consulta_inteligente`
@@ -2200,8 +1909,8 @@ ALTER TABLE `detalle_transaccion`
 -- Indices de la tabla `devolucion_detalle`
 --
 ALTER TABLE `devolucion_detalle`
-  ADD PRIMARY KEY (`fk_id_encabezado_devolucion`,`cod_linea`),
-  ADD KEY `fk_id_encabezado_devolucion` (`fk_id_encabezado_devolucion`,`cod_linea`),
+  ADD PRIMARY KEY (`fk_id_devolucion_encabezado`,`cod_linea_devolucion_encabezado`),
+  ADD KEY `fk_id_devolucion_encabezado` (`fk_id_devolucion_encabezado`,`cod_linea_devolucion_encabezado`),
   ADD KEY `fk_devolucion_producto` (`fk_id_producto`),
   ADD KEY `fk_devolucion_Estadoproducto` (`fk_id_estado_producto`);
 
@@ -2209,8 +1918,8 @@ ALTER TABLE `devolucion_detalle`
 -- Indices de la tabla `devolucion_encabezado`
 --
 ALTER TABLE `devolucion_encabezado`
-  ADD PRIMARY KEY (`pk_id_encabezado_devolucion`),
-  ADD KEY `pk_id_encabezado_devolucion` (`pk_id_encabezado_devolucion`),
+  ADD PRIMARY KEY (`pk_id_devolucion_encabezado`),
+  ADD KEY `pk_id_devolucion_encabezado` (`pk_id_devolucion_encabezado`),
   ADD KEY `fk_devolucion_fabrica` (`fk_id_fabrica`),
   ADD KEY `fk_devolucion_categoria` (`fk_id_categoria_producto`);
 
@@ -2273,8 +1982,8 @@ ALTER TABLE `encabezado_transaccion`
 ALTER TABLE `encargado_bodega`
   ADD PRIMARY KEY (`pk_id_encargado_bodega`),
   ADD KEY `pk_id_encargado_bodega` (`pk_id_encargado_bodega`),
-  ADD KEY `fk_empleado_bodega` (`fk_id_bodega`),
-  ADD KEY `fk_empleado_encargado` (`fk_id_empleado`);
+  ADD KEY `fk_empleado_encargado` (`fk_id_empleado`),
+  ADD KEY `fk_empleado_bodega1` (`fk_id_bodega`);
 
 --
 -- Indices de la tabla `entrevista`
@@ -2291,9 +2000,10 @@ ALTER TABLE `entrevista`
 ALTER TABLE `envio_producto`
   ADD PRIMARY KEY (`pk_id_envio_producto`),
   ADD KEY `pk_id_envio_producto` (`pk_id_envio_producto`),
+  ADD KEY `fk_envio_producto_vehiculo` (`fk_id_vehiculo`),
   ADD KEY `fk_envio_producto` (`fk_id_producto`),
-  ADD KEY `fk_envio_ruta` (`fk_id_ruta`),
-  ADD KEY `fk_envio_empleado` (`fk_id_empleado`);
+  ADD KEY `fk_envio_empleado` (`fk_id_empleado`),
+  ADD KEY `fk_envio_ruta` (`fk_id_ruta`);
 
 --
 -- Indices de la tabla `estadoproduccion`
@@ -2371,6 +2081,15 @@ ALTER TABLE `horario`
   ADD PRIMARY KEY (`pk_id_horario`);
 
 --
+-- Indices de la tabla `inventario`
+--
+ALTER TABLE `inventario`
+  ADD PRIMARY KEY (`pk_id_inventario`),
+  ADD KEY `pk_id_inventario` (`pk_id_inventario`),
+  ADD KEY `fk_inventario_producto` (`fk_id_producto`),
+  ADD KEY `fk_inventario_bodega` (`fk_id_bodega`);
+
+--
 -- Indices de la tabla `inventariocrm`
 --
 ALTER TABLE `inventariocrm`
@@ -2386,15 +2105,6 @@ ALTER TABLE `inventariomrp`
   ADD KEY `fk_INVENTARIO_TIPOINVENTARIO` (`fk_idtipoinventario_inventario`);
 
 --
--- Indices de la tabla `inventarioscm`
---
-ALTER TABLE `inventarioscm`
-  ADD PRIMARY KEY (`pk_id_inventario`),
-  ADD KEY `pk_id_inventario` (`pk_id_inventario`),
-  ADD KEY `fk_inventario_producto` (`fk_id_producto`),
-  ADD KEY `fk_inventario_bodega` (`fk_id_bodega`);
-
---
 -- Indices de la tabla `licencia_conduccion`
 --
 ALTER TABLE `licencia_conduccion`
@@ -2404,8 +2114,8 @@ ALTER TABLE `licencia_conduccion`
 -- Indices de la tabla `linea_producto`
 --
 ALTER TABLE `linea_producto`
-  ADD PRIMARY KEY (`pk_id_linea`),
-  ADD KEY `pk_id_linea` (`pk_id_linea`);
+  ADD PRIMARY KEY (`pk_id_linea_producto`),
+  ADD KEY `pk_id_linea_producto` (`pk_id_linea_producto`);
 
 --
 -- Indices de la tabla `login`
@@ -2454,6 +2164,23 @@ ALTER TABLE `modulo`
   ADD KEY `pk_id_modulo` (`pk_id_modulo`);
 
 --
+-- Indices de la tabla `movimiento_inventario`
+--
+ALTER TABLE `movimiento_inventario`
+  ADD PRIMARY KEY (`pk_id_movimiento_inventario`),
+  ADD KEY `pk_id_movimiento_inventario` (`pk_id_movimiento_inventario`),
+  ADD KEY `fk_mov_inventario_tipo` (`fk_id_tipo_movimiento`);
+
+--
+-- Indices de la tabla `movimiento_inventario_detalle`
+--
+ALTER TABLE `movimiento_inventario_detalle`
+  ADD PRIMARY KEY (`pk_id_movimiento_inventario_detalle`),
+  ADD KEY `pk_id_movimiento_inventario_detalle` (`pk_id_movimiento_inventario_detalle`),
+  ADD KEY `fk_mov_inventario_detalle_mov` (`fk_id_movimiento_inventario`),
+  ADD KEY `fk_mov_inventario_detalle_producto` (`fk_id_producto`);
+
+--
 -- Indices de la tabla `municipio`
 --
 ALTER TABLE `municipio`
@@ -2486,16 +2213,16 @@ ALTER TABLE `pais`
 -- Indices de la tabla `pedido_detalle`
 --
 ALTER TABLE `pedido_detalle`
-  ADD PRIMARY KEY (`fk_id_encabezado_pedido`,`cod_linea`),
-  ADD KEY `fk_id_encabezado_pedido` (`fk_id_encabezado_pedido`,`cod_linea`),
+  ADD PRIMARY KEY (`fk_id_pedido_encabezado`,`cod_linea_pedido_detalle`),
+  ADD KEY `fk_id_pedido_encabezado` (`fk_id_pedido_encabezado`,`cod_linea_pedido_detalle`),
   ADD KEY `fk_pedido_producto` (`fk_id_producto`);
 
 --
 -- Indices de la tabla `pedido_encabezado`
 --
 ALTER TABLE `pedido_encabezado`
-  ADD PRIMARY KEY (`pk_id_encabezado_pedido`),
-  ADD KEY `pk_id_encabezado_pedido` (`pk_id_encabezado_pedido`),
+  ADD PRIMARY KEY (`pk_id_pedido_encabezado`),
+  ADD KEY `pk_id_pedido_encabezado` (`pk_id_pedido_encabezado`),
   ADD KEY `fk_pedido_fabrica` (`fk_id_fabrica`);
 
 --
@@ -2511,12 +2238,12 @@ ALTER TABLE `perfil`
   ADD PRIMARY KEY (`pk_id_perfil`);
 
 --
--- Indices de la tabla `perfilusuario`
+-- Indices de la tabla `perfil_usuario`
 --
-ALTER TABLE `perfilusuario`
-  ADD PRIMARY KEY (`pk_id_perfilusuario`),
-  ADD KEY `fk_perfil_usuario_login` (`fk_idusuario_perfilusuario`),
-  ADD KEY `fk_perfil_usuario_perfil` (`fk_idperfil_perfilusuario`);
+ALTER TABLE `perfil_usuario`
+  ADD PRIMARY KEY (`pk_id_perfil_usuario`),
+  ADD KEY `fk_perfil_usuario_login` (`fk_idusuario_perfil_usuario`),
+  ADD KEY `fk_perfil_usuario_perfil` (`fk_idperfil_perfil_usuario`);
 
 --
 -- Indices de la tabla `permiso`
@@ -2554,7 +2281,7 @@ ALTER TABLE `productodetalle`
 ALTER TABLE `productoscm`
   ADD PRIMARY KEY (`pk_id_producto`),
   ADD KEY `pk_id_producto` (`pk_id_producto`),
-  ADD KEY `fk_producto_lineaProducto` (`fk_id_lineaProducto`),
+  ADD KEY `fk_producto_lineaProducto` (`fk_id_linea_producto`),
   ADD KEY `fk_producto_categoriaProducto` (`fk_id_categoria_producto`);
 
 --
@@ -2688,6 +2415,13 @@ ALTER TABLE `tipo_moneda`
   ADD PRIMARY KEY (`pk_idtipomoneda`);
 
 --
+-- Indices de la tabla `tipo_movimiento`
+--
+ALTER TABLE `tipo_movimiento`
+  ADD PRIMARY KEY (`pk_id_tipo_movimiento`),
+  ADD KEY `pk_id_tipo_movimiento` (`pk_id_tipo_movimiento`);
+
+--
 -- Indices de la tabla `tipo_transaccion`
 --
 ALTER TABLE `tipo_transaccion`
@@ -2717,25 +2451,25 @@ ALTER TABLE `venta`
 -- AUTO_INCREMENT de la tabla `aplicacion`
 --
 ALTER TABLE `aplicacion`
-  MODIFY `pk_id_aplicacion` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `pk_id_aplicacion` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT de la tabla `aplicacionperfil`
+-- AUTO_INCREMENT de la tabla `aplicacion_perfil`
 --
-ALTER TABLE `aplicacionperfil`
-  MODIFY `pk_id_aplicacionperfil` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+ALTER TABLE `aplicacion_perfil`
+  MODIFY `pk_id_aplicacion_perfil` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT de la tabla `aplicacionusuario`
+-- AUTO_INCREMENT de la tabla `aplicacion_usuario`
 --
-ALTER TABLE `aplicacionusuario`
-  MODIFY `pk_id_aplicacionusuario` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+ALTER TABLE `aplicacion_usuario`
+  MODIFY `pk_id_aplicacion_usuario` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `bitacora`
 --
 ALTER TABLE `bitacora`
-  MODIFY `pk_id_bitacora` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=407;
+  MODIFY `pk_id_bitacora` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT de la tabla `bodega`
@@ -2777,13 +2511,13 @@ ALTER TABLE `cuentas_por_cobrar`
 -- AUTO_INCREMENT de la tabla `departamento`
 --
 ALTER TABLE `departamento`
-  MODIFY `pk_id_departamento` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `pk_id_departamento` int(10) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `detallebitacora`
+-- AUTO_INCREMENT de la tabla `detalle_bitacora`
 --
-ALTER TABLE `detallebitacora`
-  MODIFY `pk_id_detallebitacora` int(10) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `detalle_bitacora`
+  MODIFY `pk_id_detalle_bitacora` int(10) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `encargado_bodega`
@@ -2810,10 +2544,22 @@ ALTER TABLE `estado_producto`
   MODIFY `pk_id_estado_producto` int(10) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT de la tabla `fabrica`
+--
+ALTER TABLE `fabrica`
+  MODIFY `pk_id_fabrica` int(10) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT de la tabla `horaempleado`
 --
 ALTER TABLE `horaempleado`
   MODIFY `pk_id_horaempleado` int(10) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `inventario`
+--
+ALTER TABLE `inventario`
+  MODIFY `pk_id_inventario` int(10) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `inventariomrp`
@@ -2822,16 +2568,10 @@ ALTER TABLE `inventariomrp`
   MODIFY `pk_id_inventario` int(10) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `inventarioscm`
---
-ALTER TABLE `inventarioscm`
-  MODIFY `pk_id_inventario` int(10) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT de la tabla `linea_producto`
 --
 ALTER TABLE `linea_producto`
-  MODIFY `pk_id_linea` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `pk_id_linea_producto` int(10) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `login`
@@ -2849,13 +2589,13 @@ ALTER TABLE `marca`
 -- AUTO_INCREMENT de la tabla `materiaprimainsumo`
 --
 ALTER TABLE `materiaprimainsumo`
-  MODIFY `pk_id_materiaprimainsumo` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `pk_id_materiaprimainsumo` int(10) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `modulo`
 --
 ALTER TABLE `modulo`
-  MODIFY `pk_id_modulo` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `pk_id_modulo` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `municipio`
@@ -2888,16 +2628,16 @@ ALTER TABLE `perfil`
   MODIFY `pk_id_perfil` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT de la tabla `perfilusuario`
+-- AUTO_INCREMENT de la tabla `perfil_usuario`
 --
-ALTER TABLE `perfilusuario`
-  MODIFY `pk_id_perfilusuario` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+ALTER TABLE `perfil_usuario`
+  MODIFY `pk_id_perfil_usuario` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `permiso`
 --
 ALTER TABLE `permiso`
-  MODIFY `pk_id_permiso` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `pk_id_permiso` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `productodetalle`
@@ -2921,7 +2661,7 @@ ALTER TABLE `proveedor`
 -- AUTO_INCREMENT de la tabla `reporte`
 --
 ALTER TABLE `reporte`
-  MODIFY `pk_id_reporte` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `pk_id_reporte` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `ruta`
@@ -2964,20 +2704,26 @@ ALTER TABLE `vehiculo`
 --
 
 --
--- Filtros para la tabla `aplicacionperfil`
+-- Filtros para la tabla `aplicacion`
 --
-ALTER TABLE `aplicacionperfil`
-  ADD CONSTRAINT `fk_aplicacionperfil_aplicacion` FOREIGN KEY (`fk_idaplicacion_aplicacionperfil`) REFERENCES `aplicacion` (`pk_id_aplicacion`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `fk_aplicacionperfil_perfil` FOREIGN KEY (`fk_idperfil_aplicacionperfil`) REFERENCES `perfil` (`pk_id_perfil`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `fk_aplicacionperfil_permiso` FOREIGN KEY (`fk_idpermiso_aplicacionperfil`) REFERENCES `permiso` (`pk_id_permiso`) ON UPDATE CASCADE;
+ALTER TABLE `aplicacion`
+  ADD CONSTRAINT `fk_aplicativo_modulo` FOREIGN KEY (`fk_id_modulo`) REFERENCES `modulo` (`pk_id_modulo`);
 
 --
--- Filtros para la tabla `aplicacionusuario`
+-- Filtros para la tabla `aplicacion_perfil`
 --
-ALTER TABLE `aplicacionusuario`
-  ADD CONSTRAINT `fk_aplicacionusuario_aplicacion` FOREIGN KEY (`fk_idaplicacion_aplicacionusuario`) REFERENCES `aplicacion` (`pk_id_aplicacion`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `fk_aplicacionusuario_login` FOREIGN KEY (`fk_idlogin_aplicacionusuario`) REFERENCES `login` (`pk_id_login`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `fk_aplicacionusuario_permiso` FOREIGN KEY (`fk_idpermiso_aplicacionusuario`) REFERENCES `permiso` (`pk_id_permiso`) ON UPDATE CASCADE;
+ALTER TABLE `aplicacion_perfil`
+  ADD CONSTRAINT `fk_aplicacionperfil_aplicacion` FOREIGN KEY (`fk_idaplicacion_aplicacion_perfil`) REFERENCES `aplicacion` (`pk_id_aplicacion`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `fk_aplicacionperfil_perfil` FOREIGN KEY (`fk_idperfil_aplicacion_perfil`) REFERENCES `perfil` (`pk_id_perfil`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `fk_aplicacionperfil_permiso` FOREIGN KEY (`fk_idpermiso_aplicacion_perfil`) REFERENCES `permiso` (`pk_id_permiso`) ON UPDATE CASCADE;
+
+--
+-- Filtros para la tabla `aplicacion_usuario`
+--
+ALTER TABLE `aplicacion_usuario`
+  ADD CONSTRAINT `fk_aplicacionusuario_aplicacion` FOREIGN KEY (`fk_idaplicacion_aplicacion_usuario`) REFERENCES `aplicacion` (`pk_id_aplicacion`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `fk_aplicacionusuario_login` FOREIGN KEY (`fk_idlogin_aplicacion_usuario`) REFERENCES `login` (`pk_id_login`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `fk_aplicacionusuario_permiso` FOREIGN KEY (`fk_idpermiso_aplicacion_usuario`) REFERENCES `permiso` (`pk_id_permiso`) ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `balance_detalle`
@@ -2997,7 +2743,7 @@ ALTER TABLE `bitacora`
 -- Filtros para la tabla `bodega`
 --
 ALTER TABLE `bodega`
-  ADD CONSTRAINT `fk_bodega_municipio` FOREIGN KEY (`fk_id_municipio`) REFERENCES `municipio` (`pk_id_municipio`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_bodega_municipio` FOREIGN KEY (`fk_id_municipio`) REFERENCES `municipio` (`pk_id_municipio`);
 
 --
 -- Filtros para la tabla `capacitacion`
@@ -3017,14 +2763,14 @@ ALTER TABLE `competencia_desarrollo`
 -- Filtros para la tabla `compra_detalle`
 --
 ALTER TABLE `compra_detalle`
-  ADD CONSTRAINT `fk_compra_detalle` FOREIGN KEY (`fk_id_encabezado_compra`) REFERENCES `compra_encabezado` (`pk_id_encabezado_compra`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_compra_producto` FOREIGN KEY (`fk_id_producto`) REFERENCES `productoscm` (`pk_id_producto`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_compra_detalle` FOREIGN KEY (`fk_id_compra_encabezado`) REFERENCES `compra_encabezado` (`pk_id_compra_encabezado`),
+  ADD CONSTRAINT `fk_compra_producto` FOREIGN KEY (`fk_id_producto`) REFERENCES `productoscm` (`pk_id_producto`);
 
 --
 -- Filtros para la tabla `compra_encabezado`
 --
 ALTER TABLE `compra_encabezado`
-  ADD CONSTRAINT `fk_compra_proveedor` FOREIGN KEY (`fk_id_proveedor`) REFERENCES `proveedor` (`pk_id_proveedor`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_compra_proveedor` FOREIGN KEY (`fk_id_proveedor`) REFERENCES `proveedor` (`pk_id_proveedor`);
 
 --
 -- Filtros para la tabla `contrato`
@@ -3064,7 +2810,7 @@ ALTER TABLE `correo_cliente`
 -- Filtros para la tabla `correo_proveedor`
 --
 ALTER TABLE `correo_proveedor`
-  ADD CONSTRAINT `fk_proveedor_correo` FOREIGN KEY (`fk_id_proveedor`) REFERENCES `proveedor` (`pk_id_proveedor`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_proveedor_correo` FOREIGN KEY (`fk_id_proveedor`) REFERENCES `proveedor` (`pk_id_proveedor`);
 
 --
 -- Filtros para la tabla `cuentas_por_cobrar`
@@ -3088,10 +2834,10 @@ ALTER TABLE `cuenta_contable`
   ADD CONSTRAINT `fk_cuentapadre_cuentahijo` FOREIGN KEY (`fk_cuentapadre`) REFERENCES `cuenta_contable` (`pk_idcuenta`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
--- Filtros para la tabla `detallebitacora`
+-- Filtros para la tabla `detalle_bitacora`
 --
-ALTER TABLE `detallebitacora`
-  ADD CONSTRAINT `fk_bitacora_detallebitacora` FOREIGN KEY (`fk_idbitacora_detallebitacora`) REFERENCES `bitacora` (`pk_id_bitacora`) ON UPDATE CASCADE;
+ALTER TABLE `detalle_bitacora`
+  ADD CONSTRAINT `fk_bitacora_detallebitacora` FOREIGN KEY (`fk_idbitacora_detalle_bitacora`) REFERENCES `bitacora` (`pk_id_bitacora`) ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `detalle_consulta_inteligente`
@@ -3127,16 +2873,16 @@ ALTER TABLE `detalle_transaccion`
 -- Filtros para la tabla `devolucion_detalle`
 --
 ALTER TABLE `devolucion_detalle`
-  ADD CONSTRAINT `fk_devolucionDetalle_encabezado` FOREIGN KEY (`fk_id_encabezado_devolucion`) REFERENCES `devolucion_encabezado` (`pk_id_encabezado_devolucion`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_devolucion_Estadoproducto` FOREIGN KEY (`fk_id_estado_producto`) REFERENCES `estado_producto` (`pk_id_estado_producto`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_devolucion_producto` FOREIGN KEY (`fk_id_producto`) REFERENCES `productoscm` (`pk_id_producto`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_devolucionDetalle_encabezado` FOREIGN KEY (`fk_id_devolucion_encabezado`) REFERENCES `devolucion_encabezado` (`pk_id_devolucion_encabezado`),
+  ADD CONSTRAINT `fk_devolucion_Estadoproducto` FOREIGN KEY (`fk_id_estado_producto`) REFERENCES `estado_producto` (`pk_id_estado_producto`),
+  ADD CONSTRAINT `fk_devolucion_producto` FOREIGN KEY (`fk_id_producto`) REFERENCES `productoscm` (`pk_id_producto`);
 
 --
 -- Filtros para la tabla `devolucion_encabezado`
 --
 ALTER TABLE `devolucion_encabezado`
-  ADD CONSTRAINT `fk_devolucion_categoria` FOREIGN KEY (`fk_id_categoria_producto`) REFERENCES `categoria_producto` (`pk_id_categoria_producto`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_devolucion_fabrica` FOREIGN KEY (`fk_id_fabrica`) REFERENCES `fabrica` (`pk_id_fabrica`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_devolucion_categoria` FOREIGN KEY (`fk_id_categoria_producto`) REFERENCES `categoria_producto` (`pk_id_categoria_producto`),
+  ADD CONSTRAINT `fk_devolucion_fabrica` FOREIGN KEY (`fk_id_fabrica`) REFERENCES `fabrica` (`pk_id_fabrica`);
 
 --
 -- Filtros para la tabla `diario_detalle`
@@ -3179,8 +2925,8 @@ ALTER TABLE `encabezado_transaccion`
 -- Filtros para la tabla `encargado_bodega`
 --
 ALTER TABLE `encargado_bodega`
-  ADD CONSTRAINT `fk_empleado_bodega` FOREIGN KEY (`fk_id_bodega`) REFERENCES `bodega` (`pk_id_bodega`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_empleado_encargado` FOREIGN KEY (`fk_id_empleado`) REFERENCES `empleado` (`pk_id_empleado`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_empleado_bodega1` FOREIGN KEY (`fk_id_bodega`) REFERENCES `bodega` (`pk_id_bodega`),
+  ADD CONSTRAINT `fk_empleado_encargado` FOREIGN KEY (`fk_id_empleado`) REFERENCES `empleado` (`pk_id_empleado`);
 
 --
 -- Filtros para la tabla `entrevista`
@@ -3194,15 +2940,16 @@ ALTER TABLE `entrevista`
 -- Filtros para la tabla `envio_producto`
 --
 ALTER TABLE `envio_producto`
-  ADD CONSTRAINT `fk_envio_empleado` FOREIGN KEY (`fk_id_empleado`) REFERENCES `empleado` (`pk_id_empleado`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_envio_producto` FOREIGN KEY (`fk_id_producto`) REFERENCES `productoscm` (`pk_id_producto`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_envio_ruta` FOREIGN KEY (`fk_id_ruta`) REFERENCES `ruta` (`pk_id_ruta`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_envio_empleado` FOREIGN KEY (`fk_id_empleado`) REFERENCES `empleado` (`pk_id_empleado`),
+  ADD CONSTRAINT `fk_envio_producto` FOREIGN KEY (`fk_id_producto`) REFERENCES `productoscm` (`pk_id_producto`),
+  ADD CONSTRAINT `fk_envio_producto_vehiculo` FOREIGN KEY (`fk_id_vehiculo`) REFERENCES `vehiculo` (`pk_id_vehiculo`),
+  ADD CONSTRAINT `fk_envio_ruta` FOREIGN KEY (`fk_id_ruta`) REFERENCES `ruta` (`pk_id_ruta`);
 
 --
 -- Filtros para la tabla `fabrica`
 --
 ALTER TABLE `fabrica`
-  ADD CONSTRAINT `fk_fabrica_municipio` FOREIGN KEY (`fk_id_municipio`) REFERENCES `municipio` (`pk_id_municipio`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_fabrica_municipio` FOREIGN KEY (`fk_id_municipio`) REFERENCES `municipio` (`pk_id_municipio`);
 
 --
 -- Filtros para la tabla `factura`
@@ -3227,6 +2974,13 @@ ALTER TABLE `horaempleado`
   ADD CONSTRAINT `fk_HORAEMPLEADO_ORDENPRODUCCION1` FOREIGN KEY (`fk_idordenproduccion_horaempleado`) REFERENCES `ordenproduccion` (`pk_id_ordenproduccion`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
+-- Filtros para la tabla `inventario`
+--
+ALTER TABLE `inventario`
+  ADD CONSTRAINT `fk_inventario_bodega` FOREIGN KEY (`fk_id_bodega`) REFERENCES `bodega` (`pk_id_bodega`),
+  ADD CONSTRAINT `fk_inventario_producto` FOREIGN KEY (`fk_id_producto`) REFERENCES `productoscm` (`pk_id_producto`);
+
+--
 -- Filtros para la tabla `inventariocrm`
 --
 ALTER TABLE `inventariocrm`
@@ -3238,13 +2992,6 @@ ALTER TABLE `inventariocrm`
 ALTER TABLE `inventariomrp`
   ADD CONSTRAINT `fk_INVENTARIO_MATERIAPRIMAINSUMO` FOREIGN KEY (`fk_idmateriaprimainsumo_inventario`) REFERENCES `materiaprimainsumo` (`pk_id_materiaprimainsumo`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `fk_INVENTARIO_TIPOINVENTARIO` FOREIGN KEY (`fk_idtipoinventario_inventario`) REFERENCES `tipoinventario` (`pk_id_tipoinventario`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Filtros para la tabla `inventarioscm`
---
-ALTER TABLE `inventarioscm`
-  ADD CONSTRAINT `fk_inventario_bodega` FOREIGN KEY (`fk_id_bodega`) REFERENCES `bodega` (`pk_id_bodega`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_inventario_producto` FOREIGN KEY (`fk_id_producto`) REFERENCES `productoscm` (`pk_id_producto`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Filtros para la tabla `mayor_detalle`
@@ -3260,10 +3007,23 @@ ALTER TABLE `mayor_encabezado`
   ADD CONSTRAINT `fk_mayorencabezado_cuenta` FOREIGN KEY (`pk_idcuenta`) REFERENCES `cuenta_contable` (`pk_idcuenta`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
+-- Filtros para la tabla `movimiento_inventario`
+--
+ALTER TABLE `movimiento_inventario`
+  ADD CONSTRAINT `fk_mov_inventario_tipo` FOREIGN KEY (`fk_id_tipo_movimiento`) REFERENCES `tipo_movimiento` (`pk_id_tipo_movimiento`);
+
+--
+-- Filtros para la tabla `movimiento_inventario_detalle`
+--
+ALTER TABLE `movimiento_inventario_detalle`
+  ADD CONSTRAINT `fk_mov_inventario_detalle_mov` FOREIGN KEY (`fk_id_movimiento_inventario`) REFERENCES `movimiento_inventario` (`pk_id_movimiento_inventario`),
+  ADD CONSTRAINT `fk_mov_inventario_detalle_producto` FOREIGN KEY (`fk_id_producto`) REFERENCES `productoscm` (`pk_id_producto`);
+
+--
 -- Filtros para la tabla `municipio`
 --
 ALTER TABLE `municipio`
-  ADD CONSTRAINT `fk_municipio_departamento` FOREIGN KEY (`fk_id_departamento`) REFERENCES `departamento` (`pk_id_departamento`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_municipio_departamento` FOREIGN KEY (`fk_id_departamento`) REFERENCES `departamento` (`pk_id_departamento`);
 
 --
 -- Filtros para la tabla `ordencompra`
@@ -3281,21 +3041,21 @@ ALTER TABLE `ordenproduccion`
 -- Filtros para la tabla `pedido_detalle`
 --
 ALTER TABLE `pedido_detalle`
-  ADD CONSTRAINT `fk_encabezado_pedido` FOREIGN KEY (`fk_id_encabezado_pedido`) REFERENCES `pedido_encabezado` (`pk_id_encabezado_pedido`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_pedido_producto` FOREIGN KEY (`fk_id_producto`) REFERENCES `productoscm` (`pk_id_producto`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_encabezado_pedido` FOREIGN KEY (`fk_id_pedido_encabezado`) REFERENCES `pedido_encabezado` (`pk_id_pedido_encabezado`),
+  ADD CONSTRAINT `fk_pedido_producto` FOREIGN KEY (`fk_id_producto`) REFERENCES `productoscm` (`pk_id_producto`);
 
 --
 -- Filtros para la tabla `pedido_encabezado`
 --
 ALTER TABLE `pedido_encabezado`
-  ADD CONSTRAINT `fk_pedido_fabrica` FOREIGN KEY (`fk_id_fabrica`) REFERENCES `fabrica` (`pk_id_fabrica`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_pedido_fabrica` FOREIGN KEY (`fk_id_fabrica`) REFERENCES `fabrica` (`pk_id_fabrica`);
 
 --
--- Filtros para la tabla `perfilusuario`
+-- Filtros para la tabla `perfil_usuario`
 --
-ALTER TABLE `perfilusuario`
-  ADD CONSTRAINT `fk_perfil_usuario_login` FOREIGN KEY (`fk_idusuario_perfilusuario`) REFERENCES `login` (`pk_id_login`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `fk_perfil_usuario_perfil` FOREIGN KEY (`fk_idperfil_perfilusuario`) REFERENCES `perfil` (`pk_id_perfil`) ON UPDATE CASCADE;
+ALTER TABLE `perfil_usuario`
+  ADD CONSTRAINT `fk_perfil_usuario_login` FOREIGN KEY (`fk_idusuario_perfil_usuario`) REFERENCES `login` (`pk_id_login`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `fk_perfil_usuario_perfil` FOREIGN KEY (`fk_idperfil_perfil_usuario`) REFERENCES `perfil` (`pk_id_perfil`) ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `presupuesto`
@@ -3322,14 +3082,14 @@ ALTER TABLE `productodetalle`
 -- Filtros para la tabla `productoscm`
 --
 ALTER TABLE `productoscm`
-  ADD CONSTRAINT `fk_producto_categoriaProducto` FOREIGN KEY (`fk_id_categoria_producto`) REFERENCES `categoria_producto` (`pk_id_categoria_producto`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_producto_lineaProducto` FOREIGN KEY (`fk_id_lineaProducto`) REFERENCES `linea_producto` (`pk_id_linea`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_producto_categoriaProducto` FOREIGN KEY (`fk_id_categoria_producto`) REFERENCES `categoria_producto` (`pk_id_categoria_producto`),
+  ADD CONSTRAINT `fk_producto_lineaProducto` FOREIGN KEY (`fk_id_linea_producto`) REFERENCES `linea_producto` (`pk_id_linea_producto`);
 
 --
 -- Filtros para la tabla `proveedor`
 --
 ALTER TABLE `proveedor`
-  ADD CONSTRAINT `fk_proveedor_pais` FOREIGN KEY (`fk_id_pais`) REFERENCES `pais` (`pk_id_pais`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_proveedor_pais` FOREIGN KEY (`fk_id_pais`) REFERENCES `pais` (`pk_id_pais`);
 
 --
 -- Filtros para la tabla `puesto`
@@ -3374,7 +3134,7 @@ ALTER TABLE `saldo_historico`
 -- Filtros para la tabla `sucursal`
 --
 ALTER TABLE `sucursal`
-  ADD CONSTRAINT `fk_sucursal_municipio` FOREIGN KEY (`fk_id_municipio`) REFERENCES `municipio` (`pk_id_municipio`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_sucursal_municipio` FOREIGN KEY (`fk_id_municipio`) REFERENCES `municipio` (`pk_id_municipio`);
 
 --
 -- Filtros para la tabla `telefono_cliente`
@@ -3386,13 +3146,13 @@ ALTER TABLE `telefono_cliente`
 -- Filtros para la tabla `telefono_proveedor`
 --
 ALTER TABLE `telefono_proveedor`
-  ADD CONSTRAINT `fk_proveedor_telefono` FOREIGN KEY (`fk_id_proveedor`) REFERENCES `proveedor` (`pk_id_proveedor`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_proveedor_telefono` FOREIGN KEY (`fk_id_proveedor`) REFERENCES `proveedor` (`pk_id_proveedor`);
 
 --
 -- Filtros para la tabla `vehiculo`
 --
 ALTER TABLE `vehiculo`
-  ADD CONSTRAINT `fk_vehiculo_marca` FOREIGN KEY (`fk_id_marca`) REFERENCES `marca` (`pk_id_marca`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_vehiculo_marca` FOREIGN KEY (`fk_id_marca`) REFERENCES `marca` (`pk_id_marca`);
 
 --
 -- Filtros para la tabla `venta`

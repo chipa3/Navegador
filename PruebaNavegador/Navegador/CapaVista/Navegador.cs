@@ -739,34 +739,43 @@ namespace CapaVistaNavegador
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
-            clsVistaBitacora bit = new clsVistaBitacora();
-            clsFuncionesSeguridad seguridad = new clsFuncionesSeguridad();
-            if (seguridad.PermisosAcceso("201", Usuario) == 1)
+            try
             {
-                if(UsuarioAvanzado == null)
+                clsVistaBitacora bit = new clsVistaBitacora();
+                clsFuncionesSeguridad seguridad = new clsFuncionesSeguridad();
+                if (seguridad.PermisosAcceso("201", Usuario) == 1)
                 {
-                    UsuarioAvanzado = new frmUsuarioAvanzado();
-                    UsuarioAvanzado.MdiParent = MDIformulario;
-                    UsuarioAvanzado.FormClosed += (o, args) => UsuarioAvanzado = null;
+                    if (UsuarioAvanzado == null)
+                    {
+                        UsuarioAvanzado = new frmUsuarioAvanzado();
+                        UsuarioAvanzado.MdiParent = MDIformulario;
+                        UsuarioAvanzado.FormClosed += (o, args) => UsuarioAvanzado = null;
+                    }
+                    bit.user(Usuario);
+                    UsuarioAvanzado.Show();
+                    UsuarioAvanzado.BringToFront();
                 }
-                bit.user(Usuario);
-                UsuarioAvanzado.Show();
-                UsuarioAvanzado.BringToFront();
-            }
-            else
-            {
-                if (UsuarioNormal == null)
+                else
                 {
-                    UsuarioNormal = new frmUsuarioNormal(tbl);
-                    UsuarioNormal.MdiParent = MDIformulario;
-                    UsuarioNormal.FormClosed += (o, args) => UsuarioNormal = null;
-                }
-                bit.user(Usuario);
-                UsuarioNormal.Show();
-                UsuarioNormal.BringToFront();
+                    if (UsuarioNormal == null)
+                    {
+                        UsuarioNormal = new frmUsuarioNormal(tbl);
+                        UsuarioNormal.MdiParent = MDIformulario;
+                        UsuarioNormal.FormClosed += (o, args) => UsuarioNormal = null;
+                    }
+                    bit.user(Usuario);
+                    UsuarioNormal.Show();
+                    UsuarioNormal.BringToFront();
 
-               
+
+                }
             }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Verifique la funcionabilidad del Objeto Común Reporteador", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+
         }
     }
 }
