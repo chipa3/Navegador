@@ -31,7 +31,7 @@ namespace EjecucionNavegador
             if (seguridad.PermisosAcceso("5", textBox1.Text) == 1)
             {
                 bit.user(textBox1.Text);
-                frmBanco Bancos = new frmBanco(textBox1.Text);
+                frmBanco Bancos = new frmBanco(textBox1.Text,this);
                 Bancos.MdiParent = this;
                 Bancos.Show();
             }

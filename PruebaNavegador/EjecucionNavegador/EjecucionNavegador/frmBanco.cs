@@ -13,11 +13,13 @@ namespace EjecucionNavegador
     public partial class frmBanco : Form
     {
         string UsuarioAplicacion;
-        public frmBanco(string usuario)
+        static Form FormularioPadre;
+        public frmBanco(string usuario, Form formularioPadre)
         {
             InitializeComponent();
             UsuarioAplicacion = usuario;
             navegador1.Usuario = UsuarioAplicacion;
+            FormularioPadre = formularioPadre;
         }
 
         private void navegador1_Load(object sender, EventArgs e)
@@ -28,7 +30,7 @@ namespace EjecucionNavegador
             navegador1.aplicacion = 5;
             navegador1.tbl = "banco";
             navegador1.campoEstado = "estado_banco";
-
+            navegador1.MDIformulario = FormularioPadre;
             //se agregan los componentes del formulario a la lista tipo control
 
             foreach (Control C in this.Controls)

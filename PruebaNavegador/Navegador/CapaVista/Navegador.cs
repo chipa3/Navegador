@@ -37,6 +37,8 @@ namespace CapaVistaNavegador
         string[] word;
         bool Señal2 = false;
         public Form formulario;
+        public Form MDIformulario;
+        private frmReporteadorNavegador reporte;
         //Para Permisos
         public Navegador()
         {
@@ -712,31 +714,19 @@ namespace CapaVistaNavegador
         }
 
         private void btnImprimir_Click(object sender, EventArgs e)
-        {
-            bool cerrado = false;
-            frmReporteadorNavegador reporte;
+        {           
             try
             {
-               
-
-                if (!reporteador)
+                if (reporte == null)
                 {
                     reporte = new frmReporteadorNavegador(aplicacion);
-                    reporte.ShowDialog();
-                    reporteador = true;
-                    if (reporte.IsDisposed)
-                    {
-                        cerrado = true;
-                    }
+                    reporte.MdiParent = MDIformulario;
+                    reporte.FormClosed += (o, args) => reporte = null;
                 }
-                
-                if (cerrado)
-                {
-                    reporteador = false;
-                }
-                
-               
-            }catch(Exception ex)
+                reporte.Show();
+                reporte.BringToFront();
+            }
+            catch(Exception ex)
             {
                 MessageBox.Show("Verifique que si tiene instalado el software necesario para utilizar esta aplicacion", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
