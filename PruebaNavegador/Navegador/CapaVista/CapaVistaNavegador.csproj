@@ -37,11 +37,12 @@
     <Reference Include="CapaVista">
       <HintPath>..\..\Consultas_Inteligentes-master\ConsultasInteligentes\CapaVista\bin\Debug\CapaVista.dll</HintPath>
     </Reference>
-    <Reference Include="CapaVistaReporteador">
+    <Reference Include="CapaVistaReporteador, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Reporteador-master\Reporteador\CapaVista\bin\Debug\CapaVistaReporteador.dll</HintPath>
     </Reference>
     <Reference Include="CapaVistaSeguridad">
-      <HintPath>..\..\Objeto_Seguridad-master\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaVistaSeguridad.dll</HintPath>
+      <HintPath>..\..\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaVistaSeguridad.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
