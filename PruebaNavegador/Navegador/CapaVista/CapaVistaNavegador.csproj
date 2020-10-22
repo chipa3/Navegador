@@ -34,6 +34,9 @@
     <Reference Include="CapaControladorNavegador">
       <HintPath>..\CapaControlador\bin\Debug\CapaControladorNavegador.dll</HintPath>
     </Reference>
+    <Reference Include="CapaVista">
+      <HintPath>..\..\Consultas_Inteligentes-master\ConsultasInteligentes\CapaVista\bin\Debug\CapaVista.dll</HintPath>
+    </Reference>
     <Reference Include="CapaVistaReporteador">
       <HintPath>..\..\Reporteador-master\Reporteador\CapaVista\bin\Debug\CapaVistaReporteador.dll</HintPath>
     </Reference>

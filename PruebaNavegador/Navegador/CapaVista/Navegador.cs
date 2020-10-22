@@ -11,6 +11,8 @@ using CapaControladorNavegador;
 using CapaVistaSeguridad;
 using CapaVistaReporteador;
 using CapaVistaReporteador.Reporteador_Navegador;
+using CapaVista.Usuario_Avanzado;
+using CapaVista.Usuario_Normal;
 
 namespace CapaVistaNavegador
 {
@@ -39,6 +41,8 @@ namespace CapaVistaNavegador
         public Form formulario;
         public Form MDIformulario;
         private frmReporteadorNavegador reporte;
+        private frmUsuarioNormal UsuarioNormal;
+        private frmUsuarioAvanzado UsuarioAvanzado;
         //Para Permisos
         public Navegador()
         {
@@ -731,6 +735,38 @@ namespace CapaVistaNavegador
                 MessageBox.Show("Verifique que si tiene instalado el software necesario para utilizar esta aplicacion", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
           
+        }
+
+        private void btnConsultar_Click(object sender, EventArgs e)
+        {
+            clsVistaBitacora bit = new clsVistaBitacora();
+            clsFuncionesSeguridad seguridad = new clsFuncionesSeguridad();
+            if (seguridad.PermisosAcceso("201", Usuario) == 1)
+            {
+                if(UsuarioAvanzado == null)
+                {
+                    UsuarioAvanzado = new frmUsuarioAvanzado();
+                    UsuarioAvanzado.MdiParent = MDIformulario;
+                    UsuarioAvanzado.FormClosed += (o, args) => UsuarioAvanzado = null;
+                }
+                bit.user(Usuario);
+                UsuarioAvanzado.Show();
+                UsuarioAvanzado.BringToFront();
+            }
+            else
+            {
+                if (UsuarioNormal == null)
+                {
+                    UsuarioNormal = new frmUsuarioNormal(tbl);
+                    UsuarioNormal.MdiParent = MDIformulario;
+                    UsuarioNormal.FormClosed += (o, args) => UsuarioNormal = null;
+                }
+                bit.user(Usuario);
+                UsuarioNormal.Show();
+                UsuarioNormal.BringToFront();
+
+               
+            }
         }
     }
 }

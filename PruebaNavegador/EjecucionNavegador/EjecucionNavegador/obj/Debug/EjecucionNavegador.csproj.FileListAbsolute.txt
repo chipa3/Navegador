@@ -46,3 +46,9 @@ C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegado
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csproj.CopyComplete
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.exe
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.pdb
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVista.dll
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControlador.dll
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModelo.dll
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVista.pdb
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControlador.pdb
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModelo.pdb

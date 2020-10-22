@@ -42,3 +42,9 @@ C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Navegador\CapaVis
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Navegador\CapaVista\obj\Debug\CapaVistaNavegador.csproj.CopyComplete
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Navegador\CapaVista\obj\Debug\CapaVistaNavegador.dll
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Navegador\CapaVista\obj\Debug\CapaVistaNavegador.pdb
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Navegador\CapaVista\bin\Debug\CapaVista.dll
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Navegador\CapaVista\bin\Debug\CapaControlador.dll
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Navegador\CapaVista\bin\Debug\CapaModelo.dll
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Navegador\CapaVista\bin\Debug\CapaVista.pdb
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Navegador\CapaVista\bin\Debug\CapaControlador.pdb
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Navegador\CapaVista\bin\Debug\CapaModelo.pdb
