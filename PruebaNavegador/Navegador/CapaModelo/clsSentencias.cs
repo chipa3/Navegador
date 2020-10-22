@@ -8,9 +8,9 @@ using CapaVistaSeguridad;
 
 namespace CapaModeloNavegador
 {
-    public class Sentencias
+    public class clsSentencias
     {
-        Conexion con = new Conexion();
+        clsConexion con = new clsConexion();
         clsVistaBitacora bit = new clsVistaBitacora();
         public int procInsertar(string tabla, string campo)
         {
@@ -34,7 +34,7 @@ namespace CapaModeloNavegador
         }
 
 
-        public void Insertar(string tabla, List<string> lista, int aplicacion)
+        public void procInsertarDatos(string tabla, List<string> lista, int aplicacion)
         {
             string sql = " INSERT INTO " + tabla + " VALUES (";
             string consulta = sql;
@@ -107,7 +107,7 @@ namespace CapaModeloNavegador
 
         }
 
-        public void Modificar(string tabla, List<string> campos, List<string> datos, int aplicacion)
+        public void procModificar(string tabla, List<string> campos, List<string> datos, int aplicacion)
         {
             int contador = datos.Count();
             string sqlInicio = "UPDATE " + tabla + " SET  ";
@@ -152,7 +152,7 @@ namespace CapaModeloNavegador
             }
         }
 
-        public OdbcDataAdapter obtener(string tabla, string estado)
+        public OdbcDataAdapter funcObtener(string tabla, string estado)
         {
             try
             {

@@ -55,8 +55,7 @@ namespace CapaModeloSeguridad
             }
             catch (Exception e)
             {
-                StreamWriter sw = new StreamWriter("C:\\Test.txt");
-                sw.WriteLine("Error: " + e.Message);
+                Console.WriteLine("Error: "+e);
             }
 
         }
@@ -80,8 +79,7 @@ namespace CapaModeloSeguridad
             }
             catch (Exception e)
             {
-                StreamWriter sw = new StreamWriter("C:\\Test.txt");
-                sw.WriteLine("Error: " + e.Message);
+                Console.WriteLine("Error: " + e);
 
             }
 

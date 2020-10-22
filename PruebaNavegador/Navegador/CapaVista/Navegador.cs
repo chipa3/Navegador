@@ -22,6 +22,7 @@ namespace CapaVistaNavegador
         public List<string> Modificar = new List<string>();
         public int OpGuardar;
         public int aplicacion;
+        private bool reporteador = false;
         //codigo de guardar
         //codigo de actualizar
         public DataGridView DatosActualizar = new DataGridView();
@@ -30,18 +31,19 @@ namespace CapaVistaNavegador
         public string tbl;
         public string cmp;
         public TextBox txt;
-        public string ruta;
-        public string ayudaRuta;
+        public string ruta = "";
+        public string ayudaRuta = "";
         public string Usuario;
         string[] word;
         bool Señal2 = false;
+        public Form formulario;
         //Para Permisos
         public Navegador()
         {
             InitializeComponent();
             control.Reverse();
         }
-        Controlador cn = new Controlador();
+        clsControlador cn = new clsControlador();
        
         public void cargar()
         {
@@ -157,23 +159,31 @@ namespace CapaVistaNavegador
         }
         private void btnAyuda_Click(object sender, EventArgs e)
         {
-            Bitacora.insert("Formulario de ayuda", aplicacion);
-            Help.ShowHelp(this, ayudaRuta, ruta);
+            if(!ayudaRuta.Equals("")  && !ruta.Equals(""))
+            {
+                Bitacora.insert("Formulario de ayuda", aplicacion);
+                Help.ShowHelp(this, ayudaRuta, ruta);
+            }
+            else
+            {
+                MessageBox.Show("Debe ingresar las rutas necesarias para abrir los archivos de ayuda", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+           
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             if (OpGuardar == 1)
             {
-
                 insertar();
                 actualizarData();
+                MessageBox.Show("El Dato se Guardo Correctamente", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else if (OpGuardar == 0)
             {
-
-                modificar();
-                actualizarData();
+                    modificar();
+                    actualizarData();
+                    MessageBox.Show("El Dato se Modifico Correctamente", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);                    
             }
             TextBox text = (TextBox)control.First();
             text.Enabled = false;
@@ -297,8 +307,12 @@ namespace CapaVistaNavegador
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            Bitacora.insert("Salir de la aplicacion", aplicacion);
-            Application.Exit();
+            DialogResult dialogResult = MessageBox.Show("¿Esta Seguro que desea salir de la aplicacion?", "Advertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
+            if (dialogResult == DialogResult.OK)
+            {
+                Bitacora.insert("Salir de la aplicacion", aplicacion);
+                formulario.Dispose();
+            }
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -445,7 +459,7 @@ namespace CapaVistaNavegador
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Has llegado al fondo");
+                MessageBox.Show("Esta en el primer elemento de la tabla", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -477,7 +491,7 @@ namespace CapaVistaNavegador
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Has llegado al tope");
+                MessageBox.Show("Ya se encuentra en el primer elemento de la tabla", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -508,7 +522,35 @@ namespace CapaVistaNavegador
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Has llegado al fondo");
+                DialogResult dialogResult = MessageBox.Show("Ya se encuentra en el ultimo elenemento ¿Desea regresar al primer elemento?", "Advertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
+                if (dialogResult == DialogResult.OK)
+                {
+                    actualizarData();
+                    DatosActualizar.CurrentCell = DatosActualizar.Rows[0].Cells[0];
+
+                    int i = -1;
+                    foreach (var item in control)
+                    {
+                        i++;
+                        // MessageBox.Show("Item: " + item.Name);
+                        string datico = DatosActualizar.Rows[0].Cells[i].Value.ToString();
+
+                        if (item is DateTimePicker)
+                        {
+                            DateTimePicker ll = (DateTimePicker)item;
+                            ll.Value = Convert.ToDateTime(datico);
+                        }
+                        else
+                        {
+                            item.Text = datico;
+                        }
+                        //MessageBox.Show("data: " + datico);
+                    }
+                    TextBox text = (TextBox)control.First();
+                    text.Enabled = false;
+                }
+                   
+                
             }
         }
         private void ObtenerPermisos()
@@ -569,7 +611,7 @@ namespace CapaVistaNavegador
         }
         private void btnFinal_Click(object sender, EventArgs e)
         {
-            int nRowIndex = DatosActualizar.Rows.Count - 2;
+            int nRowIndex = DatosActualizar.Rows.Count - 1;
             try
             {
                 DatosActualizar.CurrentCell = DatosActualizar.Rows[nRowIndex].Cells[0];
@@ -594,7 +636,7 @@ namespace CapaVistaNavegador
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Has llegado al fondo");
+                MessageBox.Show("Usted ha llegado al fondo de la tabla y no se encuentran mas datos", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -671,8 +713,34 @@ namespace CapaVistaNavegador
 
         private void btnImprimir_Click(object sender, EventArgs e)
         {
-           frmReporteadorNavegador reporte = new frmReporteadorNavegador(aplicacion);
-            reporte.Show();
+            bool cerrado = false;
+            frmReporteadorNavegador reporte;
+            try
+            {
+               
+
+                if (!reporteador)
+                {
+                    reporte = new frmReporteadorNavegador(aplicacion);
+                    reporte.ShowDialog();
+                    reporteador = true;
+                    if (reporte.IsDisposed)
+                    {
+                        cerrado = true;
+                    }
+                }
+                
+                if (cerrado)
+                {
+                    reporteador = false;
+                }
+                
+               
+            }catch(Exception ex)
+            {
+                MessageBox.Show("Verifique que si tiene instalado el software necesario para utilizar esta aplicacion", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+          
         }
     }
 }

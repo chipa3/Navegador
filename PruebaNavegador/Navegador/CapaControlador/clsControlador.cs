@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace CapaControladorNavegador
 {
-    public class Controlador
+    public class clsControlador
     {
-        Sentencias sn = new Sentencias();
+        clsSentencias sn = new clsSentencias();
 
         public int codigoMax(string tabla, string campo)
         {
@@ -22,18 +22,18 @@ namespace CapaControladorNavegador
 
         public void Datos(string tabla, List<string> lista,int aplicacion)
         {
-            sn.Insertar(tabla, lista,aplicacion);
+            sn.procInsertarDatos(tabla, lista,aplicacion);
         }
         public void Datos2(string tabla, List<string> campos, List<string> datos, int aplicacion)
         {
-            sn.Modificar(tabla, campos, datos,aplicacion);
+            sn.procModificar(tabla, campos, datos,aplicacion);
         }
 
         public DataTable enviar(string tabla,string estado)
         {
             try
             {
-                OdbcDataAdapter dt = sn.obtener(tabla,estado);
+                OdbcDataAdapter dt = sn.funcObtener(tabla,estado);
                 DataTable table = new DataTable();
                 dt.Fill(table);
                 return table;

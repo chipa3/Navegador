@@ -70,3 +70,11 @@ C:\Users\jmora\Desktop\AhoraSI3.0\Objeto_Seguridad\ObjetoSeguridad\CapaControlad
 C:\Users\jmora\Desktop\AhoraSI3.0\Objeto_Seguridad\ObjetoSeguridad\CapaControladorSeguridad\bin\Debug\CapaModeloSeguridad.dll
 C:\Users\jmora\Desktop\AhoraSI3.0\Objeto_Seguridad\ObjetoSeguridad\CapaControladorSeguridad\bin\Debug\CapaModeloSeguridad.pdb
 C:\Users\jmora\Desktop\AhoraSI3.0\Objeto_Seguridad\ObjetoSeguridad\CapaControladorSeguridad\obj\Debug\CapaControladorSeguridad.csproj.CopyComplete
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaControladorSeguridad\bin\Debug\CapaControladorSeguridad.dll
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaControladorSeguridad\bin\Debug\CapaControladorSeguridad.pdb
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaControladorSeguridad\bin\Debug\CapaModeloSeguridad.dll
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaControladorSeguridad\bin\Debug\CapaModeloSeguridad.pdb
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaControladorSeguridad\obj\Debug\CapaControladorSeguridad.csprojAssemblyReference.cache
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaControladorSeguridad\obj\Debug\CapaControladorSeguridad.csproj.CopyComplete
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaControladorSeguridad\obj\Debug\CapaControladorSeguridad.dll
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaControladorSeguridad\obj\Debug\CapaControladorSeguridad.pdb

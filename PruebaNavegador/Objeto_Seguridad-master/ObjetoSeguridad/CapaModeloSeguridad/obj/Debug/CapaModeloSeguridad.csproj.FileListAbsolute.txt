@@ -46,3 +46,8 @@ C:\Users\jmora\Desktop\AhoraSI3.0\Objeto_Seguridad\ObjetoSeguridad\CapaModeloSeg
 C:\Users\jmora\Desktop\AhoraSI3.0\Objeto_Seguridad\ObjetoSeguridad\CapaModeloSeguridad\obj\Debug\CapaModeloSeguridad.csproj.CoreCompileInputs.cache
 C:\Users\jmora\Desktop\AhoraSI3.0\Objeto_Seguridad\ObjetoSeguridad\CapaModeloSeguridad\obj\Debug\CapaModeloSeguridad.dll
 C:\Users\jmora\Desktop\AhoraSI3.0\Objeto_Seguridad\ObjetoSeguridad\CapaModeloSeguridad\obj\Debug\CapaModeloSeguridad.pdb
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaModeloSeguridad\bin\Debug\CapaModeloSeguridad.dll
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaModeloSeguridad\bin\Debug\CapaModeloSeguridad.pdb
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaModeloSeguridad\obj\Debug\CapaModeloSeguridad.csprojAssemblyReference.cache
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaModeloSeguridad\obj\Debug\CapaModeloSeguridad.dll
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaModeloSeguridad\obj\Debug\CapaModeloSeguridad.pdb

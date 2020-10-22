@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace EjecucionNavegador
 {
-    public partial class frmMateriaPrima : Form
+    public partial class frmBanco : Form
     {
         string UsuarioAplicacion;
-        public frmMateriaPrima(string usuario)
+        public frmBanco(string usuario)
         {
             InitializeComponent();
             UsuarioAplicacion = usuario;
@@ -22,13 +22,12 @@ namespace EjecucionNavegador
 
         private void navegador1_Load(object sender, EventArgs e)
         {
-
             List<string> CamposTabla = new List<string>();
             List<Control> lista = new List<Control>();
             //List<Control> lista = new List<Control>();
-            navegador1.aplicacion = 6;
-            navegador1.tbl = "materiaprimainsumo";
-            navegador1.campoEstado = "estado_materiaprimainsumo";
+            navegador1.aplicacion = 5;
+            navegador1.tbl = "banco";
+            navegador1.campoEstado = "estado_banco";
 
             //se agregan los componentes del formulario a la lista tipo control
 
@@ -58,16 +57,12 @@ namespace EjecucionNavegador
             }
 
             navegador1.control = lista;
-            navegador1.DatosActualizar = dataGridView1;
+            navegador1.formulario = this;
+            navegador1.DatosActualizar = dgvDatos;
             navegador1.actualizarData();
             navegador1.cargar();
-            navegador1.ayudaRuta = "Ayuda/AyudaTaquilla.chm";
+            navegador1.ayudaRuta = "Ayuda/Ayuda2/AyudaTaquilla.chm";
             navegador1.ruta = "AgregarCliente.html";
-
-
-
-
-
         }
     }
 }

@@ -68,17 +68,17 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(1249, 103);
+            this.groupBox1.Size = new System.Drawing.Size(1404, 103);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
             // btnSalir
             // 
             this.btnSalir.BackColor = System.Drawing.Color.White;
-            this.btnSalir.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSalir.Location = new System.Drawing.Point(1147, 23);
+            this.btnSalir.Location = new System.Drawing.Point(1312, 23);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(68, 65);
@@ -91,13 +91,13 @@
             // btnAyuda
             // 
             this.btnAyuda.BackColor = System.Drawing.Color.White;
-            this.btnAyuda.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAyuda.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAyuda.Image = ((System.Drawing.Image)(resources.GetObject("btnAyuda.Image")));
             this.btnAyuda.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnAyuda.Location = new System.Drawing.Point(1071, 23);
+            this.btnAyuda.Location = new System.Drawing.Point(1227, 23);
             this.btnAyuda.Margin = new System.Windows.Forms.Padding(4);
             this.btnAyuda.Name = "btnAyuda";
-            this.btnAyuda.Size = new System.Drawing.Size(68, 65);
+            this.btnAyuda.Size = new System.Drawing.Size(77, 65);
             this.btnAyuda.TabIndex = 12;
             this.btnAyuda.Text = "Ayuda";
             this.btnAyuda.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -107,13 +107,13 @@
             // btnInicio
             // 
             this.btnInicio.BackColor = System.Drawing.Color.White;
-            this.btnInicio.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInicio.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInicio.Image = ((System.Drawing.Image)(resources.GetObject("btnInicio.Image")));
             this.btnInicio.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnInicio.Location = new System.Drawing.Point(738, 23);
+            this.btnInicio.Location = new System.Drawing.Point(843, 23);
             this.btnInicio.Margin = new System.Windows.Forms.Padding(4);
             this.btnInicio.Name = "btnInicio";
-            this.btnInicio.Size = new System.Drawing.Size(68, 65);
+            this.btnInicio.Size = new System.Drawing.Size(81, 65);
             this.btnInicio.TabIndex = 11;
             this.btnInicio.Text = "Inicio";
             this.btnInicio.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -123,13 +123,13 @@
             // btnAdelante
             // 
             this.btnAdelante.BackColor = System.Drawing.Color.White;
-            this.btnAdelante.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdelante.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdelante.Image = ((System.Drawing.Image)(resources.GetObject("btnAdelante.Image")));
             this.btnAdelante.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnAdelante.Location = new System.Drawing.Point(901, 23);
+            this.btnAdelante.Location = new System.Drawing.Point(1029, 23);
             this.btnAdelante.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdelante.Name = "btnAdelante";
-            this.btnAdelante.Size = new System.Drawing.Size(86, 65);
+            this.btnAdelante.Size = new System.Drawing.Size(95, 65);
             this.btnAdelante.TabIndex = 8;
             this.btnAdelante.Text = "Siguiente";
             this.btnAdelante.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -140,13 +140,13 @@
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.White;
             this.btnGuardar.Enabled = false;
-            this.btnGuardar.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnGuardar.Location = new System.Drawing.Point(376, 23);
+            this.btnGuardar.Location = new System.Drawing.Point(433, 23);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(78, 65);
+            this.btnGuardar.Size = new System.Drawing.Size(93, 65);
             this.btnGuardar.TabIndex = 1;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -156,13 +156,13 @@
             // btnAtras
             // 
             this.btnAtras.BackColor = System.Drawing.Color.White;
-            this.btnAtras.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtras.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAtras.Image = ((System.Drawing.Image)(resources.GetObject("btnAtras.Image")));
             this.btnAtras.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnAtras.Location = new System.Drawing.Point(814, 23);
+            this.btnAtras.Location = new System.Drawing.Point(932, 23);
             this.btnAtras.Margin = new System.Windows.Forms.Padding(4);
             this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(79, 65);
+            this.btnAtras.Size = new System.Drawing.Size(89, 65);
             this.btnAtras.TabIndex = 10;
             this.btnAtras.Text = "Anterior";
             this.btnAtras.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -172,13 +172,13 @@
             // btnFinal
             // 
             this.btnFinal.BackColor = System.Drawing.Color.White;
-            this.btnFinal.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFinal.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFinal.Image = ((System.Drawing.Image)(resources.GetObject("btnFinal.Image")));
             this.btnFinal.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnFinal.Location = new System.Drawing.Point(995, 23);
+            this.btnFinal.Location = new System.Drawing.Point(1132, 23);
             this.btnFinal.Margin = new System.Windows.Forms.Padding(4);
             this.btnFinal.Name = "btnFinal";
-            this.btnFinal.Size = new System.Drawing.Size(68, 65);
+            this.btnFinal.Size = new System.Drawing.Size(87, 65);
             this.btnFinal.TabIndex = 9;
             this.btnFinal.Text = "Último";
             this.btnFinal.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -188,13 +188,13 @@
             // btnModificar
             // 
             this.btnModificar.BackColor = System.Drawing.Color.White;
-            this.btnModificar.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.Image = global::CapaVistaNavegador.Properties.Resources.Modificar_;
             this.btnModificar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnModificar.Location = new System.Drawing.Point(96, 23);
+            this.btnModificar.Location = new System.Drawing.Point(119, 23);
             this.btnModificar.Margin = new System.Windows.Forms.Padding(4);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(83, 65);
+            this.btnModificar.Size = new System.Drawing.Size(94, 65);
             this.btnModificar.TabIndex = 7;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -205,13 +205,13 @@
             // 
             this.btnCancelar.BackColor = System.Drawing.Color.White;
             this.btnCancelar.Enabled = false;
-            this.btnCancelar.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCancelar.Location = new System.Drawing.Point(462, 23);
+            this.btnCancelar.Location = new System.Drawing.Point(534, 23);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(82, 65);
+            this.btnCancelar.Size = new System.Drawing.Size(93, 65);
             this.btnCancelar.TabIndex = 6;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -222,13 +222,13 @@
             // 
             this.btnConsultar.BackColor = System.Drawing.Color.White;
             this.btnConsultar.Enabled = false;
-            this.btnConsultar.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultar.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultar.Image = ((System.Drawing.Image)(resources.GetObject("btnConsultar.Image")));
             this.btnConsultar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnConsultar.Location = new System.Drawing.Point(552, 23);
+            this.btnConsultar.Location = new System.Drawing.Point(635, 23);
             this.btnConsultar.Margin = new System.Windows.Forms.Padding(4);
             this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(85, 65);
+            this.btnConsultar.Size = new System.Drawing.Size(97, 65);
             this.btnConsultar.TabIndex = 5;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -237,13 +237,13 @@
             // btnImprimir
             // 
             this.btnImprimir.BackColor = System.Drawing.Color.White;
-            this.btnImprimir.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImprimir.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnImprimir.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimir.Image")));
             this.btnImprimir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnImprimir.Location = new System.Drawing.Point(645, 23);
+            this.btnImprimir.Location = new System.Drawing.Point(740, 23);
             this.btnImprimir.Margin = new System.Windows.Forms.Padding(4);
             this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(85, 65);
+            this.btnImprimir.Size = new System.Drawing.Size(95, 65);
             this.btnImprimir.TabIndex = 4;
             this.btnImprimir.Text = "Imprimir";
             this.btnImprimir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -253,13 +253,13 @@
             // btnRefrescar
             // 
             this.btnRefrescar.BackColor = System.Drawing.Color.White;
-            this.btnRefrescar.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefrescar.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefrescar.Image = ((System.Drawing.Image)(resources.GetObject("btnRefrescar.Image")));
             this.btnRefrescar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnRefrescar.Location = new System.Drawing.Point(278, 23);
+            this.btnRefrescar.Location = new System.Drawing.Point(327, 23);
             this.btnRefrescar.Margin = new System.Windows.Forms.Padding(4);
             this.btnRefrescar.Name = "btnRefrescar";
-            this.btnRefrescar.Size = new System.Drawing.Size(90, 65);
+            this.btnRefrescar.Size = new System.Drawing.Size(98, 65);
             this.btnRefrescar.TabIndex = 3;
             this.btnRefrescar.Text = "Refrescar";
             this.btnRefrescar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -269,13 +269,13 @@
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.White;
-            this.btnEliminar.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
             this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnEliminar.Location = new System.Drawing.Point(187, 23);
+            this.btnEliminar.Location = new System.Drawing.Point(221, 23);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(83, 65);
+            this.btnEliminar.Size = new System.Drawing.Size(98, 65);
             this.btnEliminar.TabIndex = 2;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -285,13 +285,13 @@
             // btnInsertar
             // 
             this.btnInsertar.BackColor = System.Drawing.Color.White;
-            this.btnInsertar.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInsertar.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInsertar.Image = global::CapaVistaNavegador.Properties.Resources.Insertar;
             this.btnInsertar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnInsertar.Location = new System.Drawing.Point(20, 23);
             this.btnInsertar.Margin = new System.Windows.Forms.Padding(4);
             this.btnInsertar.Name = "btnInsertar";
-            this.btnInsertar.Size = new System.Drawing.Size(68, 65);
+            this.btnInsertar.Size = new System.Drawing.Size(91, 65);
             this.btnInsertar.TabIndex = 0;
             this.btnInsertar.Text = "Insertar";
             this.btnInsertar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -306,7 +306,7 @@
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Navegador";
-            this.Size = new System.Drawing.Size(1216, 129);
+            this.Size = new System.Drawing.Size(1412, 129);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 

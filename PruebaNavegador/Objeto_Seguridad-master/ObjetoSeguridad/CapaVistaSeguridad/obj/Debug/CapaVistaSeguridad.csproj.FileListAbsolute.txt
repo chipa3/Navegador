@@ -155,3 +155,24 @@ D:\Escritorio\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\Capa
 D:\Escritorio\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frmConsultarPerfil.resources
 D:\Escritorio\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frmModificarPermisos.resources
 D:\Escritorio\Objeto_Seguridad\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frm_aplicacion.resources
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaVistaSeguridad.dll
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaVistaSeguridad.pdb
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaControladorSeguridad.dll
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaModeloSeguridad.dll
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaModeloSeguridad.pdb
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaVistaSeguridad\bin\Debug\CapaControladorSeguridad.pdb
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csprojAssemblyReference.cache
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.frmAsignacionDeAplicaciones.resources
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.frmAsignarAplicacionesAPerfil.resources
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.frmLogin.resources
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frm_mantenimiento_usuario.resources
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frmAgregarAplicacion.resources
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frmConsultarPerfil.resources
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frmMantenimientoPerfil.resources
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frmModificarPermisos.resources
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Formularios.Mantenimientos.frm_aplicacion.resources
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.Properties.Resources.resources
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csproj.GenerateResource.cache
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.csproj.CopyComplete
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.dll
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\Objeto_Seguridad-master\ObjetoSeguridad\CapaVistaSeguridad\obj\Debug\CapaVistaSeguridad.pdb

@@ -24,14 +24,14 @@ namespace EjecucionNavegador
             textBox1.Text = login.usuario();
         }
 
-        private void bANCOSToolStripMenuItem_Click(object sender, EventArgs e)
+        private void bancoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             clsVistaBitacora bit = new clsVistaBitacora();
             clsFuncionesSeguridad seguridad = new clsFuncionesSeguridad();
             if (seguridad.PermisosAcceso("5", textBox1.Text) == 1)
             {
                 bit.user(textBox1.Text);
-                frmAreas Bancos = new frmAreas(textBox1.Text);
+                frmBanco Bancos = new frmBanco(textBox1.Text);
                 Bancos.MdiParent = this;
                 Bancos.Show();
             }
@@ -39,26 +39,6 @@ namespace EjecucionNavegador
             {
                 MessageBox.Show("El Usuario No Cuenta Con Permisos De Acceso A La Aplicación");
             }
-        }
-
-        private void mATERIAPRIMAToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-            clsVistaBitacora bit = new clsVistaBitacora();
-            clsFuncionesSeguridad seguridad = new clsFuncionesSeguridad();
-            if (seguridad.PermisosAcceso("6", textBox1.Text) == 1)
-            {
-                bit.user(textBox1.Text);
-                frmMateriaPrima Bancos = new frmMateriaPrima(textBox1.Text);
-                Bancos.MdiParent = this;
-                Bancos.Show();
-            }
-            else
-            {
-                MessageBox.Show("El Usuario No Cuenta Con Permisos De Acceso A La Aplicación");
-            }
-
-
         }
     }
 }

@@ -1,162 +1,17 @@
-C:\Users\jose lopez\Desktop\EjecucionNavegador\EjecucionNavegador\bin\Debug\EjecucionNavegador.exe.config
-C:\Users\jose lopez\Desktop\EjecucionNavegador\EjecucionNavegador\bin\Debug\EjecucionNavegador.exe
-C:\Users\jose lopez\Desktop\EjecucionNavegador\EjecucionNavegador\bin\Debug\EjecucionNavegador.pdb
-C:\Users\jose lopez\Desktop\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVista.dll
-C:\Users\jose lopez\Desktop\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVistaSeguridad.dll
-C:\Users\jose lopez\Desktop\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControlador.dll
-C:\Users\jose lopez\Desktop\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControladorSeguridad.dll
-C:\Users\jose lopez\Desktop\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModelo.dll
-C:\Users\jose lopez\Desktop\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModeloSeguridad.dll
-C:\Users\jose lopez\Desktop\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVista.pdb
-C:\Users\jose lopez\Desktop\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVistaSeguridad.pdb
-C:\Users\jose lopez\Desktop\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControlador.pdb
-C:\Users\jose lopez\Desktop\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControladorSeguridad.pdb
-C:\Users\jose lopez\Desktop\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModelo.pdb
-C:\Users\jose lopez\Desktop\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModeloSeguridad.pdb
-C:\Users\jose lopez\Desktop\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csprojAssemblyReference.cache
-C:\Users\jose lopez\Desktop\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.frmBanco.resources
-C:\Users\jose lopez\Desktop\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.Properties.Resources.resources
-C:\Users\jose lopez\Desktop\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csproj.GenerateResource.cache
-C:\Users\jose lopez\Desktop\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csproj.CopyComplete
-C:\Users\jose lopez\Desktop\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.exe
-C:\Users\jose lopez\Desktop\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.pdb
-C:\Users\jose lopez\Desktop\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.MDI.resources
-D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\EjecucionNavegador.exe.config
-D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\EjecucionNavegador.exe
-D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\EjecucionNavegador.pdb
-D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControlador.dll
-D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControladorSeguridad.dll
-D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModelo.dll
-D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModeloSeguridad.dll
-D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVista.pdb
-D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVistaSeguridad.pdb
-D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControlador.pdb
-D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControladorSeguridad.pdb
-D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModelo.pdb
-D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModeloSeguridad.pdb
-D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csprojAssemblyReference.cache
-D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.frmBanco.resources
-D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.MDI.resources
-D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.Properties.Resources.resources
-D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csproj.GenerateResource.cache
-D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csproj.CoreCompileInputs.cache
-D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csproj.CopyComplete
-D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.exe
-D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.pdb
-D:\caanc\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVista.dll
-C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\EjecucionNavegador.exe.config
-C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\EjecucionNavegador.exe
-C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\EjecucionNavegador.pdb
-C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVista.dll
-C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControlador.dll
-C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControladorSeguridad.dll
-C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModelo.dll
-C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModeloSeguridad.dll
-C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVista.pdb
-C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVistaSeguridad.pdb
-C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControlador.pdb
-C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControladorSeguridad.pdb
-C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModelo.pdb
-C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModeloSeguridad.pdb
-C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csprojAssemblyReference.cache
-C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.frmBanco.resources
-C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.MDI.resources
-C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.Properties.Resources.resources
-C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csproj.GenerateResource.cache
-C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csproj.CopyComplete
-C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.exe
-C:\Users\jose lopez\Desktop\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.pdb
-C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csprojAssemblyReference.cache
-C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.frmBanco.resources
-C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.MDI.resources
-C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.Properties.Resources.resources
-C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csproj.GenerateResource.cache
-C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.exe
-C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.pdb
-C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\EjecucionNavegador.exe.config
-C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\EjecucionNavegador.exe
-C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\EjecucionNavegador.pdb
-C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVista.dll
-C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVistaSeguridad.dll
-C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControlador.dll
-C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControladorSeguridad.dll
-C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModelo.dll
-C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModeloSeguridad.dll
-C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVista.pdb
-C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVistaSeguridad.pdb
-C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControlador.pdb
-C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControladorSeguridad.pdb
-C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModelo.pdb
-C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModeloSeguridad.pdb
-C:\Users\jose lopez\Desktop\NavegadorGit\Objeto-Com-n-Navegador\Objeto-Com-n-Navegador-main (2)\Objeto-Com-n-Navegador-main\Pruebas del navegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csproj.CopyComplete
-C:\Users\jose lopez\Desktop\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\EjecucionNavegador.exe.config
-C:\Users\jose lopez\Desktop\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\EjecucionNavegador.exe
-C:\Users\jose lopez\Desktop\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\EjecucionNavegador.pdb
-C:\Users\jose lopez\Desktop\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVista.dll
-C:\Users\jose lopez\Desktop\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVistaSeguridad.dll
-C:\Users\jose lopez\Desktop\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControlador.dll
-C:\Users\jose lopez\Desktop\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControladorSeguridad.dll
-C:\Users\jose lopez\Desktop\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModelo.dll
-C:\Users\jose lopez\Desktop\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModeloSeguridad.dll
-C:\Users\jose lopez\Desktop\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVista.pdb
-C:\Users\jose lopez\Desktop\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVistaSeguridad.pdb
-C:\Users\jose lopez\Desktop\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControlador.pdb
-C:\Users\jose lopez\Desktop\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControladorSeguridad.pdb
-C:\Users\jose lopez\Desktop\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModelo.pdb
-C:\Users\jose lopez\Desktop\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModeloSeguridad.pdb
-C:\Users\jose lopez\Desktop\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csprojAssemblyReference.cache
-C:\Users\jose lopez\Desktop\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.frmBanco.resources
-C:\Users\jose lopez\Desktop\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.MDI.resources
-C:\Users\jose lopez\Desktop\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.Properties.Resources.resources
-C:\Users\jose lopez\Desktop\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csproj.GenerateResource.cache
-C:\Users\jose lopez\Desktop\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csproj.CopyComplete
-C:\Users\jose lopez\Desktop\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.exe
-C:\Users\jose lopez\Desktop\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.pdb
-C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\EjecucionNavegador.exe.config
-C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\EjecucionNavegador.exe
-C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\EjecucionNavegador.pdb
-C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVista.dll
-C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVistaSeguridad.dll
-C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControlador.dll
-C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControladorSeguridad.dll
-C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModelo.dll
-C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModeloSeguridad.dll
-C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVista.pdb
-C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVistaSeguridad.pdb
-C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControlador.pdb
-C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControladorSeguridad.pdb
-C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModelo.pdb
-C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModeloSeguridad.pdb
-C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csprojAssemblyReference.cache
-C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.frmBanco.resources
-C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.MDI.resources
-C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.Properties.Resources.resources
-C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csproj.GenerateResource.cache
-C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csproj.CoreCompileInputs.cache
-C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csproj.CopyComplete
-C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.exe
-C:\Users\bryan\Desktop\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.pdb
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\EjecucionNavegador.exe.config
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\EjecucionNavegador.exe
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\EjecucionNavegador.pdb
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVistaNavegador.dll
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVistaSeguridad.dll
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControladorNavegador.dll
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVistaReporteador.dll
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControladorSeguridad.dll
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModeloSeguridad.dll
-C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVistaSeguridad.pdb
-C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControladorSeguridad.pdb
-C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModeloSeguridad.pdb
-C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csprojAssemblyReference.cache
-C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.MDI.resources
-C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.Properties.Resources.resources
-C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csproj.GenerateResource.cache
-C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csproj.CopyComplete
-C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.exe
-C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.pdb
-C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVistaReporteador.dll
-C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
-C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControladorReporteador.dll
-C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModeloNavegador.dll
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModeloReporteador.dll
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControladorReporteador.dll
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CrystalDecisions.Windows.Forms.dll
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CrystalDecisions.Shared.dll
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
@@ -174,14 +29,20 @@ C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegado
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\ShockwaveFlashObjects.dll
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\stdole.dll
-C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVistaReporteador.pdb
-C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControladorReporteador.pdb
-C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModeloReporteador.pdb
-C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVistaNavegador.dll
-C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControladorNavegador.dll
-C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModeloNavegador.dll
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVistaNavegador.pdb
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVistaSeguridad.pdb
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControladorNavegador.pdb
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaVistaReporteador.pdb
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControladorSeguridad.pdb
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModeloSeguridad.pdb
 C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModeloNavegador.pdb
-C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.frmMateriaPrima.resources
-C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.frmAreas.resources
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaModeloReporteador.pdb
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\bin\Debug\CapaControladorReporteador.pdb
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csprojAssemblyReference.cache
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.frmBanco.resources
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.MDI.resources
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.Properties.Resources.resources
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csproj.GenerateResource.cache
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.csproj.CopyComplete
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.exe
+C:\Users\jose lopez\Documents\GitHub\Navegador\PruebaNavegador\EjecucionNavegador\EjecucionNavegador\obj\Debug\EjecucionNavegador.pdb

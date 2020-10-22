@@ -44,9 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Conexion.cs" />
+    <Compile Include="clsConexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sentencias.cs" />
+    <Compile Include="clsSentencias.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
