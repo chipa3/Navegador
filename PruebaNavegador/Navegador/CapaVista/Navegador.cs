@@ -1,4 +1,6 @@
-﻿using System;
+﻿/*Version 22/10/2020*/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -24,7 +26,6 @@ namespace CapaVistaNavegador
         public List<string> Modificar = new List<string>();
         public int OpGuardar;
         public int aplicacion;
-        private bool reporteador = false;
         //codigo de guardar
         //codigo de actualizar
         public DataGridView DatosActualizar = new DataGridView();
@@ -51,10 +52,10 @@ namespace CapaVistaNavegador
         }
         clsControlador cn = new clsControlador();
        
-        public void cargar()
+        public void procCargar()
         {
 
-            string Mensaje = cn.VerficarTabla(tbl);
+            string Mensaje = cn.funcVerficarTabla(tbl);
 
             if (!Mensaje.Equals("bien"))
             {
@@ -74,13 +75,13 @@ namespace CapaVistaNavegador
                 btnSalir.Enabled = false;
                 btnGuardar.Enabled = false;
                 DatosActualizar.Enabled = false;
-                bloquear();
+                procBloquear();
             }
             else
             {
-                ObtenerPermisos();
-                PermisosBotones();
-                VerificarCampos();
+                procObtenerPermisos();
+                procPermisosBotones();
+                procVerificarCampos();
                 if(Señal2)
                 {
                     DatosActualizar.CurrentCell = DatosActualizar.Rows[0].Cells[0];
@@ -119,9 +120,9 @@ namespace CapaVistaNavegador
         private void btnInsertar_Click(object sender, EventArgs e)
         {
             OpGuardar = 1;
-            Desbloquear();
+            procDesbloquear();
             TextBox text = (TextBox)control.First();
-            insertar(tbl, text.Tag.ToString(), text);
+            procInsertar(tbl, text.Tag.ToString(), text);
             btnModificar.Enabled = false;
             btnInsertar.Enabled = false;
             btnEliminar.Enabled = false;
@@ -131,17 +132,17 @@ namespace CapaVistaNavegador
 
         }
 
-        public void insertar(string tabla, string campo, TextBox txt)
+        public void procInsertar(string tabla, string campo, TextBox txt)
         {
-            Desbloquear();
+            procDesbloquear();
             string tbl = tabla;
             string cmp1 = campo;
             TextBox txt1 = txt;
-            int codigo = cn.codigoMax(tbl, cmp1);
+            int codigo = cn.funcCodigoMax(tbl, cmp1);
             txt1.Text = codigo.ToString();
             txt1.Enabled = false;
         }
-        private void Desbloquear()
+        private void procDesbloquear()
         {
             TextBox text = (TextBox)control.First();
             foreach (var item in control)
@@ -156,7 +157,7 @@ namespace CapaVistaNavegador
             text.Enabled = false;
         }
 
-        private void bloquear()
+        private void procBloquear()
         {
             foreach (var item in control)
             {
@@ -181,20 +182,20 @@ namespace CapaVistaNavegador
         {
             if (OpGuardar == 1)
             {
-                insertar();
-                actualizarData();
+                procInsertarDatos();
+                procActualizarData();
                 MessageBox.Show("El Dato se Guardo Correctamente", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else if (OpGuardar == 0)
             {
-                    modificar();
-                    actualizarData();
+                    procModificarDatos();
+                    procActualizarData();
                     MessageBox.Show("El Dato se Modifico Correctamente", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);                    
             }
             TextBox text = (TextBox)control.First();
             text.Enabled = false;
-            PermisosBotones();
-            bloquear();
+            procPermisosBotones();
+            procBloquear();
             btnGuardar.Enabled = false;
             btnCancelar.Enabled = false;
             ///////////////////
@@ -220,7 +221,7 @@ namespace CapaVistaNavegador
             }
         }
 
-        private void insertar()
+        private void procInsertarDatos()
         {
 
             List<string> lista = new List<string>();
@@ -241,10 +242,10 @@ namespace CapaVistaNavegador
                     lista.Add(fecha.Value.ToString("yyyy-MM-dd hh:mm:ss"));
                 }
             }
-            cn.Datos(tbl, lista, aplicacion);
+            cn.procDatosInsertar(tbl, lista, aplicacion);
         }
 
-        private void modificar()
+        private void procModificarDatos()
         {
             List<string> campos = new List<string>();
             List<string> Datos = new List<string>();
@@ -270,14 +271,14 @@ namespace CapaVistaNavegador
                     Datos.Add(fecha.Value.ToString("yyyy-MM-dd hh:mm:ss"));
                 }
             }
-            cn.Datos2(tbl, campos, Datos, aplicacion);
+            cn.procDatosModificar(tbl, campos, Datos, aplicacion);
         }
 
-        public void actualizarData()
+        public void procActualizarData()
         {
            
     
-                    DataTable dt = cn.enviar(tbl, campoEstado);
+                    DataTable dt = cn.funcEnviar(tbl, campoEstado);
                     DatosActualizar.DataSource = dt;
             
            
@@ -286,7 +287,7 @@ namespace CapaVistaNavegador
         private void btnRefrescar_Click(object sender, EventArgs e)
         {
             Bitacora.insert("Refrescar Datos", aplicacion);
-            actualizarData();
+            procActualizarData();
             DatosActualizar.CurrentCell = DatosActualizar.Rows[0].Cells[0];
 
             int i = -1;
@@ -323,7 +324,7 @@ namespace CapaVistaNavegador
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            bloquear();
+            procBloquear();
             Bitacora.insert("Cancelar", aplicacion);
             foreach (var item in control)
             {
@@ -362,7 +363,7 @@ namespace CapaVistaNavegador
                 }
                 //MessageBox.Show("data: " + datico);
             }
-            PermisosBotones();
+            procPermisosBotones();
             TextBox text = (TextBox)control.First();
             text.Enabled = false;
             /*  btnInsertar.Enabled = true;
@@ -375,10 +376,10 @@ namespace CapaVistaNavegador
         }
 
 
-        public void ParametrosEliminar(string tabla, string campo, string campoid, TextBox textBox)
+        public void procParametrosEliminar(string tabla, string campo, string campoid, TextBox textBox)
         {
 
-            if (cn.Eliminar(tabla, campo, campoid, textBox.Text, aplicacion))
+            if (cn.funcEliminar(tabla, campo, campoid, textBox.Text, aplicacion))
             {
                 MessageBox.Show("Registro Eliminado","Mensaje",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
@@ -396,7 +397,7 @@ namespace CapaVistaNavegador
             {
                 Bitacora.insert("Eliminacion de Datos", aplicacion);
                 TextBox text = (TextBox)control.First();
-                ParametrosEliminar(tbl, campoEstado, control.First().Tag.ToString(), text);
+                procParametrosEliminar(tbl, campoEstado, control.First().Tag.ToString(), text);
 
                 DatosActualizar.CurrentCell = DatosActualizar.Rows[0].Cells[0];
 
@@ -421,15 +422,15 @@ namespace CapaVistaNavegador
 
             }
 
-            actualizarData();
-            bloquear();
+            procActualizarData();
+            procBloquear();
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
             
             OpGuardar = 0;
-            Desbloquear();
+            procDesbloquear();
             btnModificar.Enabled = false;
             btnInsertar.Enabled = false;
             btnRefrescar.Enabled = false;
@@ -531,7 +532,7 @@ namespace CapaVistaNavegador
                 DialogResult dialogResult = MessageBox.Show("Ya se encuentra en el ultimo elenemento ¿Desea regresar al primer elemento?", "Advertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
                 if (dialogResult == DialogResult.OK)
                 {
-                    actualizarData();
+                    procActualizarData();
                     DatosActualizar.CurrentCell = DatosActualizar.Rows[0].Cells[0];
 
                     int i = -1;
@@ -559,14 +560,14 @@ namespace CapaVistaNavegador
                 
             }
         }
-        private void ObtenerPermisos()
+        private void procObtenerPermisos()
         {
             clsFuncionesSeguridad seguridad = new clsFuncionesSeguridad();
            string permisos = seguridad.Permisos(aplicacion.ToString(), Usuario);
             word = permisos.Split(',');
           
         }
-        public void PermisosBotones()
+        public void procPermisosBotones()
         {
             //Para Permisos
 
@@ -646,9 +647,9 @@ namespace CapaVistaNavegador
             }
         }
 
-        private void VerificarCampos()
+        private void procVerificarCampos()
         {
-            List<string> CamposTabla = cn.VerficarCampo(tbl);
+            List<string> CamposTabla = cn.funcVerficarCampo(tbl);
             
             foreach (var item in control)
             {
@@ -683,7 +684,7 @@ namespace CapaVistaNavegador
                     btnSalir.Enabled = false;
                     btnGuardar.Enabled = false;
                     DatosActualizar.Enabled = false;
-                    bloquear();
+                    procBloquear();
                 }
             }
             Señal2 = false;
@@ -712,7 +713,7 @@ namespace CapaVistaNavegador
                 btnSalir.Enabled = false;
                 btnGuardar.Enabled = false;
                 DatosActualizar.Enabled = false;
-                bloquear();
+                procBloquear();
             }
             
         }
