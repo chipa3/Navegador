@@ -1,4 +1,4 @@
-﻿/*Version 22/10/2020*/
+﻿/*Version 23/10/2020*/
 
 using System;
 using System.Collections.Generic;
@@ -22,8 +22,7 @@ namespace CapaVistaNavegador
     {
         clsVistaBitacora Bitacora = new clsVistaBitacora();
         //codigo de guardar
-        public List<Control> control = new List<Control>();
-        public List<string> Modificar = new List<string>();
+        public List<Control> control = null;
         public int OpGuardar;
         public int aplicacion;
         //codigo de guardar
@@ -44,11 +43,15 @@ namespace CapaVistaNavegador
         private frmReporteadorNavegador reporte;
         private frmUsuarioNormal UsuarioNormal;
         private frmUsuarioAvanzado UsuarioAvanzado;
+        int numeroCampos;
         //Para Permisos
         public Navegador()
         {
             InitializeComponent();
-            control.Reverse();
+            if (control != null)
+            {
+                control.Reverse();
+            }
         }
         clsControlador cn = new clsControlador();
        
@@ -84,31 +87,55 @@ namespace CapaVistaNavegador
                 procVerificarCampos();
                 if(Señal2)
                 {
-                    DatosActualizar.CurrentCell = DatosActualizar.Rows[0].Cells[0];
-
-                    int i = -1;
-                    control.Reverse();
-                    TextBox text = (TextBox)control.First();
-                    text.Enabled = false;
-                    foreach (var item in control)
+                    procContarCampos();
+                  //  MessageBox.Show("" + control.Count + "" + numeroCampos);
+                    if (control.Count != 0 && control.Count == numeroCampos)
                     {
-                        i++;
-                        item.Enabled = false;
-                        // MessageBox.Show("Item: " + item.Name);
-                        string datico = DatosActualizar.Rows[0].Cells[i].Value.ToString();
+                     
+                        DatosActualizar.CurrentCell = DatosActualizar.Rows[0].Cells[0];
 
-                        if (item is DateTimePicker)
+                        int i = -1;
+                        control.Reverse();
+                        TextBox text = (TextBox)control.First();
+                        text.Enabled = false;
+                        foreach (var item in control)
                         {
-                            DateTimePicker ll = (DateTimePicker)item;
-                            ll.Value = Convert.ToDateTime(datico);
+                            i++;
+                            item.Enabled = false;
+                            // MessageBox.Show("Item: " + item.Name);
+                            string datico = DatosActualizar.Rows[0].Cells[i].Value.ToString();
 
-                        }
-                        else
-                        {
-                            item.Text = datico;
+                            if (item is DateTimePicker)
+                            {
+                                DateTimePicker ll = (DateTimePicker)item;
+                                ll.Value = Convert.ToDateTime(datico);
 
+                            }
+                            else
+                            {
+                                item.Text = datico;
+
+                            }
+                            //MessageBox.Show("data: " + datico);
                         }
-                        //MessageBox.Show("data: " + datico);
+
+                    }else
+                    {
+                        btnInicio.Enabled = false;
+                        btnInsertar.Enabled = false;
+                        btnModificar.Enabled = false;
+                        btnEliminar.Enabled = false;
+                        btnRefrescar.Enabled = false;
+                        btnCancelar.Enabled = false;
+                        btnConsultar.Enabled = false;
+                        btnImprimir.Enabled = false;
+                        btnAtras.Enabled = false;
+                        btnFinal.Enabled = false;
+                        btnAdelante.Enabled = false;
+                        btnAyuda.Enabled = false;
+                        btnSalir.Enabled = false;
+                        btnGuardar.Enabled = false;
+                        DatosActualizar.Enabled = false;
                     }
                 }
                
@@ -219,6 +246,12 @@ namespace CapaVistaNavegador
                 }
                 //MessageBox.Show("data: " + datico);
             }
+        }
+        private void procContarCampos()
+        {
+            List<string> campos = cn.funcVerficarCampo(tbl);
+            numeroCampos = campos.Count;
+
         }
 
         private void procInsertarDatos()
