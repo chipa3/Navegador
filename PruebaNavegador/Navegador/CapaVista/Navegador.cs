@@ -207,17 +207,50 @@ namespace CapaVistaNavegador
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            bool Verificador = false;
             if (OpGuardar == 1)
             {
-                procInsertarDatos();
-                procActualizarData();
-                MessageBox.Show("El Dato se Guardo Correctamente", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                foreach (var items in control)
+                {
+                    if (items.Text.Equals(""))
+                    {
+                        Verificador = true;
+                    }
+                }
+                if (!Verificador)
+                {
+
+                    procInsertarDatos();
+                    procActualizarData();
+                    MessageBox.Show("El Dato se Guardo Correctamente", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Algunos campos siguen vacios", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
             }
             else if (OpGuardar == 0)
             {
+
+                foreach (var items in control)
+                {
+                    if (items.Text.Equals(""))
+                    {
+                        Verificador = true;
+                    }
+                }
+                if (!Verificador)
+                {
                     procModificarDatos();
                     procActualizarData();
-                    MessageBox.Show("El Dato se Modifico Correctamente", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);                    
+                    MessageBox.Show("El Dato se Modifico Correctamente", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Algunos campos siguen vacios", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
             }
             TextBox text = (TextBox)control.First();
             text.Enabled = false;
