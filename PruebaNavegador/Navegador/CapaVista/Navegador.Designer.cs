@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Navegador));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbxNavegador = new System.Windows.Forms.GroupBox();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnAyuda = new System.Windows.Forms.Button();
             this.btnInicio = new System.Windows.Forms.Button();
@@ -44,33 +44,33 @@
             this.btnRefrescar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnInsertar = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
+            this.gbxNavegador.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // gbxNavegador
             // 
-            this.groupBox1.Controls.Add(this.btnSalir);
-            this.groupBox1.Controls.Add(this.btnAyuda);
-            this.groupBox1.Controls.Add(this.btnInicio);
-            this.groupBox1.Controls.Add(this.btnAdelante);
-            this.groupBox1.Controls.Add(this.btnGuardar);
-            this.groupBox1.Controls.Add(this.btnAtras);
-            this.groupBox1.Controls.Add(this.btnFinal);
-            this.groupBox1.Controls.Add(this.btnModificar);
-            this.groupBox1.Controls.Add(this.btnCancelar);
-            this.groupBox1.Controls.Add(this.btnConsultar);
-            this.groupBox1.Controls.Add(this.btnImprimir);
-            this.groupBox1.Controls.Add(this.btnRefrescar);
-            this.groupBox1.Controls.Add(this.btnEliminar);
-            this.groupBox1.Controls.Add(this.btnInsertar);
-            this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(4, 4);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(1404, 103);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
+            this.gbxNavegador.Controls.Add(this.btnSalir);
+            this.gbxNavegador.Controls.Add(this.btnAyuda);
+            this.gbxNavegador.Controls.Add(this.btnInicio);
+            this.gbxNavegador.Controls.Add(this.btnAdelante);
+            this.gbxNavegador.Controls.Add(this.btnGuardar);
+            this.gbxNavegador.Controls.Add(this.btnAtras);
+            this.gbxNavegador.Controls.Add(this.btnFinal);
+            this.gbxNavegador.Controls.Add(this.btnModificar);
+            this.gbxNavegador.Controls.Add(this.btnCancelar);
+            this.gbxNavegador.Controls.Add(this.btnConsultar);
+            this.gbxNavegador.Controls.Add(this.btnImprimir);
+            this.gbxNavegador.Controls.Add(this.btnRefrescar);
+            this.gbxNavegador.Controls.Add(this.btnEliminar);
+            this.gbxNavegador.Controls.Add(this.btnInsertar);
+            this.gbxNavegador.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbxNavegador.Location = new System.Drawing.Point(4, 4);
+            this.gbxNavegador.Margin = new System.Windows.Forms.Padding(4);
+            this.gbxNavegador.Name = "gbxNavegador";
+            this.gbxNavegador.Padding = new System.Windows.Forms.Padding(4);
+            this.gbxNavegador.Size = new System.Drawing.Size(1404, 103);
+            this.gbxNavegador.TabIndex = 0;
+            this.gbxNavegador.TabStop = false;
             // 
             // btnSalir
             // 
@@ -304,11 +304,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbxNavegador);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Navegador";
             this.Size = new System.Drawing.Size(1412, 129);
-            this.groupBox1.ResumeLayout(false);
+            this.gbxNavegador.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -329,6 +329,6 @@
         private System.Windows.Forms.Button btnInicio;
         private System.Windows.Forms.Button btnAyuda;
         private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbxNavegador;
     }
 }
