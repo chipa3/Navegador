@@ -1,6 +1,4 @@
-usuario: bmaza
-contraseña: bmaza
-
-
+usuario: JLOPEZ
+contraseña: JLOPEZ
 
 DNS = clc_erp
