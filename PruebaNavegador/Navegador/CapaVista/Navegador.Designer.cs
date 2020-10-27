@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Navegador));
             this.gbxNavegador = new System.Windows.Forms.GroupBox();
             this.btnSalir = new System.Windows.Forms.Button();
@@ -44,6 +45,7 @@
             this.btnRefrescar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnInsertar = new System.Windows.Forms.Button();
+            this.ttAyuda = new System.Windows.Forms.ToolTip(this.components);
             this.gbxNavegador.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -330,5 +332,6 @@
         private System.Windows.Forms.Button btnAyuda;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.GroupBox gbxNavegador;
+        private System.Windows.Forms.ToolTip ttAyuda;
     }
 }

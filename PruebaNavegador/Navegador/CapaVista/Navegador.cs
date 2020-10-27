@@ -1,4 +1,4 @@
-﻿/*Version 25/10/2020*/
+﻿/*Version 27/10/2020*/
 
 using System;
 using System.Collections.Generic;
@@ -52,12 +52,26 @@ namespace CapaVistaNavegador
             {
                 control.Reverse();
             }
+            this.ttAyuda.SetToolTip(this.btnInsertar, "Presione para generar un nuevo codigo y activar los campos");
+            this.ttAyuda.SetToolTip(this.btnModificar, "Presione para activar los campos a modificar");
+            this.ttAyuda.SetToolTip(this.btnGuardar, "Presione para Guardar los cambios hechos despues de presionar el boton de insertar o modificar");
+            this.ttAyuda.SetToolTip(this.btnEliminar, "Presione para eliminar el dato que esta proyectado en los campos");
+            this.ttAyuda.SetToolTip(this.btnRefrescar, "Presione para refrescar el formulario");
+            this.ttAyuda.SetToolTip(this.btnCancelar, "Presione para cancelar la operacion que esta realizando actualmente");
+            this.ttAyuda.SetToolTip(this.btnConsultar, "Presione para abrir la ventana de consultas, cualquier error comunicarse con el area de consultas ");
+            this.ttAyuda.SetToolTip(this.btnImprimir, "Recuerde que debe tener un reporte asignado a la aplicacion y tener instalado los software de reportes, cualquier error comunicarse con el area de reporteador");
+            this.ttAyuda.SetToolTip(this.btnInicio, "Presione para regresar al primer dato de la tabla");
+            this.ttAyuda.SetToolTip(this.btnAtras, "Presione para regresar una posicion en la tabla");
+            this.ttAyuda.SetToolTip(this.btnAdelante, "Presione para moverse una posicion hacia adelante en la tabla de datos");
+            this.ttAyuda.SetToolTip(this.btnFinal, "Presione para moverse al ultimo dato de la tabla");
+            this.ttAyuda.SetToolTip(this.btnAyuda, "Presione para abrir la ayuda del formulario");
+            this.ttAyuda.SetToolTip(this.btnSalir, "Presione para cerrar el formulario");
         }
         clsControlador cn = new clsControlador();
        
         public void procCargar()
         {
-
+            
             string Mensaje = cn.funcVerficarTabla(tbl);
 
             if (!Mensaje.Equals("bien"))
@@ -146,6 +160,7 @@ namespace CapaVistaNavegador
         }
         private void btnInsertar_Click(object sender, EventArgs e)
         {
+            //genera un nuevo codigo en el primer textbox que se agrege a la lista
             OpGuardar = 1;
             procDesbloquear();
             TextBox text = (TextBox)control.First();
@@ -161,6 +176,7 @@ namespace CapaVistaNavegador
 
         public void procInsertar(string tabla, string campo, TextBox txt)
         {
+            //se recibe el codigo por medio de la consulta realizada en la clase de sentencias
             procDesbloquear();
             string tbl = tabla;
             string cmp1 = campo;
@@ -171,6 +187,7 @@ namespace CapaVistaNavegador
         }
         private void procDesbloquear()
         {
+            //desbloquea los campos
             TextBox text = (TextBox)control.First();
             foreach (var item in control)
             {
@@ -186,6 +203,7 @@ namespace CapaVistaNavegador
 
         private void procBloquear()
         {
+            //bloquea los campos 
             foreach (var item in control)
             {
                 item.Enabled = false;
@@ -193,6 +211,7 @@ namespace CapaVistaNavegador
         }
         private void btnAyuda_Click(object sender, EventArgs e)
         {
+            //abre el formulario de ayuda que se le asigna en el navegador
             if(!ayudaRuta.Equals("")  && !ruta.Equals(""))
             {
                 Bitacora.insert("Formulario de ayuda", aplicacion);
@@ -207,9 +226,11 @@ namespace CapaVistaNavegador
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            //verifica si se presiona el boton de insertar o modificar y llama a la funcion respectiva
             bool Verificador = false;
             if (OpGuardar == 1)
             {
+                //verifica si los campos estan vacios
                 foreach (var items in control)
                 {
                     if (items.Text.Equals(""))
@@ -217,6 +238,7 @@ namespace CapaVistaNavegador
                         Verificador = true;
                     }
                 }
+                
                 if (!Verificador)
                 {
 
@@ -258,7 +280,7 @@ namespace CapaVistaNavegador
             procBloquear();
             btnGuardar.Enabled = false;
             btnCancelar.Enabled = false;
-            ///////////////////
+            /////////////////// se copian los datos de la tablahacia los campos
             DatosActualizar.CurrentCell = DatosActualizar.Rows[0].Cells[0];
 
             int i = -1;
@@ -282,6 +304,7 @@ namespace CapaVistaNavegador
         }
         private void procContarCampos()
         {
+            //se cuenta la cantidad de campos que tiene el formulario y se compara con la tabla que se llama
             List<string> campos = cn.funcVerficarCampo(tbl);
             numeroCampos = campos.Count;
 
@@ -289,7 +312,7 @@ namespace CapaVistaNavegador
 
         private void procInsertarDatos()
         {
-
+            //procedimiento que envia los datos a la consulta de insercion en la clase de sentencias
             List<string> lista = new List<string>();
             //  control.Reverse();
             foreach (var items in control)
@@ -313,6 +336,7 @@ namespace CapaVistaNavegador
 
         private void procModificarDatos()
         {
+            //procedimiento que envia los datos a la consulta de modificar en la clase de sentencias
             List<string> campos = new List<string>();
             List<string> Datos = new List<string>();
             //   control.Reverse();
@@ -343,7 +367,7 @@ namespace CapaVistaNavegador
         public void procActualizarData()
         {
            
-    
+        //se guardar los datos de una tabla consultada en la tabla que se envia en el navegador
                     DataTable dt = cn.funcEnviar(tbl, campoEstado);
                     DatosActualizar.DataSource = dt;
             
@@ -352,6 +376,7 @@ namespace CapaVistaNavegador
 
         private void btnRefrescar_Click(object sender, EventArgs e)
         {
+            //refresca el formulario
             Bitacora.insert("Refrescar Datos", aplicacion);
             procActualizarData();
             DatosActualizar.CurrentCell = DatosActualizar.Rows[0].Cells[0];
@@ -380,6 +405,7 @@ namespace CapaVistaNavegador
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
+            //cierra el formulario en el que esta posicionado
             DialogResult dialogResult = MessageBox.Show("¿Esta Seguro que desea salir de la aplicacion?", "Advertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
             if (dialogResult == DialogResult.OK)
             {
@@ -390,6 +416,7 @@ namespace CapaVistaNavegador
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            //se cancela la operacion actual y recarga el formulario nuevamente
             procBloquear();
             Bitacora.insert("Cancelar", aplicacion);
             foreach (var item in control)
@@ -444,7 +471,7 @@ namespace CapaVistaNavegador
 
         public void procParametrosEliminar(string tabla, string campo, string campoid, TextBox textBox)
         {
-
+            //procemiento para eliminar el un dato
             if (cn.funcEliminar(tabla, campo, campoid, textBox.Text, aplicacion))
             {
                 MessageBox.Show("Registro Eliminado","Mensaje",MessageBoxButtons.OK,MessageBoxIcon.Information);
@@ -457,6 +484,7 @@ namespace CapaVistaNavegador
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+            //se elimina el dato y se actualiza el formulario
             //DialogResult dialogResult = (MessageBox.Show("¿Esta Seguro de eliminar este resgistro?", "Advertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning));
             DialogResult dialogResult = MessageBox.Show("¿Esta Seguro de eliminar este registro?", "Advertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
             if (dialogResult == DialogResult.OK)
@@ -494,7 +522,7 @@ namespace CapaVistaNavegador
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            
+            //boton de modificar activa y bloquea los botones que no son utiles en esta operacion
             OpGuardar = 0;
             procDesbloquear();
             btnModificar.Enabled = false;
@@ -508,6 +536,7 @@ namespace CapaVistaNavegador
 
         private void btnInicio_Click(object sender, EventArgs e)
         {
+            //regresa al primer registro de la tabla
             try
             {
                 DatosActualizar.CurrentCell = DatosActualizar.Rows[0].Cells[0];
@@ -538,6 +567,7 @@ namespace CapaVistaNavegador
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
+            //regresa una posicion en la tabla
             int row = DatosActualizar.CurrentCell.RowIndex;
 
             try
@@ -570,6 +600,7 @@ namespace CapaVistaNavegador
 
         private void btnAdelante_Click(object sender, EventArgs e)
         {
+            //se mueve hacia adelante en los registros de la tabla
             int row = DatosActualizar.CurrentCell.RowIndex;
             try
             {
@@ -628,6 +659,7 @@ namespace CapaVistaNavegador
         }
         private void procObtenerPermisos()
         {
+            //se obtiene los permisos de la DLL seguridad
             clsFuncionesSeguridad seguridad = new clsFuncionesSeguridad();
            string permisos = seguridad.Permisos(aplicacion.ToString(), Usuario);
             word = permisos.Split(',');
@@ -635,6 +667,7 @@ namespace CapaVistaNavegador
         }
         public void procPermisosBotones()
         {
+            //se comparan los permisos obtenidos de la DLL de seguridad
             //Para Permisos
 
             if (word[0] == "0")
@@ -684,6 +717,7 @@ namespace CapaVistaNavegador
         }
         private void btnFinal_Click(object sender, EventArgs e)
         {
+            //se mueve al final de la tabla
             int nRowIndex = DatosActualizar.Rows.Count - 1;
             try
             {
@@ -715,6 +749,7 @@ namespace CapaVistaNavegador
 
         private void procVerificarCampos()
         {
+            //se verifican los campos enviados del formulario con los campos de la tabla enviada
             List<string> CamposTabla = cn.funcVerficarCampo(tbl);
             
             foreach (var item in control)
@@ -785,7 +820,8 @@ namespace CapaVistaNavegador
         }
 
         private void btnImprimir_Click(object sender, EventArgs e)
-        {           
+        {       
+            //abre la DLL de Reporteador 
             try
             {
                 if (reporte == null)
@@ -806,6 +842,7 @@ namespace CapaVistaNavegador
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
+            //ABRE LA DLL DE CONSULTAS
             try
             {
                 clsVistaBitacora bit = new clsVistaBitacora();
