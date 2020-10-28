@@ -77,6 +77,7 @@
             // btnSalir
             // 
             this.btnSalir.BackColor = System.Drawing.Color.White;
+            this.btnSalir.Enabled = false;
             this.btnSalir.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -93,6 +94,7 @@
             // btnAyuda
             // 
             this.btnAyuda.BackColor = System.Drawing.Color.White;
+            this.btnAyuda.Enabled = false;
             this.btnAyuda.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAyuda.Image = ((System.Drawing.Image)(resources.GetObject("btnAyuda.Image")));
             this.btnAyuda.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -109,6 +111,7 @@
             // btnInicio
             // 
             this.btnInicio.BackColor = System.Drawing.Color.White;
+            this.btnInicio.Enabled = false;
             this.btnInicio.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInicio.Image = ((System.Drawing.Image)(resources.GetObject("btnInicio.Image")));
             this.btnInicio.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -125,6 +128,7 @@
             // btnAdelante
             // 
             this.btnAdelante.BackColor = System.Drawing.Color.White;
+            this.btnAdelante.Enabled = false;
             this.btnAdelante.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdelante.Image = ((System.Drawing.Image)(resources.GetObject("btnAdelante.Image")));
             this.btnAdelante.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -158,6 +162,7 @@
             // btnAtras
             // 
             this.btnAtras.BackColor = System.Drawing.Color.White;
+            this.btnAtras.Enabled = false;
             this.btnAtras.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAtras.Image = ((System.Drawing.Image)(resources.GetObject("btnAtras.Image")));
             this.btnAtras.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -174,6 +179,7 @@
             // btnFinal
             // 
             this.btnFinal.BackColor = System.Drawing.Color.White;
+            this.btnFinal.Enabled = false;
             this.btnFinal.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFinal.Image = ((System.Drawing.Image)(resources.GetObject("btnFinal.Image")));
             this.btnFinal.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -190,6 +196,7 @@
             // btnModificar
             // 
             this.btnModificar.BackColor = System.Drawing.Color.White;
+            this.btnModificar.Enabled = false;
             this.btnModificar.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.Image = global::CapaVistaNavegador.Properties.Resources.Modificar_;
             this.btnModificar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -240,6 +247,7 @@
             // btnImprimir
             // 
             this.btnImprimir.BackColor = System.Drawing.Color.White;
+            this.btnImprimir.Enabled = false;
             this.btnImprimir.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnImprimir.Image = ((System.Drawing.Image)(resources.GetObject("btnImprimir.Image")));
             this.btnImprimir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -256,6 +264,7 @@
             // btnRefrescar
             // 
             this.btnRefrescar.BackColor = System.Drawing.Color.White;
+            this.btnRefrescar.Enabled = false;
             this.btnRefrescar.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefrescar.Image = ((System.Drawing.Image)(resources.GetObject("btnRefrescar.Image")));
             this.btnRefrescar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -272,6 +281,7 @@
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.White;
+            this.btnEliminar.Enabled = false;
             this.btnEliminar.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
             this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -288,6 +298,7 @@
             // btnInsertar
             // 
             this.btnInsertar.BackColor = System.Drawing.Color.White;
+            this.btnInsertar.Enabled = false;
             this.btnInsertar.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInsertar.Image = global::CapaVistaNavegador.Properties.Resources.Insertar;
             this.btnInsertar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -307,6 +318,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.gbxNavegador);
+            this.Enabled = false;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Navegador";
             this.Size = new System.Drawing.Size(1412, 129);

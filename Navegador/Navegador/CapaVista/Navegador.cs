@@ -27,7 +27,7 @@ namespace CapaVistaNavegador
         public int aplicacion;
         //codigo de guardar
         //codigo de actualizar
-        public DataGridView DatosActualizar = new DataGridView();
+        public DataGridView DatosActualizar = null;
         //codigo de actualizar
         public string campoEstado;
         public string tbl;
@@ -38,7 +38,7 @@ namespace CapaVistaNavegador
         public string Usuario;
         string[] word;
         bool Señal2 = false;
-        public Form formulario;
+        public Form formulario = null;
         public Form MDIformulario;
         private frmReporteadorNavegador reporte;
         private frmUsuarioNormal UsuarioNormal;
@@ -71,12 +71,105 @@ namespace CapaVistaNavegador
        
         public void procCargar()
         {
-            
-            string Mensaje = cn.funcVerficarTabla(tbl);
-
-            if (!Mensaje.Equals("bien"))
+            if (control != null && DatosActualizar != null)
             {
-                MessageBox.Show(Mensaje, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                string Mensaje = cn.funcVerficarTabla(tbl);
+
+                if (!Mensaje.Equals("bien"))
+                {
+                    MessageBox.Show(Mensaje, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    btnInicio.Enabled = false;
+                    btnInsertar.Enabled = false;
+                    btnModificar.Enabled = false;
+                    btnEliminar.Enabled = false;
+                    btnRefrescar.Enabled = false;
+                    btnCancelar.Enabled = false;
+                    btnConsultar.Enabled = false;
+                    btnImprimir.Enabled = false;
+                    btnAtras.Enabled = false;
+                    btnFinal.Enabled = false;
+                    btnAdelante.Enabled = false;
+                    btnAyuda.Enabled = false;
+                    btnSalir.Enabled = false;
+                    btnGuardar.Enabled = false;
+                    DatosActualizar.Enabled = false;
+                    procBloquear();
+                }
+                else
+                {
+                    btnInicio.Enabled = true;
+                    btnInsertar.Enabled = true;
+                    btnModificar.Enabled = true;
+                    btnEliminar.Enabled = true;
+                    btnRefrescar.Enabled = true;
+                    btnConsultar.Enabled = true;
+                    btnImprimir.Enabled = true;
+                    btnAtras.Enabled = true;
+                    btnFinal.Enabled = true;
+                    btnAdelante.Enabled = true;
+                    btnAyuda.Enabled = true;
+                    btnSalir.Enabled = true;
+                    procObtenerPermisos();
+                    procPermisosBotones();
+                    procVerificarCampos();
+                    if (Señal2)
+                    {
+                        procContarCampos();
+                        //  MessageBox.Show("" + control.Count + "" + numeroCampos);
+                        if (control.Count != 0 && control.Count == numeroCampos)
+                        {
+
+                            DatosActualizar.CurrentCell = DatosActualizar.Rows[0].Cells[0];
+
+                            int i = -1;
+                            control.Reverse();
+                            TextBox text = (TextBox)control.First();
+                            text.Enabled = false;
+                            foreach (var item in control)
+                            {
+                                i++;
+                                item.Enabled = false;
+                                // MessageBox.Show("Item: " + item.Name);
+                                string datico = DatosActualizar.Rows[0].Cells[i].Value.ToString();
+
+                                if (item is DateTimePicker)
+                                {
+                                    DateTimePicker ll = (DateTimePicker)item;
+                                    ll.Value = Convert.ToDateTime(datico);
+
+                                }
+                                else
+                                {
+                                    item.Text = datico;
+
+                                }
+                                //MessageBox.Show("data: " + datico);
+                            }
+
+                        }
+                        else
+                        {
+                            btnInicio.Enabled = false;
+                            btnInsertar.Enabled = false;
+                            btnModificar.Enabled = false;
+                            btnEliminar.Enabled = false;
+                            btnRefrescar.Enabled = false;
+                            btnCancelar.Enabled = false;
+                            btnConsultar.Enabled = false;
+                            btnImprimir.Enabled = false;
+                            btnAtras.Enabled = false;
+                            btnFinal.Enabled = false;
+                            btnAdelante.Enabled = false;
+                            btnAyuda.Enabled = false;
+                            btnSalir.Enabled = false;
+                            btnGuardar.Enabled = false;
+                            DatosActualizar.Enabled = false;
+                        }
+                    }
+
+                }
+            }else
+            {
                 btnInicio.Enabled = false;
                 btnInsertar.Enabled = false;
                 btnModificar.Enabled = false;
@@ -91,68 +184,6 @@ namespace CapaVistaNavegador
                 btnAyuda.Enabled = false;
                 btnSalir.Enabled = false;
                 btnGuardar.Enabled = false;
-                DatosActualizar.Enabled = false;
-                procBloquear();
-            }
-            else
-            {
-                procObtenerPermisos();
-                procPermisosBotones();
-                procVerificarCampos();
-                if(Señal2)
-                {
-                    procContarCampos();
-                  //  MessageBox.Show("" + control.Count + "" + numeroCampos);
-                    if (control.Count != 0 && control.Count == numeroCampos)
-                    {
-                     
-                        DatosActualizar.CurrentCell = DatosActualizar.Rows[0].Cells[0];
-
-                        int i = -1;
-                        control.Reverse();
-                        TextBox text = (TextBox)control.First();
-                        text.Enabled = false;
-                        foreach (var item in control)
-                        {
-                            i++;
-                            item.Enabled = false;
-                            // MessageBox.Show("Item: " + item.Name);
-                            string datico = DatosActualizar.Rows[0].Cells[i].Value.ToString();
-
-                            if (item is DateTimePicker)
-                            {
-                                DateTimePicker ll = (DateTimePicker)item;
-                                ll.Value = Convert.ToDateTime(datico);
-
-                            }
-                            else
-                            {
-                                item.Text = datico;
-
-                            }
-                            //MessageBox.Show("data: " + datico);
-                        }
-
-                    }else
-                    {
-                        btnInicio.Enabled = false;
-                        btnInsertar.Enabled = false;
-                        btnModificar.Enabled = false;
-                        btnEliminar.Enabled = false;
-                        btnRefrescar.Enabled = false;
-                        btnCancelar.Enabled = false;
-                        btnConsultar.Enabled = false;
-                        btnImprimir.Enabled = false;
-                        btnAtras.Enabled = false;
-                        btnFinal.Enabled = false;
-                        btnAdelante.Enabled = false;
-                        btnAyuda.Enabled = false;
-                        btnSalir.Enabled = false;
-                        btnGuardar.Enabled = false;
-                        DatosActualizar.Enabled = false;
-                    }
-                }
-               
             }
 
 
@@ -366,15 +397,34 @@ namespace CapaVistaNavegador
 
         public void procActualizarData()
         {
-           
-        //se guardar los datos de una tabla consultada en la tabla que se envia en el navegador
-                    DataTable dt = cn.funcEnviar(tbl, campoEstado);
-                    DatosActualizar.DataSource = dt;
-            
-           
-        }
+            if (DatosActualizar != null)
+            {
+                //se guardar los datos de una tabla consultada en la tabla que se envia en el navegador
+                DataTable dt = cn.funcEnviar(tbl, campoEstado);
+                DatosActualizar.DataSource = dt;
+            }
+            else
+            {
+                btnInicio.Enabled = false;
+                btnInsertar.Enabled = false;
+                btnModificar.Enabled = false;
+                btnEliminar.Enabled = false;
+                btnRefrescar.Enabled = false;
+                btnCancelar.Enabled = false;
+                btnConsultar.Enabled = false;
+                btnImprimir.Enabled = false;
+                btnAtras.Enabled = false;
+                btnFinal.Enabled = false;
+                btnAdelante.Enabled = false;
+                btnAyuda.Enabled = false;
+                btnSalir.Enabled = false;
+                btnGuardar.Enabled = false;
+            }
 
-        private void btnRefrescar_Click(object sender, EventArgs e)
+
+            }
+
+            private void btnRefrescar_Click(object sender, EventArgs e)
         {
             //refresca el formulario
             Bitacora.insert("Refrescar Datos", aplicacion);
@@ -405,12 +455,19 @@ namespace CapaVistaNavegador
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            //cierra el formulario en el que esta posicionado
-            DialogResult dialogResult = MessageBox.Show("¿Esta Seguro que desea salir de la aplicacion?", "Advertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
-            if (dialogResult == DialogResult.OK)
+            if (formulario != null)
             {
-                Bitacora.insert("Salir de la aplicacion", aplicacion);
-                formulario.Dispose();
+                //cierra el formulario en el que esta posicionado
+                DialogResult dialogResult = MessageBox.Show("¿Esta Seguro que desea salir de la aplicacion?", "Advertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
+                if (dialogResult == DialogResult.OK)
+                {
+                    Bitacora.insert("Salir de la aplicacion", aplicacion);
+                    formulario.Dispose();
+                }
+            }
+            else
+            {
+                MessageBox.Show("ERROR NO SE ESTA ENVIANDO NINGUN FORMULARIO", "Advertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             }
         }
 
