@@ -1,4 +1,0 @@
-usuario: JLOPEZ
-contraseña: JLOPEZ
-
-DNS = clc_erp
