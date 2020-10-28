@@ -318,7 +318,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.gbxNavegador);
-            this.Enabled = false;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Navegador";
             this.Size = new System.Drawing.Size(1412, 129);

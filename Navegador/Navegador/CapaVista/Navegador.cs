@@ -71,7 +71,8 @@ namespace CapaVistaNavegador
        
         public void procCargar()
         {
-            if (control != null && DatosActualizar != null)
+           
+            if (control !=null && DatosActualizar != null)
             {
                 string Mensaje = cn.funcVerficarTabla(tbl);
 
@@ -185,7 +186,6 @@ namespace CapaVistaNavegador
                 btnSalir.Enabled = false;
                 btnGuardar.Enabled = false;
             }
-
 
 
         }
@@ -397,13 +397,12 @@ namespace CapaVistaNavegador
 
         public void procActualizarData()
         {
-            if (DatosActualizar != null)
+           if(DatosActualizar != null)
             {
                 //se guardar los datos de una tabla consultada en la tabla que se envia en el navegador
                 DataTable dt = cn.funcEnviar(tbl, campoEstado);
                 DatosActualizar.DataSource = dt;
-            }
-            else
+            }else
             {
                 btnInicio.Enabled = false;
                 btnInsertar.Enabled = false;
@@ -420,11 +419,12 @@ namespace CapaVistaNavegador
                 btnSalir.Enabled = false;
                 btnGuardar.Enabled = false;
             }
+       
+            
+           
+        }
 
-
-            }
-
-            private void btnRefrescar_Click(object sender, EventArgs e)
+        private void btnRefrescar_Click(object sender, EventArgs e)
         {
             //refresca el formulario
             Bitacora.insert("Refrescar Datos", aplicacion);
@@ -455,7 +455,7 @@ namespace CapaVistaNavegador
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            if (formulario != null)
+            if(formulario != null)
             {
                 //cierra el formulario en el que esta posicionado
                 DialogResult dialogResult = MessageBox.Show("¿Esta Seguro que desea salir de la aplicacion?", "Advertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
@@ -464,11 +464,11 @@ namespace CapaVistaNavegador
                     Bitacora.insert("Salir de la aplicacion", aplicacion);
                     formulario.Dispose();
                 }
-            }
-            else
+            }else
             {
                 MessageBox.Show("ERROR NO SE ESTA ENVIANDO NINGUN FORMULARIO", "Advertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             }
+          
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
